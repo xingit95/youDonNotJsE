@@ -1,0 +1,1183 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 4: Hoisting · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch5.html" />
+    
+    
+    <link rel="prev" href="ch3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up & going/toc.html">
+            
+                <a href="../up & going/toc.html">
+            
+                    
+                    Up & Going
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up & going/foreword.html">
+            
+                <a href="../up & going/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up & going/ch1.html">
+            
+                <a href="../up & going/ch1.html">
+            
+                    
+                    Chapter 1: Into Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up & going/ch2.html">
+            
+                <a href="../up & going/ch2.html">
+            
+                    
+                    Chapter 2: Into JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up & going/ch3.html">
+            
+                <a href="../up & going/ch3.html">
+            
+                    
+                    Chapter 3: Into YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up & going/apA.html">
+            
+                <a href="../up & going/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    Scope & Closures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: What is Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Lexical Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Function vs. Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Scope Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Dynamic Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: Polyfilling Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: Lexical-this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="apD.html">
+            
+                <a href="apD.html">
+            
+                    
+                    Appendix D: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../this & Object Prototypes/toc.html">
+            
+                <a href="../this & Object Prototypes/toc.html">
+            
+                    
+                    this & Object Prototypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../this & Object Prototypes/foreword.html">
+            
+                <a href="../this & Object Prototypes/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../this & Object Prototypes/ch1.html">
+            
+                <a href="../this & Object Prototypes/ch1.html">
+            
+                    
+                    Chapter 1: this Or That?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../this & Object Prototypes/ch2.html">
+            
+                <a href="../this & Object Prototypes/ch2.html">
+            
+                    
+                    Chapter 2: this All Makes Sense Now!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../this & Object Prototypes/ch3.html">
+            
+                <a href="../this & Object Prototypes/ch3.html">
+            
+                    
+                    Chapter 3: Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../this & Object Prototypes/ch4.html">
+            
+                <a href="../this & Object Prototypes/ch4.html">
+            
+                    
+                    Chapter 4: Mixing (Up) "Class" Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../this & Object Prototypes/ch5.html">
+            
+                <a href="../this & Object Prototypes/ch5.html">
+            
+                    
+                    Chapter 5: Prototypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../this & Object Prototypes/ch6.html">
+            
+                <a href="../this & Object Prototypes/ch6.html">
+            
+                    
+                    Chapter 6: Behavior Delegation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../this & Object Prototypes/apA.html">
+            
+                <a href="../this & Object Prototypes/apA.html">
+            
+                    
+                    Appendix A: ES6 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../this & Object Prototypes/apB.html">
+            
+                <a href="../this & Object Prototypes/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Types & Grammar/toc.html">
+            
+                <a href="../Types & Grammar/toc.html">
+            
+                    
+                    Types & Grammar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Types & Grammar/foreword.html">
+            
+                <a href="../Types & Grammar/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Types & Grammar/ch1.html">
+            
+                <a href="../Types & Grammar/ch1.html">
+            
+                    
+                    Chapter 1: Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Types & Grammar/ch2.html">
+            
+                <a href="../Types & Grammar/ch2.html">
+            
+                    
+                    Chapter 2: Values
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Types & Grammar/ch3.html">
+            
+                <a href="../Types & Grammar/ch3.html">
+            
+                    
+                    Chapter 3: Natives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Types & Grammar/ch4.html">
+            
+                <a href="../Types & Grammar/ch4.html">
+            
+                    
+                    Chapter 4: Coercion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Types & Grammar/ch5.html">
+            
+                <a href="../Types & Grammar/ch5.html">
+            
+                    
+                    Chapter 5: Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Types & Grammar/apA.html">
+            
+                <a href="../Types & Grammar/apA.html">
+            
+                    
+                    Appendix A: Mixed Environment JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Types & Grammar/apB.html">
+            
+                <a href="../Types & Grammar/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Async & Performance/toc.html">
+            
+                <a href="../Async & Performance/toc.html">
+            
+                    
+                    Async & Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Async & Performance/foreword.html">
+            
+                <a href="../Async & Performance/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Async & Performance/ch1.html">
+            
+                <a href="../Async & Performance/ch1.html">
+            
+                    
+                    Chapter 1: Asynchrony: Now & Later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Async & Performance/ch2.html">
+            
+                <a href="../Async & Performance/ch2.html">
+            
+                    
+                    Chapter 2: Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Async & Performance/ch3.html">
+            
+                <a href="../Async & Performance/ch3.html">
+            
+                    
+                    Chapter 3: Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Async & Performance/ch4.html">
+            
+                <a href="../Async & Performance/ch4.html">
+            
+                    
+                    Chapter 4: Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Async & Performance/ch5.html">
+            
+                <a href="../Async & Performance/ch5.html">
+            
+                    
+                    Chapter 5: Program Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Async & Performance/ch6.html">
+            
+                <a href="../Async & Performance/ch6.html">
+            
+                    
+                    Chapter 6: Benchmarking & Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Async & Performance/apA.html">
+            
+                <a href="../Async & Performance/apA.html">
+            
+                    
+                    Appendix A: Library: asynquence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Async & Performance/apB.html">
+            
+                <a href="../Async & Performance/apB.html">
+            
+                    
+                    Appendix B: Advanced Async Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Async & Performance/apC.html">
+            
+                <a href="../Async & Performance/apC.html">
+            
+                    
+                    Appendix C: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ES6 & Beyond/toc.html">
+            
+                <a href="../ES6 & Beyond/toc.html">
+            
+                    
+                    ES6 & Beyond
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../ES6 & Beyond/foreword.html">
+            
+                <a href="../ES6 & Beyond/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../ES6 & Beyond/ch1.html">
+            
+                <a href="../ES6 & Beyond/ch1.html">
+            
+                    
+                    Chapter 1: ES? Now & Future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ES6 & Beyond/ch2.html">
+            
+                <a href="../ES6 & Beyond/ch2.html">
+            
+                    
+                    Chapter 2: Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../ES6 & Beyond/ch3.html">
+            
+                <a href="../ES6 & Beyond/ch3.html">
+            
+                    
+                    Chapter 3: Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../ES6 & Beyond/ch4.html">
+            
+                <a href="../ES6 & Beyond/ch4.html">
+            
+                    
+                    Chapter 4: Async Flow Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../ES6 & Beyond/ch5.html">
+            
+                <a href="../ES6 & Beyond/ch5.html">
+            
+                    
+                    Chapter 5: Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../ES6 & Beyond/ch6.html">
+            
+                <a href="../ES6 & Beyond/ch6.html">
+            
+                    
+                    Chapter 6: API Additions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../ES6 & Beyond/ch7.html">
+            
+                <a href="../ES6 & Beyond/ch7.html">
+            
+                    
+                    Chapter 7: Meta Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../ES6 & Beyond/ch8.html">
+            
+                <a href="../ES6 & Beyond/ch8.html">
+            
+                    
+                    Chapter 8: Beyond ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../ES6 & Beyond/apA.html">
+            
+                <a href="../ES6 & Beyond/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 4: Hoisting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#you-dont-know-js-scope--closures"><b>1. </b>You Don&apos;t Know JS: Scope &amp; Closures</a></li><li><span class="title-icon "></span><a href="#chapter-4-hoisting"><b>2. </b>Chapter 4: Hoisting</a></li><ul><li><span class="title-icon "></span><a href="#chicken-or-the-egg"><b>2.1. </b>Chicken Or The Egg?</a></li><li><span class="title-icon "></span><a href="#the-compiler-strikes-again"><b>2.2. </b>The Compiler Strikes Again</a></li><li><span class="title-icon "></span><a href="#functions-first"><b>2.3. </b>Functions First</a></li><li><span class="title-icon "></span><a href="#review-tldr"><b>2.4. </b>Review (TL;DR)</a></li></ul></ul></div><a href="#you-dont-know-js-scope--closures" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="you-dont-know-js-scope--closures"><a name="you-dont-know-js-scope--closures" class="anchor-navigation-ex-anchor" href="#you-dont-know-js-scope--closures"><i class="fa fa-link" aria-hidden="true"></i></a>1. You Don&apos;t Know JS: Scope &amp; Closures</h1>
+<h1 id="chapter-4-hoisting"><a name="chapter-4-hoisting" class="anchor-navigation-ex-anchor" href="#chapter-4-hoisting"><i class="fa fa-link" aria-hidden="true"></i></a>2. Chapter 4: Hoisting</h1>
+<p>By now, you should be fairly comfortable with the idea of scope, and how variables are attached to different levels of scope depending on where and how they are declared. Both function scope and block scope behave by the same rules in this regard: any variable declared within a scope is attached to that scope.</p>
+<p>But there&apos;s a subtle detail of how scope attachment works with declarations that appear in various locations within a scope, and that detail is what we will examine here.</p>
+<h2 id="chicken-or-the-egg"><a name="chicken-or-the-egg" class="anchor-navigation-ex-anchor" href="#chicken-or-the-egg"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Chicken Or The Egg?</h2>
+<p>There&apos;s a temptation to think that all of the code you see in a JavaScript program is interpreted line-by-line, top-down in order, as the program executes. While that is substantially true, there&apos;s one part of that assumption which can lead to incorrect thinking about your program.</p>
+<p>Consider this code:</p>
+<pre class="language-"><code class="lang-js">a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> a<span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>What do you expect to be printed in the <code>console.log(..)</code> statement?</p>
+<p>Many developers would expect <code>undefined</code>, since the <code>var a</code> statement comes after the <code>a = 2</code>, and it would seem natural to assume that the variable is re-defined, and thus assigned the default <code>undefined</code>. However, the output will be <code>2</code>.</p>
+<p>Consider another piece of code:</p>
+<pre class="language-"><code class="lang-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You might be tempted to assume that, since the previous snippet exhibited some less-than-top-down looking behavior, perhaps in this snippet, <code>2</code> will also be printed. Others may think that since the <code>a</code> variable is used before it is declared, this must result in a <code>ReferenceError</code> being thrown.</p>
+<p>Unfortunately, both guesses are incorrect. <code>undefined</code> is the output.</p>
+<p><strong>So, what&apos;s going on here?</strong> It would appear we have a chicken-and-the-egg question. Which comes first, the declaration (&quot;egg&quot;), or the assignment (&quot;chicken&quot;)?</p>
+<h2 id="the-compiler-strikes-again"><a name="the-compiler-strikes-again" class="anchor-navigation-ex-anchor" href="#the-compiler-strikes-again"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. The Compiler Strikes Again</h2>
+<p>To answer this question, we need to refer back to Chapter 1, and our discussion of compilers. Recall that the <em>Engine</em> actually will compile your JavaScript code before it interprets it. Part of the compilation phase was to find and associate all declarations with their appropriate scopes. Chapter 2 showed us that this is the heart of Lexical Scope.</p>
+<p>So, the best way to think about things is that all declarations, both variables and functions, are processed first, before any part of your code is executed.</p>
+<p>When you see <code>var a = 2;</code>, you probably think of that as one statement. But JavaScript actually thinks of it as two statements: <code>var a;</code> and <code>a = 2;</code>. The first statement, the declaration, is processed during the compilation phase. The second statement, the assignment, is left <strong>in place</strong> for the execution phase.</p>
+<p>Our first snippet then should be thought of as being handled like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> a<span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-js">a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>...where the first part is the compilation and the second part is the execution.</p>
+<p>Similarly, our second snippet is actually processed as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> a<span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre>
+<p>So, one way of thinking, sort of metaphorically, about this process, is that variable and function declarations are &quot;moved&quot; from where they appear in the flow of the code to the top of the code. This gives rise to the name &quot;Hoisting&quot;.</p>
+<p>In other words, <strong>the egg (declaration) comes before the chicken (assignment)</strong>.</p>
+<p><strong>Note:</strong> Only the declarations themselves are hoisted, while any assignments or other executable logic are left <em>in place</em>. If hoisting were to re-arrange the executable logic of our code, that could wreak havoc.</p>
+<pre class="language-"><code class="lang-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The function <code>foo</code>&apos;s declaration (which in this case <em>includes</em> the implied value of it as an actual function) is hoisted, such that the call on the first line is able to execute.</p>
+<p>It&apos;s also important to note that hoisting is <strong>per-scope</strong>. So while our previous snippets were simplified in that they only included global scope, the <code>foo(..)</code> function we are now examining itself exhibits that <code>var a</code> is hoisted to the top of <code>foo(..)</code> (not, obviously, to the top of the program). So the program can perhaps be more accurately interpreted like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a<span class="token punctuation">;</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+
+    a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Function declarations are hoisted, as we just saw. But function expressions are not.</p>
+<pre class="language-"><code class="lang-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// not ReferenceError, but TypeError!</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The variable identifier <code>foo</code> is hoisted and attached to the enclosing scope (global) of this program, so <code>foo()</code> doesn&apos;t fail as a <code>ReferenceError</code>. But <code>foo</code> has no value yet (as it would if it had been a true function declaration instead of expression). So, <code>foo()</code> is attempting to invoke the <code>undefined</code> value, which is a <code>TypeError</code> illegal operation.</p>
+<p>Also recall that even though it&apos;s a named function expression, the name identifier is not available in the enclosing scope:</p>
+<pre class="language-"><code class="lang-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// TypeError</span>
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>This snippet is more accurately interpreted (with hoisting) as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> foo<span class="token punctuation">;</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// TypeError</span>
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError</span>
+
+<span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token operator">...</span>self<span class="token operator">...</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="functions-first"><a name="functions-first" class="anchor-navigation-ex-anchor" href="#functions-first"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Functions First</h2>
+<p>Both function declarations and variable declarations are hoisted. But a subtle detail (that <em>can</em> show up in code with multiple &quot;duplicate&quot; declarations) is that functions are hoisted first, and then variables.</p>
+<p>Consider:</p>
+<pre class="language-"><code class="lang-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+
+<span class="token keyword">var</span> foo<span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>1</code> is printed instead of <code>2</code>! This snippet is interpreted by the <em>Engine</em> as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+
+<span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Notice that <code>var foo</code> was the duplicate (and thus ignored) declaration, even though it came before the <code>function foo()...</code> declaration, because function declarations are hoisted before normal variables.</p>
+<p>While multiple/duplicate <code>var</code> declarations are effectively ignored, subsequent function declarations <em>do</em> override previous ones.</p>
+<pre class="language-"><code class="lang-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token number">3</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>While this all may sound like nothing more than interesting academic trivia, it highlights the fact that duplicate definitions in the same scope are a really bad idea and will often lead to confusing results.</p>
+<p>Function declarations that appear inside of normal blocks typically hoist to the enclosing scope, rather than being conditional as this code implies:</p>
+<pre class="language-"><code class="lang-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;b&quot;</span>
+
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;a&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span> <span class="token punctuation">{</span>
+   <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;b&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>However, it&apos;s important to note that this behavior is not reliable and is subject to change in future versions of JavaScript, so it&apos;s probably best to avoid declaring functions in blocks.</p>
+<h2 id="review-tldr"><a name="review-tldr" class="anchor-navigation-ex-anchor" href="#review-tldr"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Review (TL;DR)</h2>
+<p>We can be tempted to look at <code>var a = 2;</code> as one statement, but the JavaScript <em>Engine</em> does not see it that way. It sees <code>var a</code> and <code>a = 2</code> as two separate statements, the first one a compiler-phase task, and the second one an execution-phase task.</p>
+<p>What this leads to is that all declarations in a scope, regardless of where they appear, are processed <em>first</em> before the code itself is executed. You can visualize this as declarations (variables and functions) being &quot;moved&quot; to the top of their respective scopes, which we call &quot;hoisting&quot;.</p>
+<p>Declarations themselves are hoisted, but assignments, even assignments of function expressions, are <em>not</em> hoisted.</p>
+<p>Be careful about duplicate declarations, especially mixed between normal var declarations and function declarations -- peril awaits if you do!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch3.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 3: Function vs. Block Scope">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch5.html" class="navigation navigation-next " aria-label="Next page: Chapter 5: Scope Closures">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 4: Hoisting","level":"1.4.4","depth":2,"next":{"title":"Chapter 5: Scope Closures","level":"1.4.5","depth":2,"path":"Scope & Closures/ch5.md","ref":"Scope & Closures/ch5.md","articles":[]},"previous":{"title":"Chapter 3: Function vs. Block Scope","level":"1.4.3","depth":2,"path":"Scope & Closures/ch3.md","ref":"Scope & Closures/ch3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-sharing","-livereload","-search","search-plus","anchor-navigation-ex","splitter","prism","theme-comscore","livereload"],"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-plus":{},"splitter":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Scope & Closures/ch4.md","mtime":"2018-09-23T00:16:07.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-23T02:41:01.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

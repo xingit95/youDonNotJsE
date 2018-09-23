@@ -1,0 +1,1216 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: ES6 class · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apB.html" />
+    
+    
+    <link rel="prev" href="ch6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up & going/toc.html">
+            
+                <a href="../up & going/toc.html">
+            
+                    
+                    Up & Going
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up & going/foreword.html">
+            
+                <a href="../up & going/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up & going/ch1.html">
+            
+                <a href="../up & going/ch1.html">
+            
+                    
+                    Chapter 1: Into Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up & going/ch2.html">
+            
+                <a href="../up & going/ch2.html">
+            
+                    
+                    Chapter 2: Into JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up & going/ch3.html">
+            
+                <a href="../up & going/ch3.html">
+            
+                    
+                    Chapter 3: Into YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up & going/apA.html">
+            
+                <a href="../up & going/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Scope & Closures/toc.html">
+            
+                <a href="../Scope & Closures/toc.html">
+            
+                    
+                    Scope & Closures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Scope & Closures/ch1.html">
+            
+                <a href="../Scope & Closures/ch1.html">
+            
+                    
+                    Chapter 1: What is Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Scope & Closures/ch2.html">
+            
+                <a href="../Scope & Closures/ch2.html">
+            
+                    
+                    Chapter 2: Lexical Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Scope & Closures/ch3.html">
+            
+                <a href="../Scope & Closures/ch3.html">
+            
+                    
+                    Chapter 3: Function vs. Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Scope & Closures/ch4.html">
+            
+                <a href="../Scope & Closures/ch4.html">
+            
+                    
+                    Chapter 4: Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Scope & Closures/ch5.html">
+            
+                <a href="../Scope & Closures/ch5.html">
+            
+                    
+                    Chapter 5: Scope Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Scope & Closures/apA.html">
+            
+                <a href="../Scope & Closures/apA.html">
+            
+                    
+                    Appendix A: Dynamic Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Scope & Closures/apB.html">
+            
+                <a href="../Scope & Closures/apB.html">
+            
+                    
+                    Appendix B: Polyfilling Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Scope & Closures/apC.html">
+            
+                <a href="../Scope & Closures/apC.html">
+            
+                    
+                    Appendix C: Lexical-this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Scope & Closures/apD.html">
+            
+                <a href="../Scope & Closures/apD.html">
+            
+                    
+                    Appendix D: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    this & Object Prototypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="foreword.html">
+            
+                <a href="foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: this Or That?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: this All Makes Sense Now!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Mixing (Up) "Class" Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Prototypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Behavior Delegation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.8" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: ES6 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Types & Grammar/toc.html">
+            
+                <a href="../Types & Grammar/toc.html">
+            
+                    
+                    Types & Grammar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Types & Grammar/foreword.html">
+            
+                <a href="../Types & Grammar/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Types & Grammar/ch1.html">
+            
+                <a href="../Types & Grammar/ch1.html">
+            
+                    
+                    Chapter 1: Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Types & Grammar/ch2.html">
+            
+                <a href="../Types & Grammar/ch2.html">
+            
+                    
+                    Chapter 2: Values
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Types & Grammar/ch3.html">
+            
+                <a href="../Types & Grammar/ch3.html">
+            
+                    
+                    Chapter 3: Natives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Types & Grammar/ch4.html">
+            
+                <a href="../Types & Grammar/ch4.html">
+            
+                    
+                    Chapter 4: Coercion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Types & Grammar/ch5.html">
+            
+                <a href="../Types & Grammar/ch5.html">
+            
+                    
+                    Chapter 5: Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Types & Grammar/apA.html">
+            
+                <a href="../Types & Grammar/apA.html">
+            
+                    
+                    Appendix A: Mixed Environment JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Types & Grammar/apB.html">
+            
+                <a href="../Types & Grammar/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Async & Performance/toc.html">
+            
+                <a href="../Async & Performance/toc.html">
+            
+                    
+                    Async & Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Async & Performance/foreword.html">
+            
+                <a href="../Async & Performance/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Async & Performance/ch1.html">
+            
+                <a href="../Async & Performance/ch1.html">
+            
+                    
+                    Chapter 1: Asynchrony: Now & Later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Async & Performance/ch2.html">
+            
+                <a href="../Async & Performance/ch2.html">
+            
+                    
+                    Chapter 2: Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Async & Performance/ch3.html">
+            
+                <a href="../Async & Performance/ch3.html">
+            
+                    
+                    Chapter 3: Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Async & Performance/ch4.html">
+            
+                <a href="../Async & Performance/ch4.html">
+            
+                    
+                    Chapter 4: Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Async & Performance/ch5.html">
+            
+                <a href="../Async & Performance/ch5.html">
+            
+                    
+                    Chapter 5: Program Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Async & Performance/ch6.html">
+            
+                <a href="../Async & Performance/ch6.html">
+            
+                    
+                    Chapter 6: Benchmarking & Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Async & Performance/apA.html">
+            
+                <a href="../Async & Performance/apA.html">
+            
+                    
+                    Appendix A: Library: asynquence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Async & Performance/apB.html">
+            
+                <a href="../Async & Performance/apB.html">
+            
+                    
+                    Appendix B: Advanced Async Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Async & Performance/apC.html">
+            
+                <a href="../Async & Performance/apC.html">
+            
+                    
+                    Appendix C: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ES6 & Beyond/toc.html">
+            
+                <a href="../ES6 & Beyond/toc.html">
+            
+                    
+                    ES6 & Beyond
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../ES6 & Beyond/foreword.html">
+            
+                <a href="../ES6 & Beyond/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../ES6 & Beyond/ch1.html">
+            
+                <a href="../ES6 & Beyond/ch1.html">
+            
+                    
+                    Chapter 1: ES? Now & Future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ES6 & Beyond/ch2.html">
+            
+                <a href="../ES6 & Beyond/ch2.html">
+            
+                    
+                    Chapter 2: Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../ES6 & Beyond/ch3.html">
+            
+                <a href="../ES6 & Beyond/ch3.html">
+            
+                    
+                    Chapter 3: Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../ES6 & Beyond/ch4.html">
+            
+                <a href="../ES6 & Beyond/ch4.html">
+            
+                    
+                    Chapter 4: Async Flow Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../ES6 & Beyond/ch5.html">
+            
+                <a href="../ES6 & Beyond/ch5.html">
+            
+                    
+                    Chapter 5: Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../ES6 & Beyond/ch6.html">
+            
+                <a href="../ES6 & Beyond/ch6.html">
+            
+                    
+                    Chapter 6: API Additions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../ES6 & Beyond/ch7.html">
+            
+                <a href="../ES6 & Beyond/ch7.html">
+            
+                    
+                    Chapter 7: Meta Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../ES6 & Beyond/ch8.html">
+            
+                <a href="../ES6 & Beyond/ch8.html">
+            
+                    
+                    Chapter 8: Beyond ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../ES6 & Beyond/apA.html">
+            
+                <a href="../ES6 & Beyond/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Appendix A: ES6 class</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#you-dont-know-js-this--object-prototypes"><b>1. </b>You Don&apos;t Know JS: this &amp; Object Prototypes</a></li><li><span class="title-icon "></span><a href="#appendix-a-es6-class"><b>2. </b>Appendix A: ES6 class</a></li><ul><li><span class="title-icon "></span><a href="#class"><b>2.1. </b>class</a></li><li><span class="title-icon "></span><a href="#class-gotchas"><b>2.2. </b>class Gotchas</a></li></ul><li><span class="title-icon "></span><a href="#static--dynamic"><b>3. </b>Static &gt; Dynamic?</a></li><ul><li><span class="title-icon "></span><a href="#review-tldr"><b>3.1. </b>Review (TL;DR)</a></li></ul></ul></div><a href="#you-dont-know-js-this--object-prototypes" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="you-dont-know-js-this--object-prototypes"><a name="you-dont-know-js-this--object-prototypes" class="anchor-navigation-ex-anchor" href="#you-dont-know-js-this--object-prototypes"><i class="fa fa-link" aria-hidden="true"></i></a>1. You Don&apos;t Know JS: this &amp; Object Prototypes</h1>
+<h1 id="appendix-a-es6-class"><a name="appendix-a-es6-class" class="anchor-navigation-ex-anchor" href="#appendix-a-es6-class"><i class="fa fa-link" aria-hidden="true"></i></a>2. Appendix A: ES6 class</h1>
+<p>If there&apos;s any take-away message from the second half of this book (Chapters 4-6), it&apos;s that classes are an optional design pattern for code (not a necessary given), and that furthermore they are often quite awkward to implement in a <code>[[Prototype]]</code> language like JavaScript.</p>
+<p>This awkwardness is <em>not</em> just about syntax, although that&apos;s a big part of it. Chapters 4 and 5 examined quite a bit of syntactic ugliness, from verbosity of <code>.prototype</code> references cluttering the code, to <em>explicit pseudo-polymorphism</em> (see Chapter 4) when you give methods the same name at different levels of the chain and try to implement a polymorphic reference from a lower-level method to a higher-level method. <code>.constructor</code> being wrongly interpreted as &quot;was constructed by&quot; and yet being unreliable for that definition is yet another syntactic ugly.</p>
+<p>But the problems with class design are much deeper. Chapter 4 points out that classes in traditional class-oriented languages actually produce a <em>copy</em> action from parent to child to instance, whereas in <code>[[Prototype]]</code>, the action is <strong>not</strong> a copy, but rather the opposite -- a delegation link.</p>
+<p>When compared to the simplicity of OLOO-style code and behavior delegation (see Chapter 6), which embrace <code>[[Prototype]]</code> rather than hide from it, classes stand out as a sore thumb in JS.</p>
+<h2 id="class"><a name="class" class="anchor-navigation-ex-anchor" href="#class"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. class</h2>
+<p>But we <em>don&apos;t</em> need to re-argue that case again. I re-mention those issues briefly only so that you keep them fresh in your mind now that we turn our attention to the ES6 <code>class</code> mechanism. We&apos;ll demonstrate here how it works, and look at whether or not <code>class</code> does anything substantial to address any of those &quot;class&quot; concerns.</p>
+<p>Let&apos;s revisit the <code>Widget</code> / <code>Button</code> example from Chapter 6:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">Widget</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span> <span class="token punctuation">{</span>
+                width<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">,</span>
+                height<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span>
+            <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">Widget</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">,</span>label<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span> width<span class="token punctuation">,</span> height <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">=</span> label <span class="token operator">||</span> <span class="token string">&quot;Default&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;&lt;button&gt;&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">onClick</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Button &apos;&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">+</span> <span class="token string">&quot;&apos; clicked!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Beyond this syntax <em>looking</em> nicer, what problems does ES6 solve?</p>
+<ol>
+<li>There&apos;s no more (well, sorta, see below!) references to <code>.prototype</code> cluttering the code.</li>
+<li><code>Button</code> is declared directly to &quot;inherit from&quot; (aka <code>extends</code>) <code>Widget</code>, instead of needing to use <code>Object.create(..)</code> to replace a <code>.prototype</code> object that&apos;s linked, or having to set with <code>.__proto__</code> or <code>Object.setPrototypeOf(..)</code>.</li>
+<li><code>super(..)</code> now gives us a very helpful <strong>relative polymorphism</strong> capability, so that any method at one level of the chain can refer relatively one level up the chain to a method of the same name. This includes a solution to the note from Chapter 4 about the weirdness of constructors not belonging to their class, and so being unrelated -- <code>super()</code> works inside constructors exactly as you&apos;d expect.</li>
+<li><code>class</code> literal syntax has no affordance for specifying properties (only methods). This might seem limiting to some, but it&apos;s expected that the vast majority of cases where a property (state) exists elsewhere but the end-chain &quot;instances&quot;, this is usually a mistake and surprising (as it&apos;s state that&apos;s implicitly &quot;shared&quot; among all &quot;instances&quot;). So, one <em>could</em> say the <code>class</code> syntax is protecting you from mistakes.</li>
+<li><code>extends</code> lets you extend even built-in object (sub)types, like <code>Array</code> or <code>RegExp</code>, in a very natural way. Doing so without <code>class .. extends</code> has long been an exceedingly complex and frustrating task, one that only the most adept of framework authors have ever been able to accurately tackle. Now, it will be rather trivial!</li>
+</ol>
+<p>In all fairness, those are some substantial solutions to many of the most obvious (syntactic) issues and surprises people have with classical prototype-style code.</p>
+<h2 id="class-gotchas"><a name="class-gotchas" class="anchor-navigation-ex-anchor" href="#class-gotchas"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. class Gotchas</h2>
+<p>It&apos;s not all bubblegum and roses, though. There are still some deep and profoundly troubling issues with using &quot;classes&quot; as a design pattern in JS.</p>
+<p>Firstly, the <code>class</code> syntax may convince you a new &quot;class&quot; mechanism exists in JS as of ES6. <strong>Not so.</strong> <code>class</code> is, mostly, just syntactic sugar on top of the existing <code>[[Prototype]]</code> (delegation!) mechanism.</p>
+<p>That means <code>class</code> is not actually copying definitions statically at declaration time the way it does in traditional class-oriented languages. If you change/replace a method (on purpose or by accident) on the parent &quot;class&quot;, the child &quot;class&quot; and/or instances will still be &quot;affected&quot;, in that they didn&apos;t get copies at declaration time, they are all still using the live-delegation model based on <code>[[Prototype]]</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Random: &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> c1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+c1<span class="token punctuation">.</span><span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;Random: 0.4324299...&quot;</span>
+
+<span class="token constant">C</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">rand</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Random: &quot;</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">*</span> <span class="token number">1000</span> <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> c2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+c2<span class="token punctuation">.</span><span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;Random: 867&quot;</span>
+
+c1<span class="token punctuation">.</span><span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;Random: 432&quot; -- oops!!!</span>
+</code></pre>
+<p>This only seems like reasonable behavior <em>if you already know</em> about the delegation nature of things, rather than expecting <em>copies</em> from &quot;real classes&quot;. So the question to ask yourself is, why are you choosing <code>class</code> syntax for something fundamentally different from classes?</p>
+<p>Doesn&apos;t the ES6 <code>class</code> syntax <strong>just make it harder</strong> to see and understand the difference between traditional classes and delegated objects?</p>
+<p><code>class</code> syntax <em>does not</em> provide a way to declare class member properties (only methods). So if you need to do that to track shared state among instances, then you end up going back to the ugly <code>.prototype</code> syntax, like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// make sure to modify the shared state,</span>
+        <span class="token comment">// not set a shadowed property on the</span>
+        <span class="token comment">// instances!</span>
+        <span class="token constant">C</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// here, `this.count` works as expected</span>
+        <span class="token comment">// via delegation</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello: &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// add a property for shared state directly to</span>
+<span class="token comment">// prototype object</span>
+<span class="token constant">C</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> c1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Hello: 1</span>
+
+<span class="token keyword">var</span> c2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Hello: 2</span>
+
+c1<span class="token punctuation">.</span>count <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+c1<span class="token punctuation">.</span>count <span class="token operator">===</span> c2<span class="token punctuation">.</span>count<span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre>
+<p>The biggest problem here is that it betrays the <code>class</code> syntax by exposing (leakage!) <code>.prototype</code> as an implementation detail.</p>
+<p>But, we also still have the surprise gotcha that <code>this.count++</code> would implicitly create a separate shadowed <code>.count</code> property on both <code>c1</code> and <code>c2</code> objects, rather than updating the shared state. <code>class</code> offers us no consolation from that issue, except (presumably) to imply by lack of syntactic support that you shouldn&apos;t be doing that <em>at all</em>.</p>
+<p>Moreover, accidental shadowing is still a hazard:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// oops, gotcha, we&apos;re shadowing `id()` method</span>
+        <span class="token comment">// with a property value on the instance</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">id</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Id: &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> c1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">(</span> <span class="token string">&quot;c1&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+c1<span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// TypeError -- `c1.id` is now the string &quot;c1&quot;</span>
+</code></pre>
+<p>There&apos;s also some very subtle nuanced issues with how <code>super</code> works. You might assume that <code>super</code> would be bound in an analogous way to how <code>this</code> gets bound (see Chapter 2), which is that <code>super</code> would always be bound to one level higher than whatever the current method&apos;s position in the <code>[[Prototype]]</code> chain is.</p>
+<p>However, for performance reasons (<code>this</code> binding is already expensive), <code>super</code> is not bound dynamically. It&apos;s bound sort of &quot;statically&quot;, as declaration time. No big deal, right?</p>
+<p>Ehh... maybe, maybe not. If you, like most JS devs, start assigning functions around to different objects (which came from <code>class</code> definitions), in various different ways, you probably won&apos;t be very aware that in all those cases, the <code>super</code> mechanism under the covers is having to be re-bound each time.</p>
+<p>And depending on what sorts of syntactic approaches you take to these assignments, there may very well be cases where the <code>super</code> can&apos;t be properly bound (at least, not where you suspect), so you may (at time of writing, TC39 discussion is ongoing on the topic) have to manually bind <code>super</code> with <code>toMethod(..)</code> (kinda like you have to do <code>bind(..)</code> for <code>this</code> -- see Chapter 2).</p>
+<p>You&apos;re used to being able to assign around methods to different objects to <em>automatically</em> take advantage of the dynamism of <code>this</code> via the <em>implicit binding</em> rule (see Chapter 2). But the same will likely not be true with methods that use <code>super</code>.</p>
+<p>Consider what <code>super</code> should do here (against <code>D</code> and <code>E</code>):</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">P</span> <span class="token punctuation">{</span>
+    <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;P.foo&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token keyword">extends</span> <span class="token class-name">P</span> <span class="token punctuation">{</span>
+    <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> c1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+c1<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;P.foo&quot;</span>
+
+<span class="token keyword">var</span> <span class="token constant">D</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    foo<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;D.foo&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> <span class="token constant">E</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    foo<span class="token punctuation">:</span> <span class="token constant">C</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>foo
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Link E to D for delegation</span>
+Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span> <span class="token constant">E</span><span class="token punctuation">,</span> <span class="token constant">D</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">E</span><span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;P.foo&quot;</span>
+</code></pre>
+<p>If you were thinking (quite reasonably!) that <code>super</code> would be bound dynamically at call-time, you might expect that <code>super()</code> would automatically recognize that <code>E</code> delegates to <code>D</code>, so <code>E.foo()</code> using <code>super()</code> should call to <code>D.foo()</code>.</p>
+<p><strong>Not so.</strong> For performance pragmatism reasons, <code>super</code> is not <em>late bound</em> (aka, dynamically bound) like <code>this</code> is. Instead it&apos;s derived at call-time from <code>[[HomeObject]].[[Prototype]]</code>, where <code>[[HomeObject]]</code> is statically bound at creation time.</p>
+<p>In this particular case, <code>super()</code> is still resolving to <code>P.foo()</code>, since the method&apos;s <code>[[HomeObject]]</code> is still <code>C</code> and <code>C.[[Prototype]]</code> is <code>P</code>.</p>
+<p>There will <em>probably</em> be ways to manually address such gotchas. Using <code>toMethod(..)</code> to bind/rebind a method&apos;s <code>[[HomeObject]]</code> (along with setting the <code>[[Prototype]]</code> of that object!) appears to work in this scenario:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> <span class="token constant">D</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    foo<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;D.foo&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Link E to D for delegation</span>
+<span class="token keyword">var</span> <span class="token constant">E</span> <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> <span class="token constant">D</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// manually bind `foo`s `[[HomeObject]]` as</span>
+<span class="token comment">// `E`, and `E.[[Prototype]]` is `D`, so thus</span>
+<span class="token comment">// `super()` is `D.foo()`</span>
+<span class="token constant">E</span><span class="token punctuation">.</span>foo <span class="token operator">=</span> <span class="token constant">C</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>foo<span class="token punctuation">.</span><span class="token function">toMethod</span><span class="token punctuation">(</span> <span class="token constant">E</span><span class="token punctuation">,</span> <span class="token string">&quot;foo&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">E</span><span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;D.foo&quot;</span>
+</code></pre>
+<p><strong>Note:</strong> <code>toMethod(..)</code> clones the method, and takes <code>homeObject</code> as its first parameter (which is why we pass <code>E</code>), and the second parameter (optionally) sets a <code>name</code> for the new method (which keep at &quot;foo&quot;).</p>
+<p>It remains to be seen if there are other corner case gotchas that devs will run into beyond this scenario. Regardless, you will have to be diligent and stay aware of which places the engine automatically figures out <code>super</code> for you, and which places you have to manually take care of it. <strong>Ugh!</strong></p>
+<h1 id="static--dynamic"><a name="static--dynamic" class="anchor-navigation-ex-anchor" href="#static--dynamic"><i class="fa fa-link" aria-hidden="true"></i></a>3. Static &gt; Dynamic?</h1>
+<p>But the biggest problem of all about ES6 <code>class</code> is that all these various gotchas mean <code>class</code> sorta opts you into a syntax which seems to imply (like traditional classes) that once you declare a <code>class</code>, it&apos;s a static definition of a (future instantiated) thing. You completely lose sight of the fact that <code>C</code> is an object, a concrete thing, which you can directly interact with.</p>
+<p>In traditional class-oriented languages, you never adjust the definition of a class later, so the class design pattern doesn&apos;t suggest such capabilities. But <strong>one of the most powerful parts</strong> of JS is that it <em>is</em> dynamic, and the definition of any object is (unless you make it immutable) a fluid and mutable <em>thing</em>.</p>
+<p><code>class</code> seems to imply you shouldn&apos;t do such things, by forcing you into the uglier <code>.prototype</code> syntax to do so, or forcing you to think about <code>super</code> gotchas, etc. It also offers <em>very little</em> support for any of the pitfalls that this dynamism can bring.</p>
+<p>In other words, it&apos;s as if <code>class</code> is telling you: &quot;dynamic is too hard, so it&apos;s probably not a good idea. Here&apos;s a static-looking syntax, so code your stuff statically.&quot;</p>
+<p>What a sad commentary on JavaScript: <strong>dynamic is too hard, let&apos;s pretend to be (but not actually be!) static</strong>.</p>
+<p>These are the reasons why ES6 <code>class</code> is masquerading as a nice solution to syntactic headaches, but it&apos;s actually muddying the waters further and making things worse for JS and for clear and concise understanding.</p>
+<p><strong>Note:</strong> If you use the <code>.bind(..)</code> utility to make a hard-bound function (see Chapter 2), the function created is not subclassable with ES6 <code>extend</code> like normal functions are.</p>
+<h2 id="review-tldr"><a name="review-tldr" class="anchor-navigation-ex-anchor" href="#review-tldr"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Review (TL;DR)</h2>
+<p><code>class</code> does a very good job of pretending to fix the problems with the class/inheritance design pattern in JS. But it actually does the opposite: <strong>it hides many of the problems, and introduces other subtle but dangerous ones</strong>.</p>
+<p><code>class</code> contributes to the ongoing confusion of &quot;class&quot; in JavaScript which has plagued the language for nearly two decades. In some respects, it asks more questions than it answers, and it feels in totality like a very unnatural fit on top of the elegant simplicity of the <code>[[Prototype]]</code> mechanism.</p>
+<p>Bottom line: if ES6 <code>class</code> makes it harder to robustly leverage <code>[[Prototype]]</code>, and hides the most important nature of the JS object mechanism -- <strong>the live delegation links between objects</strong> -- shouldn&apos;t we see <code>class</code> as creating more troubles than it solves, and just relegate it to an anti-pattern?</p>
+<p>I can&apos;t really answer that question for you. But I hope this book has fully explored the issue at a deeper level than you&apos;ve ever gone before, and has given you the information you need <em>to answer it yourself</em>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch6.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 6: Behavior Delegation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apB.html" class="navigation navigation-next " aria-label="Next page: Appendix B: Thank You's!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: ES6 class","level":"1.5.8","depth":2,"next":{"title":"Appendix B: Thank You's!","level":"1.5.9","depth":2,"path":"this & Object Prototypes/apB.md","ref":"this & Object Prototypes/apB.md","articles":[]},"previous":{"title":"Chapter 6: Behavior Delegation","level":"1.5.7","depth":2,"path":"this & Object Prototypes/ch6.md","ref":"this & Object Prototypes/ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-sharing","-livereload","-search","search-plus","anchor-navigation-ex","splitter","prism","theme-comscore","livereload"],"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-plus":{},"splitter":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"this & Object Prototypes/apA.md","mtime":"2018-09-23T00:16:07.307Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-23T02:41:01.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

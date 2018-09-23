@@ -1,0 +1,1674 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: Library: asynquence · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apB.html" />
+    
+    
+    <link rel="prev" href="ch6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up & going/toc.html">
+            
+                <a href="../up & going/toc.html">
+            
+                    
+                    Up & Going
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up & going/foreword.html">
+            
+                <a href="../up & going/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up & going/ch1.html">
+            
+                <a href="../up & going/ch1.html">
+            
+                    
+                    Chapter 1: Into Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up & going/ch2.html">
+            
+                <a href="../up & going/ch2.html">
+            
+                    
+                    Chapter 2: Into JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up & going/ch3.html">
+            
+                <a href="../up & going/ch3.html">
+            
+                    
+                    Chapter 3: Into YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up & going/apA.html">
+            
+                <a href="../up & going/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Scope & Closures/toc.html">
+            
+                <a href="../Scope & Closures/toc.html">
+            
+                    
+                    Scope & Closures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Scope & Closures/ch1.html">
+            
+                <a href="../Scope & Closures/ch1.html">
+            
+                    
+                    Chapter 1: What is Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Scope & Closures/ch2.html">
+            
+                <a href="../Scope & Closures/ch2.html">
+            
+                    
+                    Chapter 2: Lexical Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Scope & Closures/ch3.html">
+            
+                <a href="../Scope & Closures/ch3.html">
+            
+                    
+                    Chapter 3: Function vs. Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Scope & Closures/ch4.html">
+            
+                <a href="../Scope & Closures/ch4.html">
+            
+                    
+                    Chapter 4: Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Scope & Closures/ch5.html">
+            
+                <a href="../Scope & Closures/ch5.html">
+            
+                    
+                    Chapter 5: Scope Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Scope & Closures/apA.html">
+            
+                <a href="../Scope & Closures/apA.html">
+            
+                    
+                    Appendix A: Dynamic Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Scope & Closures/apB.html">
+            
+                <a href="../Scope & Closures/apB.html">
+            
+                    
+                    Appendix B: Polyfilling Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Scope & Closures/apC.html">
+            
+                <a href="../Scope & Closures/apC.html">
+            
+                    
+                    Appendix C: Lexical-this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Scope & Closures/apD.html">
+            
+                <a href="../Scope & Closures/apD.html">
+            
+                    
+                    Appendix D: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../this & Object Prototypes/toc.html">
+            
+                <a href="../this & Object Prototypes/toc.html">
+            
+                    
+                    this & Object Prototypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../this & Object Prototypes/foreword.html">
+            
+                <a href="../this & Object Prototypes/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../this & Object Prototypes/ch1.html">
+            
+                <a href="../this & Object Prototypes/ch1.html">
+            
+                    
+                    Chapter 1: this Or That?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../this & Object Prototypes/ch2.html">
+            
+                <a href="../this & Object Prototypes/ch2.html">
+            
+                    
+                    Chapter 2: this All Makes Sense Now!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../this & Object Prototypes/ch3.html">
+            
+                <a href="../this & Object Prototypes/ch3.html">
+            
+                    
+                    Chapter 3: Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../this & Object Prototypes/ch4.html">
+            
+                <a href="../this & Object Prototypes/ch4.html">
+            
+                    
+                    Chapter 4: Mixing (Up) "Class" Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../this & Object Prototypes/ch5.html">
+            
+                <a href="../this & Object Prototypes/ch5.html">
+            
+                    
+                    Chapter 5: Prototypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../this & Object Prototypes/ch6.html">
+            
+                <a href="../this & Object Prototypes/ch6.html">
+            
+                    
+                    Chapter 6: Behavior Delegation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../this & Object Prototypes/apA.html">
+            
+                <a href="../this & Object Prototypes/apA.html">
+            
+                    
+                    Appendix A: ES6 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../this & Object Prototypes/apB.html">
+            
+                <a href="../this & Object Prototypes/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Types & Grammar/toc.html">
+            
+                <a href="../Types & Grammar/toc.html">
+            
+                    
+                    Types & Grammar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Types & Grammar/foreword.html">
+            
+                <a href="../Types & Grammar/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Types & Grammar/ch1.html">
+            
+                <a href="../Types & Grammar/ch1.html">
+            
+                    
+                    Chapter 1: Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Types & Grammar/ch2.html">
+            
+                <a href="../Types & Grammar/ch2.html">
+            
+                    
+                    Chapter 2: Values
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Types & Grammar/ch3.html">
+            
+                <a href="../Types & Grammar/ch3.html">
+            
+                    
+                    Chapter 3: Natives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Types & Grammar/ch4.html">
+            
+                <a href="../Types & Grammar/ch4.html">
+            
+                    
+                    Chapter 4: Coercion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Types & Grammar/ch5.html">
+            
+                <a href="../Types & Grammar/ch5.html">
+            
+                    
+                    Chapter 5: Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Types & Grammar/apA.html">
+            
+                <a href="../Types & Grammar/apA.html">
+            
+                    
+                    Appendix A: Mixed Environment JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Types & Grammar/apB.html">
+            
+                <a href="../Types & Grammar/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    Async & Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="foreword.html">
+            
+                <a href="foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Asynchrony: Now & Later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Program Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Benchmarking & Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.8" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Library: asynquence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: Advanced Async Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ES6 & Beyond/toc.html">
+            
+                <a href="../ES6 & Beyond/toc.html">
+            
+                    
+                    ES6 & Beyond
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../ES6 & Beyond/foreword.html">
+            
+                <a href="../ES6 & Beyond/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../ES6 & Beyond/ch1.html">
+            
+                <a href="../ES6 & Beyond/ch1.html">
+            
+                    
+                    Chapter 1: ES? Now & Future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ES6 & Beyond/ch2.html">
+            
+                <a href="../ES6 & Beyond/ch2.html">
+            
+                    
+                    Chapter 2: Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../ES6 & Beyond/ch3.html">
+            
+                <a href="../ES6 & Beyond/ch3.html">
+            
+                    
+                    Chapter 3: Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../ES6 & Beyond/ch4.html">
+            
+                <a href="../ES6 & Beyond/ch4.html">
+            
+                    
+                    Chapter 4: Async Flow Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../ES6 & Beyond/ch5.html">
+            
+                <a href="../ES6 & Beyond/ch5.html">
+            
+                    
+                    Chapter 5: Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../ES6 & Beyond/ch6.html">
+            
+                <a href="../ES6 & Beyond/ch6.html">
+            
+                    
+                    Chapter 6: API Additions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../ES6 & Beyond/ch7.html">
+            
+                <a href="../ES6 & Beyond/ch7.html">
+            
+                    
+                    Chapter 7: Meta Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../ES6 & Beyond/ch8.html">
+            
+                <a href="../ES6 & Beyond/ch8.html">
+            
+                    
+                    Chapter 8: Beyond ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../ES6 & Beyond/apA.html">
+            
+                <a href="../ES6 & Beyond/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Appendix A: Library: asynquence</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#you-dont-know-js-async--performance"><b>1. </b>You Don&apos;t Know JS: Async &amp; Performance</a></li><li><span class="title-icon "></span><a href="#appendix-a-asynquence-library"><b>2. </b>Appendix A: asynquence Library</a></li><ul><li><span class="title-icon "></span><a href="#sequences-abstraction-design"><b>2.1. </b>Sequences, Abstraction Design</a></li><li><span class="title-icon "></span><a href="#asynquence-api"><b>2.2. </b>asynquence API</a></li><ul><li><span class="title-icon "></span><a href="#steps"><b>2.2.1. </b>Steps</a></li><li><span class="title-icon "></span><a href="#errors"><b>2.2.2. </b>Errors</a></li><li><span class="title-icon "></span><a href="#parallel-steps"><b>2.2.3. </b>Parallel Steps</a></li><li><span class="title-icon "></span><a href="#forking-sequences"><b>2.2.4. </b>Forking Sequences</a></li><li><span class="title-icon "></span><a href="#combining-sequences"><b>2.2.5. </b>Combining Sequences</a></li></ul><li><span class="title-icon "></span><a href="#value-and-error-sequences"><b>2.3. </b>Value and Error Sequences</a></li><li><span class="title-icon "></span><a href="#promises-and-callbacks"><b>2.4. </b>Promises and Callbacks</a></li><li><span class="title-icon "></span><a href="#iterable-sequences"><b>2.5. </b>Iterable Sequences</a></li><li><span class="title-icon "></span><a href="#running-generators"><b>2.6. </b>Running Generators</a></li><ul><li><span class="title-icon "></span><a href="#wrapped-generators"><b>2.6.1. </b>Wrapped Generators</a></li></ul><li><span class="title-icon "></span><a href="#review"><b>2.7. </b>Review</a></li></ul></ul></div><a href="#you-dont-know-js-async--performance" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="you-dont-know-js-async--performance"><a name="you-dont-know-js-async--performance" class="anchor-navigation-ex-anchor" href="#you-dont-know-js-async--performance"><i class="fa fa-link" aria-hidden="true"></i></a>1. You Don&apos;t Know JS: Async &amp; Performance</h1>
+<h1 id="appendix-a-asynquence-library"><a name="appendix-a-asynquence-library" class="anchor-navigation-ex-anchor" href="#appendix-a-asynquence-library"><i class="fa fa-link" aria-hidden="true"></i></a>2. Appendix A: asynquence Library</h1>
+<p>Chapters 1 and 2 went into quite a bit of detail about typical asynchronous programming patterns and how they&apos;re commonly solved with callbacks. But we also saw why callbacks are fatally limited in capability, which led us to Chapters 3 and 4, with Promises and generators offering a much more solid, trustable, and reason-able base to build your asynchrony on.</p>
+<p>I referenced my own asynchronous library <em>asynquence</em> (<a href="http://github.com/getify/asynquence" target="_blank">http://github.com/getify/asynquence</a>) -- &quot;async&quot; + &quot;sequence&quot; = &quot;asynquence&quot; -- several times in this book, and I want to now briefly explain how it works and why its unique design is important and helpful.</p>
+<p>In the next appendix, we&apos;ll explore some advanced async patterns, but you&apos;ll probably want a library to make those palatable enough to be useful. We&apos;ll use <em>asynquence</em> to express those patterns, so you&apos;ll want to spend a little time here getting to know the library first.</p>
+<p><em>asynquence</em> is obviously not the only option for good async coding; certainly there are many great libraries in this space. But <em>asynquence</em> provides a unique perspective by combining the best of all these patterns into a single library, and moreover is built on a single basic abstraction: the (async) sequence.</p>
+<p>My premise is that sophisticated JS programs often need bits and pieces of various different asynchronous patterns woven together, and this is usually left entirely up to each developer to figure out. Instead of having to bring in two or more different async libraries that focus on different aspects of asynchrony, <em>asynquence</em> unifies them into variated sequence steps, with just one core library to learn and deploy.</p>
+<p>I believe the value is strong enough with <em>asynquence</em> to make async flow control programming with Promise-style semantics super easy to accomplish, so that&apos;s why we&apos;ll exclusively focus on that library here.</p>
+<p>To begin, I&apos;ll explain the design principles behind <em>asynquence</em>, and then we&apos;ll illustrate how its API works with code examples.</p>
+<h2 id="sequences-abstraction-design"><a name="sequences-abstraction-design" class="anchor-navigation-ex-anchor" href="#sequences-abstraction-design"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Sequences, Abstraction Design</h2>
+<p>Understanding <em>asynquence</em> begins with understanding a fundamental abstraction: any series of steps for a task, whether they separately are synchronous or asynchronous, can be collectively thought of as a &quot;sequence&quot;. In other words, a sequence is a container that represents a task, and is comprised of individual (potentially async) steps to complete that task.</p>
+<p>Each step in the sequence is controlled under the covers by a Promise (see Chapter 3). That is, every step you add to a sequence implicitly creates a Promise that is wired to the previous end of the sequence. Because of the semantics of Promises, every single step advancement in a sequence is asynchronous, even if you synchronously complete the step.</p>
+<p>Moreover, a sequence will always proceed linearly from step to step, meaning that step 2 always comes after step 1 finishes, and so on.</p>
+<p>Of course, a new sequence can be forked off an existing sequence, meaning the fork only occurs once the main sequence reaches that point in the flow. Sequences can also be combined in various ways, including having one sequence subsumed by another sequence at a particular point in the flow.</p>
+<p>A sequence is kind of like a Promise chain. However, with Promise chains, there is no &quot;handle&quot; to grab that references the entire chain. Whichever Promise you have a reference to only represents the current step in the chain plus any other steps hanging off it. Essentially, you cannot hold a reference to a Promise chain unless you hold a reference to the first Promise in the chain.</p>
+<p>There are many cases where it turns out to be quite useful to have a handle that references the entire sequence collectively. The most important of those cases is with sequence abort/cancel. As we covered extensively in Chapter 3, Promises themselves should never be able to be canceled, as this violates a fundamental design imperative: external immutability.</p>
+<p>But sequences have no such immutability design principle, mostly because sequences are not passed around as future-value containers that need immutable value semantics. So sequences are the proper level of abstraction to handle abort/cancel behavior. <em>asynquence</em> sequences can be <code>abort()</code>ed at any time, and the sequence will stop at that point and not go for any reason.</p>
+<p>There&apos;s plenty more reasons to prefer a sequence abstraction on top of Promise chains, for flow control purposes.</p>
+<p>First, Promise chaining is a rather manual process -- one that can get pretty tedious once you start creating and chaining Promises across a wide swath of your programs -- and this tedium can act counterproductively to dissuade the developer from using Promises in places where they are quite appropriate.</p>
+<p>Abstractions are meant to reduce boilerplate and tedium, so the sequence abstraction is a good solution to this problem. With Promises, your focus is on the individual step, and there&apos;s little assumption that you will keep the chain going. With sequences, the opposite approach is taken, assuming the sequence will keep having more steps added indefinitely.</p>
+<p>This abstraction complexity reduction is especially powerful when you start thinking about higher-order Promise patterns (beyond <code>race([..])</code> and <code>all([..])</code>.</p>
+<p>For example, in the middle of a sequence, you may want to express a step that is conceptually like a <code>try..catch</code> in that the step will always result in success, either the intended main success resolution or a positive nonerror signal for the caught error. Or, you might want to express a step that is like a retry/until loop, where it keeps trying the same step over and over until success occurs.</p>
+<p>These sorts of abstractions are quite nontrivial to express using only Promise primitives, and doing so in the middle of an existing Promise chain is not pretty. But if you abstract your thinking to a sequence, and consider a step as a wrapper around a Promise, that step wrapper can hide such details, freeing you to think about the flow control in the most sensible way without being bothered by the details.</p>
+<p>Second, and perhaps more importantly, thinking of async flow control in terms of steps in a sequence allows you to abstract out the details of what types of asynchronicity are involved with each individual step. Under the covers, a Promise will always control the step, but above the covers, that step can look either like a continuation callback (the simple default), or like a real Promise, or as a run-to-completion generator, or ... Hopefully, you get the picture.</p>
+<p>Third, sequences can more easily be twisted to adapt to different modes of thinking, such as event-, stream-, or reactive-based coding. <em>asynquence</em> provides a pattern I call &quot;reactive sequences&quot; (which we&apos;ll cover later) as a variation on the &quot;reactive observable&quot; ideas in RxJS (&quot;Reactive Extensions&quot;), that lets a repeatable event fire off a new sequence instance each time. Promises are one-shot-only, so it&apos;s quite awkward to express repetitious asynchrony with Promises alone.</p>
+<p>Another alternate mode of thinking inverts the resolution/control capability in a pattern I call &quot;iterable sequences&quot;. Instead of each individual step internally controlling its own completion (and thus advancement of the sequence), the sequence is inverted so the advancement control is through an external iterator, and each step in the <em>iterable sequence</em> just responds to the <code>next(..)</code> <em>iterator</em> control.</p>
+<p>We&apos;ll explore all of these different variations as we go throughout the rest of this appendix, so don&apos;t worry if we ran over those bits far too quickly just now.</p>
+<p>The takeaway is that sequences are a more powerful and sensible abstraction for complex asynchrony than just Promises (Promise chains) or just generators, and <em>asynquence</em> is designed to express that abstraction with just the right level of sugar to make async programming more understandable and more enjoyable.</p>
+<h2 id="asynquence-api"><a name="asynquence-api" class="anchor-navigation-ex-anchor" href="#asynquence-api"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. asynquence API</h2>
+<p>To start off, the way you create a sequence (an <em>asynquence</em> instance) is with the <code>ASQ(..)</code> function. An <code>ASQ()</code> call with no parameters creates an empty initial sequence, whereas passing one or more values or functions to <code>ASQ(..)</code> sets up the sequence with each argument representing the initial steps of the sequence.</p>
+<p><strong>Note:</strong> For the purposes of all code examples here, I will use the <em>asynquence</em> top-level identifier in global browser usage: <code>ASQ</code>. If you include and use <em>asynquence</em> through a module system (browser or server), you of course can define whichever symbol you prefer, and <em>asynquence</em> won&apos;t care!</p>
+<p>Many of the API methods discussed here are built into the core of <em>asynquence</em>, but others are provided through including the optional &quot;contrib&quot; plug-ins package. See the documentation for <em>asynquence</em> for whether a method is built in or defined via plug-in: <a href="http://github.com/getify/asynquence" target="_blank">http://github.com/getify/asynquence</a></p>
+<h3 id="steps"><a name="steps" class="anchor-navigation-ex-anchor" href="#steps"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. Steps</h3>
+<p>If a function represents a normal step in the sequence, that function is invoked with the first parameter being the continuation callback, and any subsequent parameters being any messages passed on from the previous step. The step will not complete until the continuation callback is called. Once it&apos;s called, any arguments you pass to it will be sent along as messages to the next step in the sequence.</p>
+<p>To add an additional normal step to the sequence, call <code>then(..)</code> (which has essentially the exact same semantics as the <code>ASQ(..)</code> call):</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span>
+    <span class="token comment">// step 1</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">done</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// step 2</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">,</span>greeting<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">done</span><span class="token punctuation">(</span> greeting <span class="token operator">+</span> <span class="token string">&quot; World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// step 3</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">,</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> msg<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// step 4</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">,</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// HELLO WORLD</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Note:</strong> Though the name <code>then(..)</code> is identical to the native Promises API, this <code>then(..)</code> is different. You can pass as few or as many functions or values to <code>then(..)</code> as you&apos;d like, and each is taken as a separate step. There&apos;s no two-callback fulfilled/rejected semantics involved.</p>
+<p>Unlike with Promises, where to chain one Promise to the next you have to create and <code>return</code> that Promise from a <code>then(..)</code> fulfillment handler, with <em>asynquence</em>, all you need to do is call the continuation callback -- I always call it <code>done()</code> but you can name it whatever suits you -- and optionally pass it completion messages as arguments.</p>
+<p>Each step defined by <code>then(..)</code> is assumed to be asynchronous. If you have a step that&apos;s synchronous, you can either just call <code>done(..)</code> right away, or you can use the simpler <code>val(..)</code> step helper:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// step 1 (sync)</span>
+<span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">done</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// manually synchronous</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// step 2 (sync)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>greeting<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> greeting <span class="token operator">+</span> <span class="token string">&quot; World&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// step 3 (async)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">,</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> msg<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// step 4 (sync)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>As you can see, <code>val(..)</code>-invoked steps don&apos;t receive a continuation callback, as that part is assumed for you -- and the parameter list is less cluttered as a result! To send a message along to the next step, you simply use <code>return</code>.</p>
+<p>Think of <code>val(..)</code> as representing a synchronous &quot;value-only&quot; step, which is useful for synchronous value operations, logging, and the like.</p>
+<h3 id="errors"><a name="errors" class="anchor-navigation-ex-anchor" href="#errors"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.2. Errors</h3>
+<p>One important difference with <em>asynquence</em> compared to Promises is with error handling.</p>
+<p>With Promises, each individual Promise (step) in a chain can have its own independent error, and each subsequent step has the ability to handle the error or not. The main reason for this semantic comes (again) from the focus on individual Promises rather than on the chain (sequence) as a whole.</p>
+<p>I believe that most of the time, an error in one part of a sequence is generally not recoverable, so the subsequent steps in the sequence are moot and should be skipped. So, by default, an error at any step of a sequence throws the entire sequence into error mode, and the rest of the normal steps are ignored.</p>
+<p>If you <em>do</em> need to have a step where its error is recoverable, there are several different API methods that can accommodate, such as <code>try(..)</code> -- previously mentioned as a kind of <code>try..catch</code> step -- or <code>until(..)</code> -- a retry loop that keeps attempting the step until it succeeds or you manually <code>break()</code> the loop. <em>asynquence</em> even has <code>pThen(..)</code> and <code>pCatch(..)</code> methods, which work identically to how normal Promise <code>then(..)</code> and <code>catch(..)</code> work (see Chapter 3), so you can do localized mid-sequence error handling if you so choose.</p>
+<p>The point is, you have both options, but the more common one in my experience is the default. With Promises, to get a chain of steps to ignore all steps once an error occurs, you have to take care not to register a rejection handler at any step; otherwise, that error gets swallowed as handled, and the sequence may continue (perhaps unexpectedly). This kind of desired behavior is a bit awkward to properly and reliably handle.</p>
+<p>To register a sequence error notification handler, <em>asynquence</em> provides an <code>or(..)</code> sequence method, which also has an alias of <code>onerror(..)</code>. You can call this method anywhere in the sequence, and you can register as many handlers as you&apos;d like. That makes it easy for multiple different consumers to listen in on a sequence to know if it failed or not; it&apos;s kind of like an error event handler in that respect.</p>
+<p>Just like with Promises, all JS exceptions become sequence errors, or you can programmatically signal a sequence error:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// signal an error for the sequence</span>
+        done<span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span> <span class="token string">&quot;Oops&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// will never get here</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// Oops</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// won&apos;t get here either</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// later</span>
+
+sq<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// Oops</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Another really important difference with error handling in <em>asynquence</em> compared to native Promises is the default behavior of &quot;unhandled exceptions&quot;. As we discussed at length in Chapter 3, a rejected Promise without a registered rejection handler will just silently hold (aka swallow) the error; you have to remember to always end a chain with a final <code>catch(..)</code>.</p>
+<p>In <em>asynquence</em>, the assumption is reversed.</p>
+<p>If an error occurs on a sequence, and it <strong>at that moment</strong> has no error handlers registered, the error is reported to the <code>console</code>. In other words, unhandled rejections are by default always reported so as not to be swallowed and missed.</p>
+<p>As soon as you register an error handler against a sequence, it opts that sequence out of such reporting, to prevent duplicate noise.</p>
+<p>There may, in fact, be cases where you want to create a sequence that may go into the error state before you have a chance to register the handler. This isn&apos;t common, but it can happen from time to time.</p>
+<p>In those cases, you can also <strong>opt a sequence instance out</strong> of error reporting by calling <code>defer()</code> on the sequence. You should only opt out of error reporting if you are sure that you&apos;re going to eventually handle such errors:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq1 <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    doesnt<span class="token punctuation">.</span><span class="token function">Exist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// will throw exception to console</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> sq2 <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    doesnt<span class="token punctuation">.</span><span class="token function">Exist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// will throw only a sequence error</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// opt-out of error reporting</span>
+<span class="token punctuation">.</span><span class="token function">defer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    sq1<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// ReferenceError</span>
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    sq2<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// ReferenceError</span>
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ReferenceError (from sq1)</span>
+</code></pre>
+<p>This is better error handling behavior than Promises themselves have, because it&apos;s the Pit of Success, not the Pit of Failure (see Chapter 3).</p>
+<p><strong>Note:</strong> If a sequence is piped into (aka subsumed by) another sequence -- see &quot;Combining Sequences&quot;  for a complete description -- then the source sequence is opted out of error reporting, but now the target sequence&apos;s error reporting or lack thereof must be considered.</p>
+<h3 id="parallel-steps"><a name="parallel-steps" class="anchor-navigation-ex-anchor" href="#parallel-steps"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.3. Parallel Steps</h3>
+<p>Not all steps in your sequences will have just a single (async) task to perform; some will need to perform multiple steps &quot;in parallel&quot; (concurrently). A step in a sequence in which multiple substeps are processing concurrently is called a <code>gate(..)</code> -- there&apos;s an <code>all(..)</code> alias if you prefer -- and is directly symmetric to native <code>Promise.all([..])</code>.</p>
+<p>If all the steps in the <code>gate(..)</code> complete successfully, all success messages will be passed to the next sequence step. If any of them generate errors, the whole sequence immediately goes into an error state.</p>
+<p>Consider:</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> done<span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">gate</span><span class="token punctuation">(</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">done</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">done</span><span class="token punctuation">(</span> <span class="token string">&quot;World&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg1<span class="token punctuation">,</span>msg2<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg1 <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// Hello</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg2 <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// [ &quot;World&quot;, &quot;!&quot; ]</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>For illustration, let&apos;s compare that example to native Promises:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> resolve<span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// note: we need a [ ] array here</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span> <span class="token punctuation">[</span> <span class="token string">&quot;World&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;!&quot;</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+    <span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msgs<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msgs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// Hello</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msgs<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// [ &quot;World&quot;, &quot;!&quot; ]</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Yuck. Promises require a lot more boilerplate overhead to express the same asynchronous flow control. That&apos;s a great illustration of why the <em>asynquence</em> API and abstraction make dealing with Promise steps a lot nicer. The improvement only goes higher the more complex your asynchrony is.</p>
+<h4 id="step-variations"><a name="step-variations" class="anchor-navigation-ex-anchor" href="#step-variations"><i class="fa fa-link" aria-hidden="true"></i></a>Step Variations</h4>
+<p>There are several variations in the contrib plug-ins on <em>asynquence</em>&apos;s <code>gate(..)</code> step type that can be quite helpful:</p>
+<ul>
+<li><code>any(..)</code> is like <code>gate(..)</code>, except just one segment has to eventually succeed to proceed on the main sequence.</li>
+<li><code>first(..)</code> is like <code>any(..)</code>, except as soon as any segment succeeds, the main sequence proceeds (ignoring subsequent results from other segments).</li>
+<li><code>race(..)</code> (symmetric with <code>Promise.race([..])</code>) is like <code>first(..)</code>, except the main sequence proceeds as soon as any segment completes (either success or failure).</li>
+<li><code>last(..)</code> is like <code>any(..)</code>, except only the latest segment to complete successfully sends its message(s) along to the main sequence.</li>
+<li><code>none(..)</code> is the inverse of <code>gate(..)</code>: the main sequence proceeds only if all the segments fail (with all segment error message(s) transposed as success message(s) and vice versa).</li>
+</ul>
+<p>Let&apos;s first define some helpers to make illustration cleaner:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">success1</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">success2</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">failure3</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        done<span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span> <span class="token number">3</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">output</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now, let&apos;s demonstrate these <code>gate(..)</code> step variations:</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">race</span><span class="token punctuation">(</span>
+    failure3<span class="token punctuation">,</span>
+    success1
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 3</span>
+
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">any</span><span class="token punctuation">(</span>
+    success1<span class="token punctuation">,</span>
+    failure3<span class="token punctuation">,</span>
+    success2
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span>slice<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> arguments <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
+        args        <span class="token comment">// [ 1, undefined, 2 ]</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">first</span><span class="token punctuation">(</span>
+    failure3<span class="token punctuation">,</span>
+    success1<span class="token punctuation">,</span>
+    success2
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 1</span>
+
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">last</span><span class="token punctuation">(</span>
+    failure3<span class="token punctuation">,</span>
+    success1<span class="token punctuation">,</span>
+    success2
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 2</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">none</span><span class="token punctuation">(</span>
+    failure3
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span>        <span class="token comment">// 3</span>
+<span class="token punctuation">.</span><span class="token function">none</span><span class="token punctuation">(</span>
+    failure3
+    success1
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 1</span>
+</code></pre>
+<p>Another step variation is <code>map(..)</code>, which lets you asynchronously map elements of an array to different values, and the step doesn&apos;t proceed until all the mappings are complete. <code>map(..)</code> is very similar to <code>gate(..)</code>, except it gets the initial values from an array instead of from separately specified functions, and also because you define a single function callback to operate on each value:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">double</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> x <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> double <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token comment">// [2,4,6]</span>
+</code></pre>
+<p>Also, <code>map(..)</code> can receive either of its parameters (the array or the callback) from messages passed from the previous step:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">plusOne</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> x <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> double <span class="token punctuation">)</span>            <span class="token comment">// message `[1,2,3]` comes in</span>
+<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span> plusOne <span class="token punctuation">)</span>            <span class="token comment">// message `[2,4,6]` comes in</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// [3,5,7]</span>
+</code></pre>
+<p>Another variation is <code>waterfall(..)</code>, which is kind of like a mixture between <code>gate(..)</code>&apos;s message collection behavior but <code>then(..)</code>&apos;s sequential processing.</p>
+<p>Step 1 is first executed, then the success message from step 1 is given to step 2, and then both success messages go to step 3, and then all three success messages go to step 4, and so on, such that the messages sort of collect and cascade down the &quot;waterfall&quot;.</p>
+<p>Consider:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">double</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span>slice<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> arguments<span class="token punctuation">,</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> args <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> args<span class="token punctuation">[</span>args<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token number">3</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">waterfall</span><span class="token punctuation">(</span>
+    double<span class="token punctuation">,</span>                    <span class="token comment">// [ 3 ]</span>
+    double<span class="token punctuation">,</span>                    <span class="token comment">// [ 6 ]</span>
+    double<span class="token punctuation">,</span>                    <span class="token comment">// [ 6, 12 ]</span>
+    double                    <span class="token comment">// [ 6, 12, 24 ]</span>
+<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span>slice<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> arguments <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> args <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// [ 6, 12, 24, 48 ]</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If at any point in the &quot;waterfall&quot; an error occurs, the whole sequence immediately goes into an error state.</p>
+<h4 id="error-tolerance"><a name="error-tolerance" class="anchor-navigation-ex-anchor" href="#error-tolerance"><i class="fa fa-link" aria-hidden="true"></i></a>Error Tolerance</h4>
+<p>Sometimes you want to manage errors at the step level and not let them necessarily send the whole sequence into the error state. <em>asynquence</em> offers two step variations for that purpose.</p>
+<p><code>try(..)</code> attempts a step, and if it succeeds, the sequence proceeds as normal, but if the step fails, the failure is turned into a success message formated as <code>{ catch: .. }</code> with the error message(s) filled in:</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token keyword">try</span><span class="token punctuation">(</span> success1 <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span>            <span class="token comment">// 1</span>
+<span class="token punctuation">.</span><span class="token keyword">try</span><span class="token punctuation">(</span> failure3 <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span>            <span class="token comment">// { catch: 3 }</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// never gets here</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You could instead set up a retry loop using <code>until(..)</code>, which tries the step and if it fails, retries the step again on the next event loop tick, and so on.</p>
+<p>This retry loop can continue indefinitely, but if you want to break out of the loop, you can call the <code>break()</code> flag on the completion trigger, which sends the main sequence into an error state:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token number">3</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">until</span><span class="token punctuation">(</span> double <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span>                    <span class="token comment">// 6</span>
+<span class="token punctuation">.</span><span class="token function">until</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    count<span class="token operator">++</span><span class="token punctuation">;</span>
+
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            done<span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// break out of the `until(..)` retry loop</span>
+            done<span class="token punctuation">.</span><span class="token keyword">break</span><span class="token punctuation">(</span> <span class="token string">&quot;Oops&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token comment">// Oops</span>
+</code></pre>
+<h4 id="promise-style-steps"><a name="promise-style-steps" class="anchor-navigation-ex-anchor" href="#promise-style-steps"><i class="fa fa-link" aria-hidden="true"></i></a>Promise-Style Steps</h4>
+<p>If you would prefer to have, inline in your sequence, Promise-style semantics like Promises&apos; <code>then(..)</code> and <code>catch(..)</code> (see Chapter 3), you can use the <code>pThen</code> and <code>pCatch</code> plug-ins:</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token number">21</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">pThen</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> msg <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">pThen</span><span class="token punctuation">(</span> output <span class="token punctuation">)</span>                <span class="token comment">// 42</span>
+<span class="token punctuation">.</span><span class="token function">pThen</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// throw an exception</span>
+    doesnt<span class="token punctuation">.</span><span class="token function">Exist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">pCatch</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// caught the exception (rejection)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// ReferenceError</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// main sequence is back in a</span>
+    <span class="token comment">// success state because previous</span>
+    <span class="token comment">// exception was caught by</span>
+    <span class="token comment">// `pCatch(..)`</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>pThen(..)</code> and <code>pCatch(..)</code> are designed to run in the sequence, but behave as if it was a normal Promise chain. As such, you can either resolve genuine Promises or <em>asynquence</em> sequences from the &quot;fulfillment&quot; handler passed to <code>pThen(..)</code> (see Chapter 3).</p>
+<h3 id="forking-sequences"><a name="forking-sequences" class="anchor-navigation-ex-anchor" href="#forking-sequences"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.4. Forking Sequences</h3>
+<p>One feature that can be quite useful about Promises is that you can attach multiple <code>then(..)</code> handler registrations to the same promise, effectively &quot;forking&quot; the flow-control at that promise:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> p <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span> <span class="token number">21</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fork 1 (from `p`)</span>
+p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> msg <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 42</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+
+<span class="token comment">// fork 2 (from `p`)</span>
+p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 21</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The same &quot;forking&quot; is easy in <em>asynquence</em> with <code>fork()</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> sq2 <span class="token operator">=</span> sq<span class="token punctuation">.</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fork 1</span>
+sq<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fork 2</span>
+sq2<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="combining-sequences"><a name="combining-sequences" class="anchor-navigation-ex-anchor" href="#combining-sequences"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.5. Combining Sequences</h3>
+<p>The reverse of <code>fork()</code>ing, you can combine two sequences by subsuming one into another, using the <code>seq(..)</code> instance method:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">done</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">200</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span> done<span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// subsume `sq` sequence into this sequence</span>
+<span class="token punctuation">.</span><span class="token function">seq</span><span class="token punctuation">(</span> sq <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// Hello World</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+</code></pre>
+<p><code>seq(..)</code> can either accept a sequence itself, as shown here, or a function. If a function, it&apos;s expected that the function when called will return a sequence, so the preceding code could have been done with:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// ..</span>
+<span class="token punctuation">.</span><span class="token function">seq</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> sq<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// ..</span>
+</code></pre>
+<p>Also, that step could instead have been accomplished with a <code>pipe(..)</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// ..</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// pipe `sq` into the `done` continuation callback</span>
+    sq<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span> done <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token comment">// ..</span>
+</code></pre>
+<p>When a sequence is subsumed, both its success message stream and its error stream are piped in.</p>
+<p><strong>Note:</strong> As mentioned in an earlier note, piping (manually with <code>pipe(..)</code> or automatically with <code>seq(..)</code>) opts the source sequence out of error-reporting, but doesn&apos;t affect the error reporting status of the target sequence.</p>
+<h2 id="value-and-error-sequences"><a name="value-and-error-sequences" class="anchor-navigation-ex-anchor" href="#value-and-error-sequences"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Value and Error Sequences</h2>
+<p>If any step of a sequence is just a normal value, that value is just mapped to that step&apos;s completion message:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token number">42</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sq<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 42</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If you want to make a sequence that&apos;s automatically errored:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">failed</span><span class="token punctuation">(</span> <span class="token string">&quot;Oops&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">seq</span><span class="token punctuation">(</span> sq <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// won&apos;t get here</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// Oops</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You also may want to automatically create a delayed-value or a delayed-error sequence. Using the <code>after</code> and <code>failAfter</code> contrib plug-ins, this is easy:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq1 <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">after</span><span class="token punctuation">(</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> sq2 <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">failAfter</span><span class="token punctuation">(</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">&quot;Oops&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sq1<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg1<span class="token punctuation">,</span>msg2<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg1<span class="token punctuation">,</span> msg2 <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// Hello World</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sq2<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token comment">// Oops</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can also insert a delay in the middle of a sequence using <code>after(..)</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token number">42</span> <span class="token punctuation">)</span>
+<span class="token comment">// insert a delay into the sequence</span>
+<span class="token punctuation">.</span><span class="token function">after</span><span class="token punctuation">(</span> <span class="token number">100</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 42</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="promises-and-callbacks"><a name="promises-and-callbacks" class="anchor-navigation-ex-anchor" href="#promises-and-callbacks"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Promises and Callbacks</h2>
+<p>I think <em>asynquence</em> sequences provide a lot of value on top of native Promises, and for the most part you&apos;ll find it more pleasant and more powerful to work at that level of abstraction. However, integrating <em>asynquence</em> with other non-<em>asynquence</em> code will be a reality.</p>
+<p>You can easily subsume a promise (e.g., thenable -- see Chapter 3) into a sequence using the <code>promise(..)</code> instance method:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> p <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span> <span class="token number">42</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">ASQ</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">promise</span><span class="token punctuation">(</span> p <span class="token punctuation">)</span>            <span class="token comment">// could also: `function(){ return p; }`</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 42</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>And to go the opposite direction and fork/vend a promise from a sequence at a certain step, use the <code>toPromise</code> contrib plug-in:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">after</span><span class="token punctuation">(</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">&quot;Hello World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sq<span class="token punctuation">.</span><span class="token function">toPromise</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// this is a standard promise chain now</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> msg<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// HELLO WORLD</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>To adapt <em>asynquence</em> to systems using callbacks, there are several helper facilities. To automatically generate an &quot;error-first style&quot; callback from your sequence to wire into a callback-oriented utility, use <code>errfcb</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> sq <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// note: expecting &quot;error-first style&quot; callback</span>
+    <span class="token function">someAsyncFuncWithCB</span><span class="token punctuation">(</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> done<span class="token punctuation">.</span>errfcb <span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// ..</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// ..</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// note: expecting &quot;error-first style&quot; callback</span>
+<span class="token function">anotherAsyncFuncWithCB</span><span class="token punctuation">(</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> sq<span class="token punctuation">.</span><span class="token function">errfcb</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You also may want to create a sequence-wrapped version of a utility -- compare to &quot;promisory&quot; in Chapter 3 and &quot;thunkory&quot; in Chapter 4 -- and <em>asynquence</em> provides <code>ASQ.wrap(..)</code> for that purpose:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> coolUtility <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">wrap</span><span class="token punctuation">(</span> someAsyncFuncWithCB <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">coolUtility</span><span class="token punctuation">(</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// ..</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// ..</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Note:</strong> For the sake of clarity (and for fun!), let&apos;s coin yet another term, for a sequence-producing function that comes from <code>ASQ.wrap(..)</code>, like <code>coolUtility</code> here. I propose &quot;sequory&quot; (&quot;sequence&quot; + &quot;factory&quot;).</p>
+<h2 id="iterable-sequences"><a name="iterable-sequences" class="anchor-navigation-ex-anchor" href="#iterable-sequences"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. Iterable Sequences</h2>
+<p>The normal paradigm for a sequence is that each step is responsible for completing itself, which is what advances the sequence. Promises work the same way.</p>
+<p>The unfortunate part is that sometimes you need external control over a Promise/step, which leads to awkward &quot;capability extraction&quot;.</p>
+<p>Consider this Promises example:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> domready <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// don&apos;t want to put this here, because</span>
+    <span class="token comment">// it belongs logically in another part</span>
+    <span class="token comment">// of the code</span>
+    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;DOMContentLoaded&quot;</span><span class="token punctuation">,</span> resolve <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+domready<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// DOM is ready!</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The &quot;capability extraction&quot; anti-pattern with Promises looks like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> ready<span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> domready <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// extract the `resolve()` capability</span>
+    ready <span class="token operator">=</span> resolve<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+domready<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// DOM is ready!</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;DOMContentLoaded&quot;</span><span class="token punctuation">,</span> ready <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Note:</strong> This anti-pattern is an awkward code smell, in my opinion, but some developers like it, for reasons I can&apos;t grasp.</p>
+<p><em>asynquence</em> offers an inverted sequence type I call &quot;iterable sequences&quot;, which externalizes the control capability (it&apos;s quite useful in use cases like the <code>domready</code>):</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// note: `domready` here is an *iterator* that</span>
+<span class="token comment">// controls the sequence</span>
+<span class="token keyword">var</span> domready <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">iterable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+domready<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// DOM is ready</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;DOMContentLoaded&quot;</span><span class="token punctuation">,</span> domready<span class="token punctuation">.</span>next <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>There&apos;s more to iterable sequences than what we see in this scenario. We&apos;ll come back to them in Appendix B.</p>
+<h2 id="running-generators"><a name="running-generators" class="anchor-navigation-ex-anchor" href="#running-generators"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. Running Generators</h2>
+<p>In Chapter 4, we derived a utility called <code>run(..)</code> which can run generators to completion, listening for <code>yield</code>ed Promises and using them to async resume the generator. <em>asynquence</em> has just such a utility built in, called <code>runner(..)</code>.</p>
+<p>Let&apos;s first set up some helpers for illustration:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">doublePr</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span> x <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">doubleSeq</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">done</span><span class="token punctuation">(</span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now, we can use <code>runner(..)</code> as a step in the middle of a sequence:</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">ASQ</span><span class="token punctuation">(</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">11</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">runner</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token operator">*</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> x <span class="token operator">=</span> token<span class="token punctuation">.</span>messages<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> token<span class="token punctuation">.</span>messages<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// yield a real promise</span>
+    x <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">doublePr</span><span class="token punctuation">(</span> x <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// yield a sequence</span>
+    x <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">doubleSeq</span><span class="token punctuation">(</span> x <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// 84</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="wrapped-generators"><a name="wrapped-generators" class="anchor-navigation-ex-anchor" href="#wrapped-generators"><i class="fa fa-link" aria-hidden="true"></i></a>2.6.1. Wrapped Generators</h3>
+<p>You can also create a self-packaged generator -- that is, a normal function that runs your specified generator and returns a sequence for its completion -- by <code>ASQ.wrap(..)</code>ing it:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token constant">ASQ</span><span class="token punctuation">.</span><span class="token function">wrap</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token operator">*</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> x <span class="token operator">=</span> token<span class="token punctuation">.</span>messages<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> token<span class="token punctuation">.</span>messages<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// yield a real promise</span>
+    x <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">doublePr</span><span class="token punctuation">(</span> x <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// yield a sequence</span>
+    x <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">doubleSeq</span><span class="token punctuation">(</span> x <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> gen<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span> <span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// 68</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>There&apos;s a lot more awesome that <code>runner(..)</code> is capable of, but we&apos;ll come back to that in Appendix B.</p>
+<h2 id="review"><a name="review" class="anchor-navigation-ex-anchor" href="#review"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. Review</h2>
+<p><em>asynquence</em> is a simple abstraction -- a sequence is a series of (async) steps -- on top of Promises, aimed at making working with various asynchronous patterns much easier, without any compromise in capability.</p>
+<p>There are other goodies in the <em>asynquence</em> core API and its contrib plug-ins beyond what we saw in this appendix, but we&apos;ll leave that as an exercise for the reader to go check the rest of the capabilities out.</p>
+<p>You&apos;ve now seen the essence and spirit of <em>asynquence</em>. The key take away is that a sequence is comprised of steps, and those steps can be any of dozens of different variations on Promises, or they can be a generator-run, or... The choice is up to you, you have all the freedom to weave together whatever async flow control logic is appropriate for your tasks. No more library switching to catch different async patterns.</p>
+<p>If these <em>asynquence</em> snippets have made sense to you, you&apos;re now pretty well up to speed on the library; it doesn&apos;t take that much to learn, actually!</p>
+<p>If you&apos;re still a little fuzzy on how it works (or why!), you&apos;ll want to spend a little more time examining the previous examples and playing around with <em>asynquence</em> yourself, before going on to the next appendix. Appendix B will push <em>asynquence</em> into several more advanced and powerful async patterns.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch6.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 6: Benchmarking & Tuning">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apB.html" class="navigation navigation-next " aria-label="Next page: Appendix B: Advanced Async Patterns">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: Library: asynquence","level":"1.7.8","depth":2,"next":{"title":"Appendix B: Advanced Async Patterns","level":"1.7.9","depth":2,"path":"Async & Performance/apB.md","ref":"Async & Performance/apB.md","articles":[]},"previous":{"title":"Chapter 6: Benchmarking & Tuning","level":"1.7.7","depth":2,"path":"Async & Performance/ch6.md","ref":"Async & Performance/ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-sharing","-livereload","-search","search-plus","anchor-navigation-ex","splitter","prism","theme-comscore","livereload"],"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-plus":{},"splitter":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Async & Performance/apA.md","mtime":"2018-09-23T00:16:06.979Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-23T02:41:01.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

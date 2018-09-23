@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "-lunr",
+    "-sharing",
+    "-livereload",
+    "-search",
+    "search-plus",
+    "anchor-navigation-ex",
+    "splitter",
+    "prism",
+    "theme-comscore"
+  ],
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "associatedWithSummary": false,
+      "showLevel": true
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-okaidia.css"
+      ]
+    }
+  }
+}

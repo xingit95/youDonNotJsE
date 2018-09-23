@@ -1,0 +1,1730 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 6: Behavior Delegation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apA.html" />
+    
+    
+    <link rel="prev" href="ch5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up & going/toc.html">
+            
+                <a href="../up & going/toc.html">
+            
+                    
+                    Up & Going
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up & going/foreword.html">
+            
+                <a href="../up & going/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up & going/ch1.html">
+            
+                <a href="../up & going/ch1.html">
+            
+                    
+                    Chapter 1: Into Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up & going/ch2.html">
+            
+                <a href="../up & going/ch2.html">
+            
+                    
+                    Chapter 2: Into JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up & going/ch3.html">
+            
+                <a href="../up & going/ch3.html">
+            
+                    
+                    Chapter 3: Into YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up & going/apA.html">
+            
+                <a href="../up & going/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Scope & Closures/toc.html">
+            
+                <a href="../Scope & Closures/toc.html">
+            
+                    
+                    Scope & Closures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Scope & Closures/ch1.html">
+            
+                <a href="../Scope & Closures/ch1.html">
+            
+                    
+                    Chapter 1: What is Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Scope & Closures/ch2.html">
+            
+                <a href="../Scope & Closures/ch2.html">
+            
+                    
+                    Chapter 2: Lexical Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Scope & Closures/ch3.html">
+            
+                <a href="../Scope & Closures/ch3.html">
+            
+                    
+                    Chapter 3: Function vs. Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Scope & Closures/ch4.html">
+            
+                <a href="../Scope & Closures/ch4.html">
+            
+                    
+                    Chapter 4: Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Scope & Closures/ch5.html">
+            
+                <a href="../Scope & Closures/ch5.html">
+            
+                    
+                    Chapter 5: Scope Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Scope & Closures/apA.html">
+            
+                <a href="../Scope & Closures/apA.html">
+            
+                    
+                    Appendix A: Dynamic Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Scope & Closures/apB.html">
+            
+                <a href="../Scope & Closures/apB.html">
+            
+                    
+                    Appendix B: Polyfilling Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Scope & Closures/apC.html">
+            
+                <a href="../Scope & Closures/apC.html">
+            
+                    
+                    Appendix C: Lexical-this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Scope & Closures/apD.html">
+            
+                <a href="../Scope & Closures/apD.html">
+            
+                    
+                    Appendix D: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    this & Object Prototypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="foreword.html">
+            
+                <a href="foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: this Or That?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: this All Makes Sense Now!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Mixing (Up) "Class" Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Prototypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.7" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Behavior Delegation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: ES6 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Types & Grammar/toc.html">
+            
+                <a href="../Types & Grammar/toc.html">
+            
+                    
+                    Types & Grammar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Types & Grammar/foreword.html">
+            
+                <a href="../Types & Grammar/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Types & Grammar/ch1.html">
+            
+                <a href="../Types & Grammar/ch1.html">
+            
+                    
+                    Chapter 1: Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Types & Grammar/ch2.html">
+            
+                <a href="../Types & Grammar/ch2.html">
+            
+                    
+                    Chapter 2: Values
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Types & Grammar/ch3.html">
+            
+                <a href="../Types & Grammar/ch3.html">
+            
+                    
+                    Chapter 3: Natives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Types & Grammar/ch4.html">
+            
+                <a href="../Types & Grammar/ch4.html">
+            
+                    
+                    Chapter 4: Coercion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Types & Grammar/ch5.html">
+            
+                <a href="../Types & Grammar/ch5.html">
+            
+                    
+                    Chapter 5: Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Types & Grammar/apA.html">
+            
+                <a href="../Types & Grammar/apA.html">
+            
+                    
+                    Appendix A: Mixed Environment JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Types & Grammar/apB.html">
+            
+                <a href="../Types & Grammar/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Async & Performance/toc.html">
+            
+                <a href="../Async & Performance/toc.html">
+            
+                    
+                    Async & Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Async & Performance/foreword.html">
+            
+                <a href="../Async & Performance/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Async & Performance/ch1.html">
+            
+                <a href="../Async & Performance/ch1.html">
+            
+                    
+                    Chapter 1: Asynchrony: Now & Later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Async & Performance/ch2.html">
+            
+                <a href="../Async & Performance/ch2.html">
+            
+                    
+                    Chapter 2: Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Async & Performance/ch3.html">
+            
+                <a href="../Async & Performance/ch3.html">
+            
+                    
+                    Chapter 3: Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Async & Performance/ch4.html">
+            
+                <a href="../Async & Performance/ch4.html">
+            
+                    
+                    Chapter 4: Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Async & Performance/ch5.html">
+            
+                <a href="../Async & Performance/ch5.html">
+            
+                    
+                    Chapter 5: Program Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Async & Performance/ch6.html">
+            
+                <a href="../Async & Performance/ch6.html">
+            
+                    
+                    Chapter 6: Benchmarking & Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Async & Performance/apA.html">
+            
+                <a href="../Async & Performance/apA.html">
+            
+                    
+                    Appendix A: Library: asynquence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Async & Performance/apB.html">
+            
+                <a href="../Async & Performance/apB.html">
+            
+                    
+                    Appendix B: Advanced Async Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Async & Performance/apC.html">
+            
+                <a href="../Async & Performance/apC.html">
+            
+                    
+                    Appendix C: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ES6 & Beyond/toc.html">
+            
+                <a href="../ES6 & Beyond/toc.html">
+            
+                    
+                    ES6 & Beyond
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../ES6 & Beyond/foreword.html">
+            
+                <a href="../ES6 & Beyond/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../ES6 & Beyond/ch1.html">
+            
+                <a href="../ES6 & Beyond/ch1.html">
+            
+                    
+                    Chapter 1: ES? Now & Future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ES6 & Beyond/ch2.html">
+            
+                <a href="../ES6 & Beyond/ch2.html">
+            
+                    
+                    Chapter 2: Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../ES6 & Beyond/ch3.html">
+            
+                <a href="../ES6 & Beyond/ch3.html">
+            
+                    
+                    Chapter 3: Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../ES6 & Beyond/ch4.html">
+            
+                <a href="../ES6 & Beyond/ch4.html">
+            
+                    
+                    Chapter 4: Async Flow Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../ES6 & Beyond/ch5.html">
+            
+                <a href="../ES6 & Beyond/ch5.html">
+            
+                    
+                    Chapter 5: Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../ES6 & Beyond/ch6.html">
+            
+                <a href="../ES6 & Beyond/ch6.html">
+            
+                    
+                    Chapter 6: API Additions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../ES6 & Beyond/ch7.html">
+            
+                <a href="../ES6 & Beyond/ch7.html">
+            
+                    
+                    Chapter 7: Meta Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../ES6 & Beyond/ch8.html">
+            
+                <a href="../ES6 & Beyond/ch8.html">
+            
+                    
+                    Chapter 8: Beyond ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../ES6 & Beyond/apA.html">
+            
+                <a href="../ES6 & Beyond/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 6: Behavior Delegation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#you-dont-know-js-this--object-prototypes"><b>1. </b>You Don&apos;t Know JS: this &amp; Object Prototypes</a></li><li><span class="title-icon "></span><a href="#chapter-6-behavior-delegation"><b>2. </b>Chapter 6: Behavior Delegation</a></li><ul><li><span class="title-icon "></span><a href="#towards-delegation-oriented-design"><b>2.1. </b>Towards Delegation-Oriented Design</a></li><ul><li><span class="title-icon "></span><a href="#class-theory"><b>2.1.1. </b>Class Theory</a></li><li><span class="title-icon "></span><a href="#delegation-theory"><b>2.1.2. </b>Delegation Theory</a></li><li><span class="title-icon "></span><a href="#mental-models-compared"><b>2.1.3. </b>Mental Models Compared</a></li></ul><li><span class="title-icon "></span><a href="#classes-vs-objects"><b>2.2. </b>Classes vs. Objects</a></li><ul><li><span class="title-icon "></span><a href="#widget-classes"><b>2.2.1. </b>Widget &quot;Classes&quot;</a></li><li><span class="title-icon "></span><a href="#delegating-widget-objects"><b>2.2.2. </b>Delegating Widget Objects</a></li></ul><li><span class="title-icon "></span><a href="#simpler-design"><b>2.3. </b>Simpler Design</a></li><ul><li><span class="title-icon "></span><a href="#de-class-ified"><b>2.3.1. </b>De-class-ified</a></li></ul><li><span class="title-icon "></span><a href="#nicer-syntax"><b>2.4. </b>Nicer Syntax</a></li><ul><li><span class="title-icon "></span><a href="#unlexical"><b>2.4.1. </b>Unlexical</a></li></ul><li><span class="title-icon "></span><a href="#introspection"><b>2.5. </b>Introspection</a></li><li><span class="title-icon "></span><a href="#review-tldr"><b>2.6. </b>Review (TL;DR)</a></li></ul></ul></div><a href="#you-dont-know-js-this--object-prototypes" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="you-dont-know-js-this--object-prototypes"><a name="you-dont-know-js-this--object-prototypes" class="anchor-navigation-ex-anchor" href="#you-dont-know-js-this--object-prototypes"><i class="fa fa-link" aria-hidden="true"></i></a>1. You Don&apos;t Know JS: this &amp; Object Prototypes</h1>
+<h1 id="chapter-6-behavior-delegation"><a name="chapter-6-behavior-delegation" class="anchor-navigation-ex-anchor" href="#chapter-6-behavior-delegation"><i class="fa fa-link" aria-hidden="true"></i></a>2. Chapter 6: Behavior Delegation</h1>
+<p>In Chapter 5, we addressed the <code>[[Prototype]]</code> mechanism  in detail, and <em>why</em> it&apos;s confusing and inappropriate (despite countless attempts for nearly two decades) to describe it as &quot;class&quot; or &quot;inheritance&quot;. We trudged through not only the fairly verbose syntax (<code>.prototype</code> littering the code), but the various gotchas (like surprising <code>.constructor</code> resolution or ugly pseudo-polymorphic syntax). We explored variations of the &quot;mixin&quot; approach, which many people use to attempt to smooth over such rough areas.</p>
+<p>It&apos;s a common reaction at this point to wonder why it has to be so complex to do something seemingly so simple. Now that we&apos;ve pulled back the curtain and seen just how dirty it all gets, it&apos;s not a surprise that most JS developers never dive this deep, and instead relegate such mess to a &quot;class&quot; library to handle it for them.</p>
+<p>I hope by now you&apos;re not content to just gloss over and leave such details to a &quot;black box&quot; library. Let&apos;s now dig into how we <em>could and should be</em> thinking about the object <code>[[Prototype]]</code> mechanism in JS, in a <strong>much simpler and more straightforward way</strong> than the confusion of classes.</p>
+<p>As a brief review of our conclusions from Chapter 5, the <code>[[Prototype]]</code> mechanism is an internal link that exists on one object which references another object.</p>
+<p>This linkage is exercised when a property/method reference is made against the first object, and no such property/method exists. In that case, the <code>[[Prototype]]</code> linkage tells the engine to look for the property/method on the linked-to object. In turn, if that object cannot fulfill the look-up, its <code>[[Prototype]]</code> is followed, and so on. This series of links between objects forms what is called the &quot;prototype chain&quot;.</p>
+<p>In other words, the actual mechanism, the essence of what&apos;s important to the functionality we can leverage in JavaScript, is <strong>all about objects being linked to other objects.</strong></p>
+<p>That single observation is fundamental and critical to understanding the motivations and approaches for the rest of this chapter!</p>
+<h2 id="towards-delegation-oriented-design"><a name="towards-delegation-oriented-design" class="anchor-navigation-ex-anchor" href="#towards-delegation-oriented-design"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Towards Delegation-Oriented Design</h2>
+<p>To properly focus our thoughts on how to use <code>[[Prototype]]</code> in the most straightforward way, we must recognize that it represents a fundamentally different design pattern from classes (see Chapter 4).</p>
+<p><strong>Note:</strong> <em>Some</em> principles of class-oriented design are still very valid, so don&apos;t toss out everything you know (just most of it!). For example, <em>encapsulation</em> is quite powerful, and is compatible (though not as common) with delegation.</p>
+<p>We need to try to change our thinking from the class/inheritance design pattern to the behavior delegation design pattern. If you have done most or all of your programming in your education/career thinking in classes, this may be uncomfortable or feel unnatural. You may need to try this mental exercise quite a few times to get the hang of this very different way of thinking.</p>
+<p>I&apos;m going to walk you through some theoretical exercises first, then we&apos;ll look side-by-side at a more concrete example to give you practical context for your own code.</p>
+<h3 id="class-theory"><a name="class-theory" class="anchor-navigation-ex-anchor" href="#class-theory"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. Class Theory</h3>
+<p>Let&apos;s say we have several similar tasks (&quot;XYZ&quot;, &quot;ABC&quot;, etc) that we need to model in our software.</p>
+<p>With classes, the way you design the scenario is: define a general parent (base) class like <code>Task</code>, defining shared behavior for all the &quot;alike&quot; tasks. Then, you define child classes <code>XYZ</code> and <code>ABC</code>, both of which inherit from <code>Task</code>, and each of which adds specialized behavior to handle their respective tasks.</p>
+<p><strong>Importantly,</strong> the class design pattern will encourage you that to get the most out of inheritance, you will want to employ method overriding (and polymorphism), where you override the definition of some general <code>Task</code> method in your <code>XYZ</code> task, perhaps even making use of <code>super</code> to call to the base version of that method while adding more behavior to it. <strong>You&apos;ll likely find quite a few places</strong> where you can &quot;abstract&quot; out general behavior to the parent class and specialize (override) it in your child classes.</p>
+<p>Here&apos;s some loose pseudo-code for that scenario:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">Task</span> <span class="token punctuation">{</span>
+    id<span class="token punctuation">;</span>
+
+    <span class="token comment">// constructor `Task()`</span>
+    <span class="token function">Task</span><span class="token punctuation">(</span><span class="token constant">ID</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> id <span class="token operator">=</span> <span class="token constant">ID</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token function">outputTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">output</span><span class="token punctuation">(</span> id <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">XYZ</span> inherits Task <span class="token punctuation">{</span>
+    label<span class="token punctuation">;</span>
+
+    <span class="token comment">// constructor `XYZ()`</span>
+    <span class="token constant">XYZ</span><span class="token punctuation">(</span><span class="token constant">ID</span><span class="token punctuation">,</span>Label<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">super</span><span class="token punctuation">(</span> <span class="token constant">ID</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> label <span class="token operator">=</span> Label<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token function">outputTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">output</span><span class="token punctuation">(</span> label <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ABC</span> inherits Task <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now, you can instantiate one or more <strong>copies</strong> of the <code>XYZ</code> child class, and use those instance(s) to perform task &quot;XYZ&quot;. These instances have <strong>copies both</strong> of the general <code>Task</code> defined behavior as well as the specific <code>XYZ</code> defined behavior. Likewise, instances of the <code>ABC</code> class would have copies of the <code>Task</code> behavior and the specific <code>ABC</code> behavior. After construction, you will generally only interact with these instances (and not the classes), as the instances each have copies of all the behavior you need to do the intended task.</p>
+<h3 id="delegation-theory"><a name="delegation-theory" class="anchor-navigation-ex-anchor" href="#delegation-theory"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2. Delegation Theory</h3>
+<p>But now let&apos;s try to think about the same problem domain, but using <em>behavior delegation</em> instead of <em>classes</em>.</p>
+<p>You will first define an <strong>object</strong> (not a class, nor a <code>function</code> as most JS&apos;rs would lead you to believe) called <code>Task</code>, and it will have concrete behavior on it that includes utility methods that various tasks can use (read: <em>delegate to</em>!). Then, for each task (&quot;XYZ&quot;, &quot;ABC&quot;), you define an <strong>object</strong> to hold that task-specific data/behavior. You <strong>link</strong> your task-specific object(s) to the <code>Task</code> utility object, allowing them to delegate to it when they need to.</p>
+<p>Basically, you think about performing task &quot;XYZ&quot; as needing behaviors from two sibling/peer objects (<code>XYZ</code> and <code>Task</code>) to accomplish it. But rather than needing to compose them together, via class copies, we can keep them in their separate objects, and we can allow <code>XYZ</code> object to <strong>delegate to</strong> <code>Task</code> when needed.</p>
+<p>Here&apos;s some simple code to suggest how you accomplish that:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Task <span class="token operator">=</span> <span class="token punctuation">{</span>
+    setID<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token constant">ID</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token constant">ID</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    outputID<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// make `XYZ` delegate to `Task`</span>
+<span class="token keyword">var</span> <span class="token constant">XYZ</span> <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Task <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">XYZ</span><span class="token punctuation">.</span><span class="token function-variable function">prepareTask</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token constant">ID</span><span class="token punctuation">,</span>Label<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setID</span><span class="token punctuation">(</span> <span class="token constant">ID</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">=</span> Label<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token constant">XYZ</span><span class="token punctuation">.</span><span class="token function-variable function">outputTaskDetails</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">outputID</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ABC = Object.create( Task );</span>
+<span class="token comment">// ABC ... = ...</span>
+</code></pre>
+<p>In this code, <code>Task</code> and <code>XYZ</code> are not classes (or functions), they&apos;re <strong>just objects</strong>. <code>XYZ</code> is set up via <code>Object.create(..)</code> to <code>[[Prototype]]</code> delegate to the <code>Task</code> object (see Chapter 5).</p>
+<p>As compared to class-orientation (aka, OO -- object-oriented), I call this style of code <strong>&quot;OLOO&quot;</strong> (objects-linked-to-other-objects). All we <em>really</em> care about is that the <code>XYZ</code> object delegates to the <code>Task</code> object (as does the <code>ABC</code> object).</p>
+<p>In JavaScript, the <code>[[Prototype]]</code> mechanism links <strong>objects</strong> to other <strong>objects</strong>. There are no abstract mechanisms like &quot;classes&quot;, no matter how much you try to convince yourself otherwise. It&apos;s like paddling a canoe upstream: you <em>can</em> do it, but you&apos;re <em>choosing</em> to go against the natural current, so it&apos;s obviously <strong>going to be harder to get where you&apos;re going.</strong></p>
+<p>Some other differences to note with <strong>OLOO style code</strong>:</p>
+<ol>
+<li>Both <code>id</code> and <code>label</code> data members from the previous class example are data properties directly on <code>XYZ</code> (neither is on <code>Task</code>). In general, with <code>[[Prototype]]</code> delegation involved, <strong>you want state to be on the delegators</strong> (<code>XYZ</code>, <code>ABC</code>), not on the delegate (<code>Task</code>).</li>
+<li><p>With the class design pattern, we intentionally named <code>outputTask</code> the same on both parent (<code>Task</code>) and child (<code>XYZ</code>), so that we could take advantage of overriding (polymorphism). In behavior delegation, we do the opposite: <strong>we avoid if at all possible naming things the same</strong> at different levels of the <code>[[Prototype]]</code> chain (called shadowing -- see Chapter 5), because having those name collisions creates awkward/brittle syntax to disambiguate references (see Chapter 4), and we want to avoid that if we can.</p>
+<p>This design pattern calls for less of general method names which are prone to overriding and instead more of descriptive method names, <em>specific</em> to the type of behavior each object is doing. <strong>This can actually create easier to understand/maintain code</strong>, because the names of methods (not only at definition location but strewn throughout other code) are more obvious (self documenting).</p>
+</li>
+<li><p><code>this.setID(ID);</code> inside of a method on the <code>XYZ</code> object first looks on <code>XYZ</code> for <code>setID(..)</code>, but since it doesn&apos;t find a method of that name on <code>XYZ</code>, <code>[[Prototype]]</code> <em>delegation</em> means it can follow the link to <code>Task</code> to look for <code>setID(..)</code>, which it of course finds. Moreover, because of implicit call-site <code>this</code> binding rules (see Chapter 2), when <code>setID(..)</code> runs, even though the method was found on <code>Task</code>, the <code>this</code> binding for that function call is <code>XYZ</code> exactly as we&apos;d expect and want. We see the same thing with <code>this.outputID()</code> later in the code listing.</p>
+<p>In other words, the general utility methods that exist on <code>Task</code> are available to us while interacting with <code>XYZ</code>, because <code>XYZ</code> can delegate to <code>Task</code>.</p>
+</li>
+</ol>
+<p><strong>Behavior Delegation</strong> means: let some object (<code>XYZ</code>) provide a delegation (to <code>Task</code>) for property or method references if not found on the object (<code>XYZ</code>).</p>
+<p>This is an <em>extremely powerful</em> design pattern, very distinct from the idea of parent and child classes, inheritance, polymorphism, etc. Rather than organizing the objects in your mind vertically, with Parents flowing down to Children, think of objects side-by-side, as peers, with any direction of delegation links between the objects as necessary.</p>
+<p><strong>Note:</strong> Delegation is more properly used as an internal implementation detail rather than exposed directly in the API design. In the above example, we don&apos;t necessarily <em>intend</em> with our API design for developers to call <code>XYZ.setID()</code> (though we can, of course!). We sorta <em>hide</em> the delegation as an internal detail of our API, where <code>XYZ.prepareTask(..)</code> delegates to <code>Task.setID(..)</code>. See the &quot;Links As Fallbacks?&quot; discussion in Chapter 5 for more detail.</p>
+<h4 id="mutual-delegation-disallowed"><a name="mutual-delegation-disallowed" class="anchor-navigation-ex-anchor" href="#mutual-delegation-disallowed"><i class="fa fa-link" aria-hidden="true"></i></a>Mutual Delegation (Disallowed)</h4>
+<p>You cannot create a <em>cycle</em> where two or more objects are mutually delegated (bi-directionally) to each other. If you make <code>B</code> linked to <code>A</code>, and then try to link <code>A</code> to <code>B</code>, you will get an error.</p>
+<p>It&apos;s a shame (not terribly surprising, but mildly annoying) that this is disallowed. If you made a reference to a property/method which didn&apos;t exist in either place, you&apos;d have an infinite recursion on the <code>[[Prototype]]</code> loop. But if all references were strictly present, then <code>B</code> could delegate to <code>A</code>, and vice versa, and it <em>could</em> work. This would mean you could use either object to delegate to the other, for various tasks. There are a few niche use-cases where this might be helpful.</p>
+<p>But it&apos;s disallowed because engine implementors have observed that it&apos;s more performant to check for (and reject!) the infinite circular reference once at set-time rather than needing to have the performance hit of that guard check every time you look-up a property on an object.</p>
+<h4 id="debugged"><a name="debugged" class="anchor-navigation-ex-anchor" href="#debugged"><i class="fa fa-link" aria-hidden="true"></i></a>Debugged</h4>
+<p>We&apos;ll briefly cover a subtle detail that can be confusing to developers. In general, the JS specification does not control how browser developer tools should represent specific values/structures to a developer, so each browser/engine is free to interpret such things as they see fit. As such, browsers/tools <em>don&apos;t always agree</em>. Specifically, the behavior we will now examine is currently observed only in Chrome&apos;s Developer Tools.</p>
+<p>Consider this traditional &quot;class constructor&quot; style JS code, as it would appear in the <em>console</em> of Chrome Developer Tools:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> a1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+a1<span class="token punctuation">;</span> <span class="token comment">// Foo {}</span>
+</code></pre>
+<p>Let&apos;s look at the last line of that snippet: the output of evaluating the <code>a1</code> expression, which prints <code>Foo {}</code>. If you try this same code in Firefox, you will likely see <code>Object {}</code>. Why the difference? What do these outputs mean?</p>
+<p>Chrome is essentially saying &quot;{} is an empty object that was constructed by a function with name &apos;Foo&apos;&quot;. Firefox is saying &quot;{} is an empty object of general construction from Object&quot;. The subtle difference is that Chrome is actively tracking, as an <em>internal property</em>, the name of the actual function that did the construction, whereas other browsers don&apos;t track that additional information.</p>
+<p>It would be tempting to attempt to explain this with JavaScript mechanisms:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> a1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+a1<span class="token punctuation">.</span>constructor<span class="token punctuation">;</span> <span class="token comment">// Foo(){}</span>
+a1<span class="token punctuation">.</span>constructor<span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token comment">// &quot;Foo&quot;</span>
+</code></pre>
+<p>So, is that how Chrome is outputting &quot;Foo&quot;, by simply examining the object&apos;s <code>.constructor.name</code>? Confusingly, the answer is both &quot;yes&quot; and &quot;no&quot;.</p>
+<p>Consider this code:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> a1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Foo<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">constructor</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">Gotcha</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+a1<span class="token punctuation">.</span>constructor<span class="token punctuation">;</span> <span class="token comment">// Gotcha(){}</span>
+a1<span class="token punctuation">.</span>constructor<span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token comment">// &quot;Gotcha&quot;</span>
+
+a1<span class="token punctuation">;</span> <span class="token comment">// Foo {}</span>
+</code></pre>
+<p>Even though we change <code>a1.constructor.name</code> to legitimately be something else (&quot;Gotcha&quot;), Chrome&apos;s console still uses the &quot;Foo&quot; name.</p>
+<p>So, it would appear the answer to previous question (does it use <code>.constructor.name</code>?) is <strong>no</strong>, it must track it somewhere else, internally.</p>
+<p>But, Not so fast! Let&apos;s see how this kind of behavior works with OLOO-style code:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> a1 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Foo <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+a1<span class="token punctuation">;</span> <span class="token comment">// Object {}</span>
+
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span> Foo<span class="token punctuation">,</span> <span class="token string">&quot;constructor&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    enumerable<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    value<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">Gotcha</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+a1<span class="token punctuation">;</span> <span class="token comment">// Gotcha {}</span>
+</code></pre>
+<p>Ah-ha! <strong>Gotcha!</strong> Here, Chrome&apos;s console <strong>did</strong> find and use the <code>.constructor.name</code>. Actually, while writing this book, this exact behavior was identified as a bug in Chrome, and by the time you&apos;re reading this, it may have already been fixed. So you may instead have seen the corrected <code>a1; // Object {}</code>.</p>
+<p>Aside from that bug, the internal tracking (apparently only for debug output purposes) of the &quot;constructor name&quot; that Chrome does (shown in the earlier snippets) is an intentional Chrome-only extension of behavior beyond what the JS specification calls for.</p>
+<p>If you don&apos;t use a &quot;constructor&quot; to make your objects, as we&apos;ve discouraged with OLOO-style code here in this chapter, then you&apos;ll get objects that Chrome does <em>not</em> track an internal &quot;constructor name&quot; for, and such objects will correctly only be outputted as &quot;Object {}&quot;, meaning &quot;object generated from Object() construction&quot;.</p>
+<p><strong>Don&apos;t think</strong> this represents a drawback of OLOO-style coding. When you code with OLOO and behavior delegation as your design pattern, <em>who</em> &quot;constructed&quot; (that is, <em>which function</em> was called with <code>new</code>?) some object is an irrelevant detail. Chrome&apos;s specific internal &quot;constructor name&quot; tracking is really only useful if you&apos;re fully embracing &quot;class-style&quot; coding, but is moot if you&apos;re instead embracing OLOO delegation.</p>
+<h3 id="mental-models-compared"><a name="mental-models-compared" class="anchor-navigation-ex-anchor" href="#mental-models-compared"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.3. Mental Models Compared</h3>
+<p>Now that you can see a difference between &quot;class&quot; and &quot;delegation&quot; design patterns, at least theoretically, let&apos;s see the implications these design patterns have on the mental models we use to reason about our code.</p>
+<p>We&apos;ll examine some more theoretical (&quot;Foo&quot;, &quot;Bar&quot;) code, and compare both ways (OO vs. OLOO) of implementing the code. The first snippet uses the classical (&quot;prototypal&quot;) OO style:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">Foo</span><span class="token punctuation">(</span>who<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>me <span class="token operator">=</span> who<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+Foo<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">identify</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;I am &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>me<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">Bar</span><span class="token punctuation">(</span>who<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Foo<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> who <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+Bar<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Foo<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Bar<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">speak</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello, &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">identify</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;.&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bar</span><span class="token punctuation">(</span> <span class="token string">&quot;b1&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bar</span><span class="token punctuation">(</span> <span class="token string">&quot;b2&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+b1<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+b2<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Parent class <code>Foo</code>, inherited by child class <code>Bar</code>, which is then instantiated twice as <code>b1</code> and <code>b2</code>. What we have is <code>b1</code> delegating to <code>Bar.prototype</code> which delegates to <code>Foo.prototype</code>. This should look fairly familiar to you, at this point. Nothing too ground-breaking going on.</p>
+<p>Now, let&apos;s implement <strong>the exact same functionality</strong> using <em>OLOO</em> style code:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Foo <span class="token operator">=</span> <span class="token punctuation">{</span>
+    init<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>who<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>me <span class="token operator">=</span> who<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    identify<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;I am &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>me<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> Bar <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Foo <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Bar<span class="token punctuation">.</span><span class="token function-variable function">speak</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello, &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">identify</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;.&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> b1 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Bar <span class="token punctuation">)</span><span class="token punctuation">;</span>
+b1<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span> <span class="token string">&quot;b1&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b2 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Bar <span class="token punctuation">)</span><span class="token punctuation">;</span>
+b2<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span> <span class="token string">&quot;b2&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+b1<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+b2<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>We take exactly the same advantage of <code>[[Prototype]]</code> delegation from <code>b1</code> to <code>Bar</code> to <code>Foo</code> as we did in the previous snippet between <code>b1</code>, <code>Bar.prototype</code>, and <code>Foo.prototype</code>. <strong>We still have the same 3 objects linked together</strong>.</p>
+<p>But, importantly, we&apos;ve greatly simplified <em>all the other stuff</em> going on, because now we just set up <strong>objects</strong> linked to each other, without needing all the cruft and confusion of things that look (but don&apos;t behave!) like classes, with constructors and prototypes and <code>new</code> calls.</p>
+<p>Ask yourself: if I can get the same functionality with OLOO style code as I do with &quot;class&quot; style code, but OLOO is simpler and has less things to think about, <strong>isn&apos;t OLOO better</strong>?</p>
+<p>Let&apos;s examine the mental models involved between these two snippets.</p>
+<p>First, the class-style code snippet implies this mental model of entities and their relationships:</p>
+<p><img src="fig4.png"></p>
+<p>Actually, that&apos;s a little unfair/misleading, because it&apos;s showing a lot of extra detail that you don&apos;t <em>technically</em> need to know at all times (though you <em>do</em> need to understand it!). One take-away is that it&apos;s quite a complex series of relationships. But another take-away: if you spend the time to follow those relationship arrows around, <strong>there&apos;s an amazing amount of internal consistency</strong> in JS&apos;s mechanisms.</p>
+<p>For instance, the ability of a JS function to access <code>call(..)</code>, <code>apply(..)</code>, and <code>bind(..)</code> (see Chapter 2) is because functions themselves are objects, and function-objects also have a <code>[[Prototype]]</code> linkage, to the <code>Function.prototype</code> object, which defines those default methods that any function-object can delegate to. JS can do those things, <em>and you can too!</em>.</p>
+<p>OK, let&apos;s now look at a <em>slightly</em> simplified version of that diagram which is a little more &quot;fair&quot; for comparison -- it shows only the <em>relevant</em> entities and relationships.</p>
+<p><img src="fig5.png"></p>
+<p>Still pretty complex, eh? The dotted lines are depicting the implied relationships when you setup the &quot;inheritance&quot; between <code>Foo.prototype</code> and <code>Bar.prototype</code> and haven&apos;t yet <em>fixed</em> the <strong>missing</strong> <code>.constructor</code> property reference (see &quot;Constructor Redux&quot; in Chapter 5). Even with those dotted lines removed, the mental model is still an awful lot to juggle every time you work with object linkages.</p>
+<p>Now, let&apos;s look at the mental model for OLOO-style code:</p>
+<p><img src="fig6.png"></p>
+<p>As you can see comparing them, it&apos;s quite obvious that OLOO-style code has <em>vastly less stuff</em> to worry about, because OLOO-style code embraces the <strong>fact</strong> that the only thing we ever really cared about was the <strong>objects linked to other objects</strong>.</p>
+<p>All the other &quot;class&quot; cruft was a confusing and complex way of getting the same end result. Remove that stuff, and things get much simpler (without losing any capability).</p>
+<h2 id="classes-vs-objects"><a name="classes-vs-objects" class="anchor-navigation-ex-anchor" href="#classes-vs-objects"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Classes vs. Objects</h2>
+<p>We&apos;ve just seen various theoretical explorations and mental models of &quot;classes&quot; vs. &quot;behavior delegation&quot;. But, let&apos;s now look at more concrete code scenarios to show how&apos;d you actually use these ideas.</p>
+<p>We&apos;ll first examine a typical scenario in front-end web dev: creating UI widgets (buttons, drop-downs, etc).</p>
+<h3 id="widget-classes"><a name="widget-classes" class="anchor-navigation-ex-anchor" href="#widget-classes"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. Widget &quot;Classes&quot;</h3>
+<p>Because you&apos;re probably still so used to the OO design pattern, you&apos;ll likely immediately think of this problem domain in terms of a parent class (perhaps called <code>Widget</code>) with all the common base widget behavior, and then child derived classes for specific widget types (like <code>Button</code>).</p>
+<p><strong>Note:</strong> We&apos;re going to use jQuery here for DOM and CSS manipulation, only because it&apos;s a detail we don&apos;t really care about for the purposes of our current discussion. None of this code cares which JS framework (jQuery, Dojo, YUI, etc), if any, you might solve such mundane tasks with.</p>
+<p>Let&apos;s examine how we&apos;d implement the &quot;class&quot; design in classic-style pure JS without any &quot;class&quot; helper library or syntax:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Parent class</span>
+<span class="token keyword">function</span> <span class="token function">Widget</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+Widget<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">render</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span> <span class="token punctuation">{</span>
+            width<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">,</span>
+            height<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span>
+        <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Child class</span>
+<span class="token keyword">function</span> <span class="token function">Button</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">,</span>label<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &quot;super&quot; constructor call</span>
+    Widget<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> width<span class="token punctuation">,</span> height <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">=</span> label <span class="token operator">||</span> <span class="token string">&quot;Default&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;&lt;button&gt;&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// make `Button` &quot;inherit&quot; from `Widget`</span>
+Button<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Widget<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// override base &quot;inherited&quot; `render(..)`</span>
+Button<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">render</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &quot;super&quot; call</span>
+    Widget<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>render<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+Button<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">onClick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Button &apos;&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">+</span> <span class="token string">&quot;&apos; clicked!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span> document <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> $body <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> document<span class="token punctuation">.</span>body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> btn1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Button</span><span class="token punctuation">(</span> <span class="token number">125</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> btn2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Button</span><span class="token punctuation">(</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token string">&quot;World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    btn1<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span> $body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    btn2<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span> $body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>OO design patterns tell us to declare a base <code>render(..)</code> in the parent class, then override it in our child class, but not to replace it per se, rather to augment the base functionality with button-specific behavior.</p>
+<p>Notice the ugliness of <em>explicit pseudo-polymorphism</em> (see Chapter 4) with <code>Widget.call</code> and <code>Widget.prototype.render.call</code> references for faking &quot;super&quot; calls from the child &quot;class&quot; methods back up to the &quot;parent&quot; class base methods. Yuck.</p>
+<h4 id="es6-class-sugar"><a name="es6-class-sugar" class="anchor-navigation-ex-anchor" href="#es6-class-sugar"><i class="fa fa-link" aria-hidden="true"></i></a>ES6 <code>class</code> sugar</h4>
+<p>We cover ES6 <code>class</code> syntax sugar in detail in Appendix A, but let&apos;s briefly demonstrate how we&apos;d implement the same code using <code>class</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">Widget</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span> <span class="token punctuation">{</span>
+                width<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">,</span>
+                height<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span>
+            <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">Widget</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">,</span>label<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span> width<span class="token punctuation">,</span> height <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">=</span> label <span class="token operator">||</span> <span class="token string">&quot;Default&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;&lt;button&gt;&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">onClick</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Button &apos;&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">+</span> <span class="token string">&quot;&apos; clicked!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span> document <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> $body <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> document<span class="token punctuation">.</span>body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> btn1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Button</span><span class="token punctuation">(</span> <span class="token number">125</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> btn2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Button</span><span class="token punctuation">(</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token string">&quot;World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    btn1<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span> $body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    btn2<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span> $body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Undoubtedly, a number of the syntax uglies of the previous classical approach have been smoothed over with ES6&apos;s <code>class</code>. The presence of a <code>super(..)</code> in particular seems quite nice (though when you dig into it, it&apos;s not all roses!).</p>
+<p>Despite syntactic improvements, <strong>these are not <em>real</em> classes</strong>, as they still operate on top of the <code>[[Prototype]]</code> mechanism. They suffer from all the same mental-model mismatches we explored in Chapters 4, 5 and thus far in this chapter. Appendix A will expound on the ES6 <code>class</code> syntax and its implications in detail. We&apos;ll see why solving syntax hiccups doesn&apos;t substantially solve our class confusions in JS, though it makes a valiant effort masquerading as a solution!</p>
+<p>Whether you use the classic prototypal syntax or the new ES6 sugar, you&apos;ve still made a <em>choice</em> to model the problem domain (UI widgets) with &quot;classes&quot;. And as the previous few chapters try to demonstrate, this <em>choice</em> in JavaScript is opting you into extra headaches and mental tax.</p>
+<h3 id="delegating-widget-objects"><a name="delegating-widget-objects" class="anchor-navigation-ex-anchor" href="#delegating-widget-objects"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.2. Delegating Widget Objects</h3>
+<p>Here&apos;s our simpler <code>Widget</code> / <code>Button</code> example, using <strong>OLOO style delegation</strong>:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Widget <span class="token operator">=</span> <span class="token punctuation">{</span>
+    init<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height <span class="token operator">||</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    insert<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span> <span class="token punctuation">{</span>
+                width<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">,</span>
+                height<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span>
+            <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> Button <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Widget <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Button<span class="token punctuation">.</span><span class="token function-variable function">setup</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span>height<span class="token punctuation">,</span>label<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// delegated call</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span> width<span class="token punctuation">,</span> height <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">=</span> label <span class="token operator">||</span> <span class="token string">&quot;Default&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$elem <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;&lt;button&gt;&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+Button<span class="token punctuation">.</span><span class="token function-variable function">build</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>$where<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// delegated call</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span> $where <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$elem<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+Button<span class="token punctuation">.</span><span class="token function-variable function">onClick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">&quot;Button &apos;&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>label <span class="token operator">+</span> <span class="token string">&quot;&apos; clicked!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span> document <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> $body <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span> document<span class="token punctuation">.</span>body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> btn1 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Button <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    btn1<span class="token punctuation">.</span><span class="token function">setup</span><span class="token punctuation">(</span> <span class="token number">125</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">&quot;Hello&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> btn2 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Button <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    btn2<span class="token punctuation">.</span><span class="token function">setup</span><span class="token punctuation">(</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token string">&quot;World&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    btn1<span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span> $body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    btn2<span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span> $body <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>With this OLOO-style approach, we don&apos;t think of <code>Widget</code> as a parent and <code>Button</code> as a child. Rather, <code>Widget</code> <strong>is just an object</strong> and is sort of a utility collection that any specific type of widget might want to delegate to, and <code>Button</code> <strong>is also just a stand-alone object</strong> (with a delegation link to <code>Widget</code>, of course!).</p>
+<p>From a design pattern perspective, we <strong>didn&apos;t</strong> share the same method name <code>render(..)</code> in both objects, the way classes suggest, but instead we chose different names (<code>insert(..)</code> and <code>build(..)</code>) that were more descriptive of what task each does specifically. The <em>initialization</em> methods are called <code>init(..)</code> and <code>setup(..)</code>, respectively, for the same reasons.</p>
+<p>Not only does this delegation design pattern suggest different and more descriptive names (rather than shared and more generic names), but doing so with OLOO happens to avoid the ugliness of the explicit pseudo-polymorphic calls (<code>Widget.call</code> and <code>Widget.prototype.render.call</code>), as you can see by the simple, relative, delegated calls to <code>this.init(..)</code> and <code>this.insert(..)</code>.</p>
+<p>Syntactically, we also don&apos;t have any constructors, <code>.prototype</code> or <code>new</code> present, as they are, in fact, just unnecessary cruft.</p>
+<p>Now, if you&apos;re paying close attention, you may notice that what was previously just one call (<code>var btn1 = new Button(..)</code>) is now two calls (<code>var btn1 = Object.create(Button)</code> and <code>btn1.setup(..)</code>). Initially this may seem like a drawback (more code).</p>
+<p>However, even this is something that&apos;s <strong>a pro of OLOO style code</strong> as compared to classical prototype style code. How?</p>
+<p>With class constructors, you are &quot;forced&quot; (not really, but strongly suggested) to do both construction and initialization in the same step. However, there are many cases where being able to do these two steps separately (as you do with OLOO!) is more flexible.</p>
+<p>For example, let&apos;s say you create all your instances in a pool at the beginning of your program, but you wait to initialize them with specific setup until they are pulled from the pool and used. We showed the two calls happening right next to each other, but of course they can happen at very different times and in very different parts of our code, as needed.</p>
+<p><strong>OLOO</strong> supports <em>better</em> the principle of separation of concerns, where creation and initialization are not necessarily conflated into the same operation.</p>
+<h2 id="simpler-design"><a name="simpler-design" class="anchor-navigation-ex-anchor" href="#simpler-design"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Simpler Design</h2>
+<p>In addition to OLOO providing ostensibly simpler (and more flexible!) code, behavior delegation as a pattern can actually lead to simpler code architecture. Let&apos;s examine one last example that illustrates how OLOO simplifies your overall design.</p>
+<p>The scenario we&apos;ll examine is two controller objects, one for handling the login form of a web page, and another for actually handling the authentication (communication) with the server.</p>
+<p>We&apos;ll need a utility helper for making the Ajax communication to the server. We&apos;ll use jQuery (though any framework would do fine), since it handles not only the Ajax for us, but it returns a promise-like answer so that we can listen for the response in our calling code with <code>.then(..)</code>.</p>
+<p><strong>Note:</strong> We don&apos;t cover Promises here, but we will cover them in a future title of the <em>&quot;You Don&apos;t Know JS&quot;</em> series.</p>
+<p>Following the typical class design pattern, we&apos;ll break up the task into base functionality in a class called <code>Controller</code>, and then we&apos;ll derive two child classes, <code>LoginController</code> and <code>AuthController</code>, which both inherit from <code>Controller</code> and specialize some of those base behaviors.</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Parent class</span>
+<span class="token keyword">function</span> <span class="token function">Controller</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+Controller<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">showDialog</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>title<span class="token punctuation">,</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// display title &amp; message to user in dialog</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+Controller<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">success</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">showDialog</span><span class="token punctuation">(</span> <span class="token string">&quot;Success&quot;</span><span class="token punctuation">,</span> msg <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+Controller<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">failure</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>errors<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">showDialog</span><span class="token punctuation">(</span> <span class="token string">&quot;Error&quot;</span><span class="token punctuation">,</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Child class</span>
+<span class="token keyword">function</span> <span class="token function">LoginController</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Controller<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Link child class to parent</span>
+LoginController<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Controller<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span><span class="token punctuation">;</span>
+LoginController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">getUser</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span> <span class="token string">&quot;login_username&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+LoginController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">getPassword</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span> <span class="token string">&quot;login_password&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+LoginController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">validateEntry</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>user<span class="token punctuation">,</span>pw<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    user <span class="token operator">=</span> user <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pw <span class="token operator">=</span> pw <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>user <span class="token operator">&amp;&amp;</span> pw<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">failure</span><span class="token punctuation">(</span> <span class="token string">&quot;Please enter a username &amp; password!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>pw<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">failure</span><span class="token punctuation">(</span> <span class="token string">&quot;Password must be 5+ characters!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// got here? validated!</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// Override to extend base `failure()`</span>
+LoginController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">failure</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &quot;super&quot; call</span>
+    Controller<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>failure<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">&quot;Login invalid: &quot;</span> <span class="token operator">+</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Child class</span>
+<span class="token keyword">function</span> <span class="token function">AuthController</span><span class="token punctuation">(</span>login<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Controller<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// in addition to inheritance, we also need composition</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>login <span class="token operator">=</span> login<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Link child class to parent</span>
+AuthController<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Controller<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span><span class="token punctuation">;</span>
+AuthController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">server</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> $<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span> <span class="token punctuation">{</span>
+        url<span class="token punctuation">:</span> url<span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> data
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+AuthController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">checkAuth</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>login<span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pw <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>login<span class="token punctuation">.</span><span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>login<span class="token punctuation">.</span><span class="token function">validateEntry</span><span class="token punctuation">(</span> user<span class="token punctuation">,</span> pw <span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">server</span><span class="token punctuation">(</span> <span class="token string">&quot;/check-auth&quot;</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+            user<span class="token punctuation">:</span> user<span class="token punctuation">,</span>
+            pw<span class="token punctuation">:</span> pw
+        <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>success<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>failure<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// Override to extend base `success()`</span>
+AuthController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">success</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &quot;super&quot; call</span>
+    Controller<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>success<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">&quot;Authenticated!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// Override to extend base `failure()`</span>
+AuthController<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">failure</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &quot;super&quot; call</span>
+    Controller<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>failure<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">&quot;Auth Failed: &quot;</span> <span class="token operator">+</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> auth <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AuthController</span><span class="token punctuation">(</span>
+    <span class="token comment">// in addition to inheritance, we also need composition</span>
+    <span class="token keyword">new</span> <span class="token class-name">LoginController</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+auth<span class="token punctuation">.</span><span class="token function">checkAuth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>We have base behaviors that all controllers share, which are <code>success(..)</code>, <code>failure(..)</code> and <code>showDialog(..)</code>. Our child classes <code>LoginController</code> and <code>AuthController</code> override <code>failure(..)</code> and <code>success(..)</code> to augment the default base class behavior. Also note that <code>AuthController</code> needs an instance of <code>LoginController</code> to interact with the login form, so that becomes a member data property.</p>
+<p>The other thing to mention is that we chose some <em>composition</em> to sprinkle in on top of the inheritance. <code>AuthController</code> needs to know about <code>LoginController</code>, so we instantiate it (<code>new LoginController()</code>) and keep a class member property called <code>this.login</code> to reference it, so that <code>AuthController</code> can invoke behavior on <code>LoginController</code>.</p>
+<p><strong>Note:</strong> There <em>might</em> have been a slight temptation to make <code>AuthController</code> inherit from <code>LoginController</code>, or vice versa, such that we had <em>virtual composition</em> through the inheritance chain. But this is a strongly clear example of what&apos;s wrong with class inheritance as <em>the</em> model for the problem domain, because neither <code>AuthController</code> nor <code>LoginController</code> are specializing base behavior of the other, so inheritance between them makes little sense except if classes are your only design pattern. Instead, we layered in some simple <em>composition</em> and now they can cooperate, while still both benefiting from the inheritance from the parent base <code>Controller</code>.</p>
+<p>If you&apos;re familiar with class-oriented (OO) design, this should all look pretty familiar and natural.</p>
+<h3 id="de-class-ified"><a name="de-class-ified" class="anchor-navigation-ex-anchor" href="#de-class-ified"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1. De-class-ified</h3>
+<p>But, <strong>do we really need to model this problem</strong> with a parent <code>Controller</code> class, two child classes, <strong>and some composition</strong>? Is there a way to take advantage of OLOO-style behavior delegation and have a <em>much</em> simpler design? <strong>Yes!</strong></p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> LoginController <span class="token operator">=</span> <span class="token punctuation">{</span>
+    errors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    getUser<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span> <span class="token string">&quot;login_username&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    getPassword<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span> <span class="token string">&quot;login_password&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    validateEntry<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>user<span class="token punctuation">,</span>pw<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        user <span class="token operator">=</span> user <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pw <span class="token operator">=</span> pw <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>user <span class="token operator">&amp;&amp;</span> pw<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">failure</span><span class="token punctuation">(</span> <span class="token string">&quot;Please enter a username &amp; password!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>pw<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">failure</span><span class="token punctuation">(</span> <span class="token string">&quot;Password must be 5+ characters!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// got here? validated!</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    showDialog<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>title<span class="token punctuation">,</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// display success message to user in dialog</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    failure<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>errors<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">showDialog</span><span class="token punctuation">(</span> <span class="token string">&quot;Error&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Login invalid: &quot;</span> <span class="token operator">+</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token comment">// Link `AuthController` to delegate to `LoginController`</span>
+<span class="token keyword">var</span> AuthController <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> LoginController <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+AuthController<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+AuthController<span class="token punctuation">.</span><span class="token function-variable function">checkAuth</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pw <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">validateEntry</span><span class="token punctuation">(</span> user<span class="token punctuation">,</span> pw <span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">server</span><span class="token punctuation">(</span> <span class="token string">&quot;/check-auth&quot;</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+            user<span class="token punctuation">:</span> user<span class="token punctuation">,</span>
+            pw<span class="token punctuation">:</span> pw
+        <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>accepted<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>rejected<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+AuthController<span class="token punctuation">.</span><span class="token function-variable function">server</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> $<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span> <span class="token punctuation">{</span>
+        url<span class="token punctuation">:</span> url<span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> data
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+AuthController<span class="token punctuation">.</span><span class="token function-variable function">accepted</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">showDialog</span><span class="token punctuation">(</span> <span class="token string">&quot;Success&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Authenticated!&quot;</span> <span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+AuthController<span class="token punctuation">.</span><span class="token function-variable function">rejected</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">failure</span><span class="token punctuation">(</span> <span class="token string">&quot;Auth Failed: &quot;</span> <span class="token operator">+</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Since <code>AuthController</code> is just an object (so is <code>LoginController</code>), we don&apos;t need to instantiate (like <code>new AuthController()</code>) to perform our task. All we need to do is:</p>
+<pre class="language-"><code class="lang-js">AuthController<span class="token punctuation">.</span><span class="token function">checkAuth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Of course, with OLOO, if you do need to create one or more additional objects in the delegation chain, that&apos;s easy, and still doesn&apos;t require anything like class instantiation:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> controller1 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> AuthController <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> controller2 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> AuthController <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>With behavior delegation, <code>AuthController</code> and <code>LoginController</code> are <strong>just objects</strong>, <em>horizontal</em> peers of each other, and are not arranged or related as parents and children in class-orientation. We somewhat arbitrarily chose to have <code>AuthController</code> delegate to <code>LoginController</code> -- it would have been just as valid for the delegation to go the reverse direction.</p>
+<p>The main takeaway from this second code listing is that we only have two entities (<code>LoginController</code> and <code>AuthController</code>), <strong>not three</strong> as before.</p>
+<p>We didn&apos;t need a base <code>Controller</code> class to &quot;share&quot; behavior between the two, because delegation is a powerful enough mechanism to give us the functionality we need. We also, as noted before, don&apos;t need to instantiate our classes to work with them, because there are no classes, <strong>just the objects themselves.</strong> Furthermore, there&apos;s no need for <em>composition</em> as delegation gives the two objects the ability to cooperate <em>differentially</em> as needed.</p>
+<p>Lastly, we avoided the polymorphism pitfalls of class-oriented design by not having the names <code>success(..)</code> and <code>failure(..)</code> be the same on both objects, which would have required ugly explicit pseudopolymorphism. Instead, we called them <code>accepted()</code> and <code>rejected(..)</code> on <code>AuthController</code> -- slightly more descriptive names for their specific tasks.</p>
+<p><strong>Bottom line</strong>: we end up with the same capability, but a (significantly) simpler design. That&apos;s the power of OLOO-style code and the power of the <em>behavior delegation</em> design pattern.</p>
+<h2 id="nicer-syntax"><a name="nicer-syntax" class="anchor-navigation-ex-anchor" href="#nicer-syntax"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Nicer Syntax</h2>
+<p>One of the nicer things that makes ES6&apos;s <code>class</code> so deceptively attractive (see Appendix A on why to avoid it!) is the short-hand syntax for declaring class methods:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
+    <span class="token function">methodName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* .. */</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>We get to drop the word <code>function</code> from the declaration, which makes JS developers everywhere cheer!</p>
+<p>And you may have noticed and been frustrated that the suggested OLOO syntax above has lots of <code>function</code> appearances, which seems like a bit of a detractor to the goal of OLOO simplification. <strong>But it doesn&apos;t have to be that way!</strong></p>
+<p>As of ES6, we can use <em>concise method declarations</em> in any object literal, so an object in OLOO style can be declared this way (same short-hand sugar as with <code>class</code> body syntax):</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> LoginController <span class="token operator">=</span> <span class="token punctuation">{</span>
+    errors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Look ma, no `function`!</span>
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>About the only difference is that object literals will still require <code>,</code> comma separators between elements whereas <code>class</code> syntax doesn&apos;t. Pretty minor concession in the whole scheme of things.</p>
+<p>Moreover, as of ES6, the clunkier syntax you use (like for the <code>AuthController</code> definition), where you&apos;re assigning properties individually and not using an object literal, can be re-written using an object literal (so that you can use concise methods), and you can just modify that object&apos;s <code>[[Prototype]]</code> with <code>Object.setPrototypeOf(..)</code>, like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// use nicer object literal syntax w/ concise methods!</span>
+<span class="token keyword">var</span> AuthController <span class="token operator">=</span> <span class="token punctuation">{</span>
+    errors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token function">checkAuth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">server</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// NOW, link `AuthController` to delegate to `LoginController`</span>
+Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span> AuthController<span class="token punctuation">,</span> LoginController <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>OLOO-style as of ES6, with concise methods, <strong>is a lot friendlier</strong> than it was before (and even then, it was much simpler and nicer than classical prototype-style code). <strong>You don&apos;t have to opt for class</strong> (complexity) to get nice clean object syntax!</p>
+<h3 id="unlexical"><a name="unlexical" class="anchor-navigation-ex-anchor" href="#unlexical"><i class="fa fa-link" aria-hidden="true"></i></a>2.4.1. Unlexical</h3>
+<p>There <em>is</em> one drawback to concise methods that&apos;s subtle but important to note. Consider this code:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Foo <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/*..*/</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    baz<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/*..*/</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Here&apos;s the syntactic de-sugaring that expresses how that code will operate:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Foo <span class="token operator">=</span> <span class="token punctuation">{</span>
+    bar<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/*..*/</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    baz<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/*..*/</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>See the difference? The <code>bar()</code> short-hand became an <em>anonymous function expression</em> (<code>function()..</code>) attached to the <code>bar</code> property, because the function object itself has no name identifier. Compare that to the manually specified <em>named function expression</em> (<code>function baz()..</code>) which has a lexical name identifier <code>baz</code> in addition to being attached to a <code>.baz</code> property.</p>
+<p>So what? In the <em>&quot;Scope &amp; Closures&quot;</em> title of this <em>&quot;You Don&apos;t Know JS&quot;</em> book series, we cover the three main downsides of <em>anonymous function expressions</em> in detail. We&apos;ll just briefly repeat them so we can compare to the concise method short-hand.</p>
+<p>Lack of a <code>name</code> identifier on an anonymous function:</p>
+<ol>
+<li>makes debugging stack traces harder</li>
+<li>makes self-referencing (recursion, event (un)binding, etc) harder</li>
+<li>makes code (a little bit) harder to understand</li>
+</ol>
+<p>Items 1 and 3 don&apos;t apply to concise methods.</p>
+<p>Even though the de-sugaring uses an <em>anonymous function expression</em> which normally would have no <code>name</code> in stack traces, concise methods are specified to set the internal <code>name</code> property of the function object accordingly, so stack traces should be able to use it (though that&apos;s implementation dependent so not guaranteed).</p>
+<p>Item 2 is, unfortunately, <strong>still a drawback to concise methods</strong>. They will not have a lexical identifier to use as a self-reference. Consider:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Foo <span class="token operator">=</span> <span class="token punctuation">{</span>
+    bar<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> Foo<span class="token punctuation">.</span><span class="token function">bar</span><span class="token punctuation">(</span> x <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    baz<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">baz</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">baz</span><span class="token punctuation">(</span> x <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The manual <code>Foo.bar(x*2)</code> reference above kind of suffices in this example, but there are many cases where a function wouldn&apos;t necessarily be able to do that, such as cases where the function is being shared in delegation across different objects, using <code>this</code> binding, etc. You would want to use a real self-reference, and the function object&apos;s <code>name</code> identifier is the best way to accomplish that.</p>
+<p>Just be aware of this caveat for concise methods, and if you run into such issues with lack of self-reference, make sure to forgo the concise method syntax <strong>just for that declaration</strong> in favor of the manual <em>named function expression</em> declaration form: <code>baz: function baz(){..}</code>.</p>
+<h2 id="introspection"><a name="introspection" class="anchor-navigation-ex-anchor" href="#introspection"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. Introspection</h2>
+<p>If you&apos;ve spent much time with class oriented programming (either in JS or other languages), you&apos;re probably familiar with <em>type introspection</em>: inspecting an instance to find out what <em>kind</em> of object it is. The primary goal of <em>type introspection</em> with class instances is to reason about the structure/capabilities of the object based on <em>how it was created</em>.</p>
+<p>Consider this code which uses <code>instanceof</code> (see Chapter 5) for introspecting on an object <code>a1</code> to infer its capability:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+Foo<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">something</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> a1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// later</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a1 <span class="token keyword">instanceof</span> <span class="token class-name">Foo</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a1<span class="token punctuation">.</span><span class="token function">something</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Because <code>Foo.prototype</code> (not <code>Foo</code>!) is in the <code>[[Prototype]]</code> chain (see Chapter 5) of <code>a1</code>, the <code>instanceof</code> operator (confusingly) pretends to tell us that <code>a1</code> is an instance of the <code>Foo</code> &quot;class&quot;. With this knowledge, we then assume that <code>a1</code> has the capabilities described by the <code>Foo</code> &quot;class&quot;.</p>
+<p>Of course, there is no <code>Foo</code> class, only a plain old normal function <code>Foo</code>, which happens to have a reference to an arbitrary object (<code>Foo.prototype</code>) that <code>a1</code> happens to be delegation-linked to. By its syntax, <code>instanceof</code> pretends to be inspecting the relationship between <code>a1</code> and <code>Foo</code>, but it&apos;s actually telling us whether <code>a1</code> and (the arbitrary object referenced by) <code>Foo.prototype</code> are related.</p>
+<p>The semantic confusion (and indirection) of <code>instanceof</code> syntax means that to use <code>instanceof</code>-based introspection to ask if object <code>a1</code> is related to the capabilities object in question, you <em>have to</em> have a function that holds a reference to that object -- you can&apos;t just directly ask if the two objects are related.</p>
+<p>Recall the abstract <code>Foo</code> / <code>Bar</code> / <code>b1</code> example from earlier in this chapter, which we&apos;ll abbreviate here:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">Foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* .. */</span> <span class="token punctuation">}</span>
+Foo<span class="token punctuation">.</span>prototype<span class="token operator">...</span>
+
+<span class="token keyword">function</span> <span class="token function">Bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* .. */</span> <span class="token punctuation">}</span>
+Bar<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Foo<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bar</span><span class="token punctuation">(</span> <span class="token string">&quot;b1&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>For <em>type introspection</em> purposes on the entities in that example, using <code>instanceof</code> and <code>.prototype</code> semantics, here are the various checks you might need to perform:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// relating `Foo` and `Bar` to each other</span>
+Bar<span class="token punctuation">.</span>prototype <span class="token keyword">instanceof</span> <span class="token class-name">Foo</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span> Bar<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span> <span class="token operator">===</span> Foo<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment">// true</span>
+Foo<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">isPrototypeOf</span><span class="token punctuation">(</span> Bar<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+<span class="token comment">// relating `b1` to both `Foo` and `Bar`</span>
+b1 <span class="token keyword">instanceof</span> <span class="token class-name">Foo</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+b1 <span class="token keyword">instanceof</span> <span class="token class-name">Bar</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span> b1 <span class="token punctuation">)</span> <span class="token operator">===</span> Bar<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment">// true</span>
+Foo<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">isPrototypeOf</span><span class="token punctuation">(</span> b1 <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Bar<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">isPrototypeOf</span><span class="token punctuation">(</span> b1 <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre>
+<p>It&apos;s fair to say that some of that kinda sucks. For instance, intuitively (with classes) you might want to be able to say something like <code>Bar instanceof Foo</code> (because it&apos;s easy to mix up what &quot;instance&quot; means to think it includes &quot;inheritance&quot;), but that&apos;s not a sensible comparison in JS. You have to do <code>Bar.prototype instanceof Foo</code> instead.</p>
+<p>Another common, but perhaps less robust, pattern for <em>type introspection</em>, which many devs seem to prefer over <code>instanceof</code>, is called &quot;duck typing&quot;. This term comes from the adage, &quot;if it looks like a duck, and it quacks like a duck, it must be a duck&quot;.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>a1<span class="token punctuation">.</span>something<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a1<span class="token punctuation">.</span><span class="token function">something</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Rather than inspecting for a relationship between <code>a1</code> and an object that holds the delegatable <code>something()</code> function, we assume that the test for <code>a1.something</code> passing means <code>a1</code> has the capability to call <code>.something()</code> (regardless of if it found the method directly on <code>a1</code> or delegated to some other object). In and of itself, that assumption isn&apos;t so risky.</p>
+<p>But &quot;duck typing&quot; is often extended to make <strong>other assumptions about the object&apos;s capabilities</strong> besides what&apos;s being tested, which of course introduces more risk (aka, brittle design) into the test.</p>
+<p>One notable example of &quot;duck typing&quot; comes with ES6 Promises (which as an earlier note explained are not being covered in this book).</p>
+<p>For various reasons, there&apos;s a need to determine if any arbitrary object reference <em>is a Promise</em>, but the way that test is done is to check if the object happens to have a <code>then()</code> function present on it. In other words, <strong>if any object</strong> happens to have a <code>then()</code> method, ES6 Promises will assume unconditionally that the object <strong>is a &quot;thenable&quot;</strong> and therefore will expect it to behave conformantly to all standard behaviors of Promises.</p>
+<p>If you have any non-Promise object that happens for whatever reason to have a <code>then()</code> method on it, you are strongly advised to keep it far away from the ES6 Promise mechanism to avoid broken assumptions.</p>
+<p>That example clearly illustrates the perils of &quot;duck typing&quot;. You should only use such approaches sparingly and in controlled conditions.</p>
+<p>Turning our attention once again back to OLOO-style code as presented here in this chapter, <em>type introspection</em> turns out to be much cleaner. Let&apos;s recall (and abbreviate) the <code>Foo</code> / <code>Bar</code> / <code>b1</code> OLOO example from earlier in the chapter:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> Foo <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">/* .. */</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> Bar <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Foo <span class="token punctuation">)</span><span class="token punctuation">;</span>
+Bar<span class="token operator">...</span>
+
+<span class="token keyword">var</span> b1 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span> Bar <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Using this OLOO approach, where all we have are plain objects that are related via <code>[[Prototype]]</code> delegation, here&apos;s the quite simplified <em>type introspection</em> we might use:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// relating `Foo` and `Bar` to each other</span>
+Foo<span class="token punctuation">.</span><span class="token function">isPrototypeOf</span><span class="token punctuation">(</span> Bar <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span> Bar <span class="token punctuation">)</span> <span class="token operator">===</span> Foo<span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+<span class="token comment">// relating `b1` to both `Foo` and `Bar`</span>
+Foo<span class="token punctuation">.</span><span class="token function">isPrototypeOf</span><span class="token punctuation">(</span> b1 <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Bar<span class="token punctuation">.</span><span class="token function">isPrototypeOf</span><span class="token punctuation">(</span> b1 <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span> b1 <span class="token punctuation">)</span> <span class="token operator">===</span> Bar<span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre>
+<p>We&apos;re not using <code>instanceof</code> anymore, because it&apos;s confusingly pretending to have something to do with classes. Now, we just ask the (informally stated) question, &quot;are you <em>a</em> prototype of me?&quot; There&apos;s no more indirection necessary with stuff like <code>Foo.prototype</code> or the painfully verbose <code>Foo.prototype.isPrototypeOf(..)</code>.</p>
+<p>I think it&apos;s fair to say these checks are significantly less complicated/confusing than the previous set of introspection checks. <strong>Yet again, we see that OLOO is simpler than (but with all the same power of) class-style coding in JavaScript.</strong></p>
+<h2 id="review-tldr"><a name="review-tldr" class="anchor-navigation-ex-anchor" href="#review-tldr"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. Review (TL;DR)</h2>
+<p>Classes and inheritance are a design pattern you can <em>choose</em>, or <em>not choose</em>, in your software architecture. Most developers take for granted that classes are the only (proper) way to organize code, but here we&apos;ve seen there&apos;s another less-commonly talked about pattern that&apos;s actually quite powerful: <strong>behavior delegation</strong>.</p>
+<p>Behavior delegation suggests objects as peers of each other, which delegate amongst themselves, rather than parent and child class relationships. JavaScript&apos;s <code>[[Prototype]]</code> mechanism is, by its very designed nature, a behavior delegation mechanism. That means we can either choose to struggle to implement class mechanics on top of JS (see Chapters 4 and 5), or we can just embrace the natural state of <code>[[Prototype]]</code> as a delegation mechanism.</p>
+<p>When you design code with objects only, not only does it simplify the syntax you use, but it can actually lead to simpler code architecture design.</p>
+<p><strong>OLOO</strong> (objects-linked-to-other-objects) is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements <code>[[Prototype]]</code>-based behavior delegation.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch5.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 5: Prototypes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apA.html" class="navigation navigation-next " aria-label="Next page: Appendix A: ES6 class">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 6: Behavior Delegation","level":"1.5.7","depth":2,"next":{"title":"Appendix A: ES6 class","level":"1.5.8","depth":2,"path":"this & Object Prototypes/apA.md","ref":"this & Object Prototypes/apA.md","articles":[]},"previous":{"title":"Chapter 5: Prototypes","level":"1.5.6","depth":2,"path":"this & Object Prototypes/ch5.md","ref":"this & Object Prototypes/ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-sharing","-livereload","-search","search-plus","anchor-navigation-ex","splitter","prism","theme-comscore","livereload"],"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-plus":{},"splitter":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"this & Object Prototypes/ch6.md","mtime":"2018-09-23T00:16:07.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-23T02:41:01.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

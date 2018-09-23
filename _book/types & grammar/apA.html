@@ -1,0 +1,1298 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: Mixed Environment JavaScript · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apB.html" />
+    
+    
+    <link rel="prev" href="ch5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up & going/toc.html">
+            
+                <a href="../up & going/toc.html">
+            
+                    
+                    Up & Going
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up & going/foreword.html">
+            
+                <a href="../up & going/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up & going/ch1.html">
+            
+                <a href="../up & going/ch1.html">
+            
+                    
+                    Chapter 1: Into Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up & going/ch2.html">
+            
+                <a href="../up & going/ch2.html">
+            
+                    
+                    Chapter 2: Into JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up & going/ch3.html">
+            
+                <a href="../up & going/ch3.html">
+            
+                    
+                    Chapter 3: Into YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up & going/apA.html">
+            
+                <a href="../up & going/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Scope & Closures/toc.html">
+            
+                <a href="../Scope & Closures/toc.html">
+            
+                    
+                    Scope & Closures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Scope & Closures/ch1.html">
+            
+                <a href="../Scope & Closures/ch1.html">
+            
+                    
+                    Chapter 1: What is Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Scope & Closures/ch2.html">
+            
+                <a href="../Scope & Closures/ch2.html">
+            
+                    
+                    Chapter 2: Lexical Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Scope & Closures/ch3.html">
+            
+                <a href="../Scope & Closures/ch3.html">
+            
+                    
+                    Chapter 3: Function vs. Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Scope & Closures/ch4.html">
+            
+                <a href="../Scope & Closures/ch4.html">
+            
+                    
+                    Chapter 4: Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Scope & Closures/ch5.html">
+            
+                <a href="../Scope & Closures/ch5.html">
+            
+                    
+                    Chapter 5: Scope Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Scope & Closures/apA.html">
+            
+                <a href="../Scope & Closures/apA.html">
+            
+                    
+                    Appendix A: Dynamic Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Scope & Closures/apB.html">
+            
+                <a href="../Scope & Closures/apB.html">
+            
+                    
+                    Appendix B: Polyfilling Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Scope & Closures/apC.html">
+            
+                <a href="../Scope & Closures/apC.html">
+            
+                    
+                    Appendix C: Lexical-this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Scope & Closures/apD.html">
+            
+                <a href="../Scope & Closures/apD.html">
+            
+                    
+                    Appendix D: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../this & Object Prototypes/toc.html">
+            
+                <a href="../this & Object Prototypes/toc.html">
+            
+                    
+                    this & Object Prototypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../this & Object Prototypes/foreword.html">
+            
+                <a href="../this & Object Prototypes/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../this & Object Prototypes/ch1.html">
+            
+                <a href="../this & Object Prototypes/ch1.html">
+            
+                    
+                    Chapter 1: this Or That?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../this & Object Prototypes/ch2.html">
+            
+                <a href="../this & Object Prototypes/ch2.html">
+            
+                    
+                    Chapter 2: this All Makes Sense Now!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../this & Object Prototypes/ch3.html">
+            
+                <a href="../this & Object Prototypes/ch3.html">
+            
+                    
+                    Chapter 3: Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../this & Object Prototypes/ch4.html">
+            
+                <a href="../this & Object Prototypes/ch4.html">
+            
+                    
+                    Chapter 4: Mixing (Up) "Class" Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../this & Object Prototypes/ch5.html">
+            
+                <a href="../this & Object Prototypes/ch5.html">
+            
+                    
+                    Chapter 5: Prototypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../this & Object Prototypes/ch6.html">
+            
+                <a href="../this & Object Prototypes/ch6.html">
+            
+                    
+                    Chapter 6: Behavior Delegation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../this & Object Prototypes/apA.html">
+            
+                <a href="../this & Object Prototypes/apA.html">
+            
+                    
+                    Appendix A: ES6 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../this & Object Prototypes/apB.html">
+            
+                <a href="../this & Object Prototypes/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    Types & Grammar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="foreword.html">
+            
+                <a href="foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Values
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Natives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Coercion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.7" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Mixed Environment JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Async & Performance/toc.html">
+            
+                <a href="../Async & Performance/toc.html">
+            
+                    
+                    Async & Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Async & Performance/foreword.html">
+            
+                <a href="../Async & Performance/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Async & Performance/ch1.html">
+            
+                <a href="../Async & Performance/ch1.html">
+            
+                    
+                    Chapter 1: Asynchrony: Now & Later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Async & Performance/ch2.html">
+            
+                <a href="../Async & Performance/ch2.html">
+            
+                    
+                    Chapter 2: Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Async & Performance/ch3.html">
+            
+                <a href="../Async & Performance/ch3.html">
+            
+                    
+                    Chapter 3: Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Async & Performance/ch4.html">
+            
+                <a href="../Async & Performance/ch4.html">
+            
+                    
+                    Chapter 4: Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Async & Performance/ch5.html">
+            
+                <a href="../Async & Performance/ch5.html">
+            
+                    
+                    Chapter 5: Program Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Async & Performance/ch6.html">
+            
+                <a href="../Async & Performance/ch6.html">
+            
+                    
+                    Chapter 6: Benchmarking & Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../Async & Performance/apA.html">
+            
+                <a href="../Async & Performance/apA.html">
+            
+                    
+                    Appendix A: Library: asynquence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../Async & Performance/apB.html">
+            
+                <a href="../Async & Performance/apB.html">
+            
+                    
+                    Appendix B: Advanced Async Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../Async & Performance/apC.html">
+            
+                <a href="../Async & Performance/apC.html">
+            
+                    
+                    Appendix C: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ES6 & Beyond/toc.html">
+            
+                <a href="../ES6 & Beyond/toc.html">
+            
+                    
+                    ES6 & Beyond
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../ES6 & Beyond/foreword.html">
+            
+                <a href="../ES6 & Beyond/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../ES6 & Beyond/ch1.html">
+            
+                <a href="../ES6 & Beyond/ch1.html">
+            
+                    
+                    Chapter 1: ES? Now & Future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ES6 & Beyond/ch2.html">
+            
+                <a href="../ES6 & Beyond/ch2.html">
+            
+                    
+                    Chapter 2: Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../ES6 & Beyond/ch3.html">
+            
+                <a href="../ES6 & Beyond/ch3.html">
+            
+                    
+                    Chapter 3: Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../ES6 & Beyond/ch4.html">
+            
+                <a href="../ES6 & Beyond/ch4.html">
+            
+                    
+                    Chapter 4: Async Flow Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../ES6 & Beyond/ch5.html">
+            
+                <a href="../ES6 & Beyond/ch5.html">
+            
+                    
+                    Chapter 5: Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../ES6 & Beyond/ch6.html">
+            
+                <a href="../ES6 & Beyond/ch6.html">
+            
+                    
+                    Chapter 6: API Additions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../ES6 & Beyond/ch7.html">
+            
+                <a href="../ES6 & Beyond/ch7.html">
+            
+                    
+                    Chapter 7: Meta Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../ES6 & Beyond/ch8.html">
+            
+                <a href="../ES6 & Beyond/ch8.html">
+            
+                    
+                    Chapter 8: Beyond ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../ES6 & Beyond/apA.html">
+            
+                <a href="../ES6 & Beyond/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Appendix A: Mixed Environment JavaScript</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#you-dont-know-js-types--grammar"><b>1. </b>You Don&apos;t Know JS: Types &amp; Grammar</a></li><li><span class="title-icon "></span><a href="#appendix-a-mixed-environment-javascript"><b>2. </b>Appendix A: Mixed Environment JavaScript</a></li><ul><li><span class="title-icon "></span><a href="#annex-b-ecmascript"><b>2.1. </b>Annex B (ECMAScript)</a></li><ul><li><span class="title-icon "></span><a href="#web-ecmascript"><b>2.1.1. </b>Web ECMAScript</a></li></ul><li><span class="title-icon "></span><a href="#host-objects"><b>2.2. </b>Host Objects</a></li><li><span class="title-icon "></span><a href="#global-dom-variables"><b>2.3. </b>Global DOM Variables</a></li><li><span class="title-icon "></span><a href="#native-prototypes"><b>2.4. </b>Native Prototypes</a></li><ul><li><span class="title-icon "></span><a href="#shimspolyfills"><b>2.4.1. </b>Shims/Polyfills</a></li></ul><li><span class="title-icon "></span><a href="#scripts"><b>2.5. </b><script>s</a></li><li><span class='title-icon '></span><a href='#reserved-words'><b>2.6. </b>Reserved Words</a></li><li><span class='title-icon '></span><a href='#implementation-limits'><b>2.7. </b>Implementation Limits</a></li><li><span class='title-icon '></span><a href='#review'><b>2.8. </b>Review</a></li></ul></ul></div><a href='#you-dont-know-js-types--grammar' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a><h1 id="you-dont-know-js-types--grammar"><a name="you-dont-know-js-types--grammar" class="anchor-navigation-ex-anchor" href="#you-dont-know-js-types--grammar"><i class="fa fa-link" aria-hidden="true"></i></a>1. You Don&apos;t Know JS: Types &amp; Grammar</h1>
+<h1 id="appendix-a-mixed-environment-javascript"><a name="appendix-a-mixed-environment-javascript" class="anchor-navigation-ex-anchor" href="#appendix-a-mixed-environment-javascript"><i class="fa fa-link" aria-hidden="true"></i></a>2. Appendix A: Mixed Environment JavaScript</h1>
+<p>Beyond the core language mechanics we&apos;ve fully explored in this book, there are several ways that your JS code can behave differently when it runs in the real world. If JS was executing purely inside an engine, it&apos;d be entirely predictable based on nothing but the black-and-white of the spec. But JS pretty much always runs in the context of a hosting environment, which exposes your code to some degree of unpredictability.</p>
+<p>For example, when your code runs alongside code from other sources, or when your code runs in different types of JS engines (not just browsers), there are some things that may behave differently.</p>
+<p>We&apos;ll briefly explore some of these concerns.</p>
+<h2 id="annex-b-ecmascript"><a name="annex-b-ecmascript" class="anchor-navigation-ex-anchor" href="#annex-b-ecmascript"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Annex B (ECMAScript)</h2>
+<p>It&apos;s a little known fact that the official name of the language is ECMAScript (referring to the ECMA standards body that manages it). What then is &quot;JavaScript&quot;? JavaScript is the common tradename of the language, of course, but more appropriately, JavaScript is basically the browser implementation of the spec.</p>
+<p>The official ECMAScript specification includes &quot;Annex B,&quot; which discusses specific deviations from the official spec for the purposes of JS compatibility in browsers.</p>
+<p>The proper way to consider these deviations is that they are only reliably present/valid if your code is running in a browser. If your code always runs in browsers, you won&apos;t see any observable difference. If not (like if it can run in node.js, Rhino, etc.), or you&apos;re not sure, tread carefully.</p>
+<p>The main compatibility differences:</p>
+<ul>
+<li>Octal number literals are allowed, such as <code>0123</code> (decimal <code>83</code>) in non-<code>strict mode</code>.</li>
+<li><code>window.escape(..)</code> and <code>window.unescape(..)</code> allow you to escape or unescape strings with <code>%</code>-delimited hexadecimal escape sequences. For example: <code>window.escape( &quot;?foo=97%&amp;bar=3%&quot; )</code> produces <code>&quot;%3Ffoo%3D97%25%26bar%3D3%25&quot;</code>.</li>
+<li><code>String.prototype.substr</code> is quite similar to <code>String.prototype.substring</code>, except that instead of the second parameter being the ending index (noninclusive), the second parameter is the <code>length</code> (number of characters to include).</li>
+</ul>
+<h3 id="web-ecmascript"><a name="web-ecmascript" class="anchor-navigation-ex-anchor" href="#web-ecmascript"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. Web ECMAScript</h3>
+<p>The Web ECMAScript specification (<a href="http://javascript.spec.whatwg.org/">http://javascript.spec.whatwg.org/</a>) covers the differences between the official ECMAScript specification and the current JavaScript implementations in browsers.</p>
+<p>In other words, these items are &quot;required&quot; of browsers (to be compatible with each other) but are not (as of the time of writing) listed in the &quot;Annex B&quot; section of the official spec:</p>
+<ul>
+<li><code>&lt;!--</code> and <code>--&gt;</code> are valid single-line comment delimiters.</li>
+<li><code>String.prototype</code> additions for returning HTML-formatted strings: <code>anchor(..)</code>, <code>big(..)</code>, <code>blink(..)</code>, <code>bold(..)</code>, <code>fixed(..)</code>, <code>fontcolor(..)</code>, <code>fontsize(..)</code>, <code>italics(..)</code>, <code>link(..)</code>, <code>small(..)</code>, <code>strike(..)</code>, and <code>sub(..)</code>. <strong>Note:</strong> These are very rarely used in practice, and are generally discouraged in favor of other built-in DOM APIs or user-defined utilities.</li>
+<li><code>RegExp</code> extensions: <code>RegExp.$1</code> .. <code>RegExp.$9</code> (match-groups) and <code>RegExp.lastMatch</code>/<code>RegExp[&quot;$&amp;&quot;]</code> (most recent match).</li>
+<li><code>Function.prototype</code> additions: <code>Function.prototype.arguments</code> (aliases internal <code>arguments</code> object) and <code>Function.caller</code> (aliases internal <code>arguments.caller</code>). <strong>Note:</strong> <code>arguments</code> and thus <code>arguments.caller</code> are deprecated, so you should avoid using them if possible. That goes doubly so for these aliases -- don&apos;t use them!</li>
+</ul>
+<p><strong>Note:</strong> Some other minor and rarely used deviations are not included in our list here. See the external &quot;Annex B&quot; and &quot;Web ECMAScript&quot; documents for more detailed information as needed.</p>
+<p>Generally speaking, all these differences are rarely used, so the deviations from the specification are not significant concerns. <strong>Just be careful</strong> if you rely on any of them.</p>
+<h2 id="host-objects"><a name="host-objects" class="anchor-navigation-ex-anchor" href="#host-objects"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Host Objects</h2>
+<p>The well-covered rules for how variables behave in JS have exceptions to them when it comes to variables that are auto-defined, or otherwise created and provided to JS by the environment that hosts your code (browser, etc.) -- so called, &quot;host objects&quot; (which include both built-in <code>object</code>s and <code>function</code>s).</p>
+<p>For example:</p>
+<pre><code class="lang-js">var a = document.createElement( &quot;div&quot; );
+
+typeof a;                                // &quot;object&quot; -- as expected
+Object.prototype.toString.call( a );    // &quot;[object HTMLDivElement]&quot;
+
+a.tagName;                                // &quot;DIV&quot;
+</code></pre>
+<p><code>a</code> is not just an <code>object</code>, but a special host object because it&apos;s a DOM element. It has a different internal <code>[[Class]]</code> value (<code>&quot;HTMLDivElement&quot;</code>) and comes with predefined (and often unchangeable) properties.</p>
+<p>Another such quirk has already been covered, in the &quot;Falsy Objects&quot; section in Chapter 4: some objects can exist but when coerced to <code>boolean</code> they (confoundingly) will coerce to <code>false</code> instead of the expected <code>true</code>.</p>
+<p>Other behavior variations with host objects to be aware of can include:</p>
+<ul>
+<li>not having access to normal <code>object</code> built-ins like <code>toString()</code></li>
+<li>not being overwritable</li>
+<li>having certain predefined read-only properties</li>
+<li>having methods that cannot be <code>this</code>-overriden to other objects</li>
+<li>and more...</li>
+</ul>
+<p>Host objects are critical to making our JS code work with its surrounding environment. But it&apos;s important to note when you&apos;re interacting with a host object and be careful assuming its behaviors, as they will quite often not conform to regular JS <code>object</code>s.</p>
+<p>One notable example of a host object that you probably interact with regularly is the <code>console</code> object and its various functions (<code>log(..)</code>, <code>error(..)</code>, etc.). The <code>console</code> object is provided by the <em>hosting environment</em> specifically so your code can interact with it for various development-related output tasks.</p>
+<p>In browsers, <code>console</code> hooks up to the developer tools&apos; console display, whereas in node.js and other server-side JS environments, <code>console</code> is generally connected to the standard-output (<code>stdout</code>) and standard-error (<code>stderr</code>) streams of the JavaScript environment system process.</p>
+<h2 id="global-dom-variables"><a name="global-dom-variables" class="anchor-navigation-ex-anchor" href="#global-dom-variables"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Global DOM Variables</h2>
+<p>You&apos;re probably aware that declaring a variable in the global scope (with or without <code>var</code>) creates not only a global variable, but also its mirror: a property of the same name on the <code>global</code> object (<code>window</code> in the browser).</p>
+<p>But what may be less common knowledge is that (because of legacy browser behavior) creating DOM elements with <code>id</code> attributes creates global variables of those same names. For example:</p>
+<pre><code class="lang-html">&lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p>And:</p>
+<pre><code class="lang-js">if (typeof foo == &quot;undefined&quot;) {
+    foo = 42;        // will never run
+}
+
+console.log( foo );    // HTML element
+</code></pre>
+<p>You&apos;re perhaps used to managing global variable tests (using <code>typeof</code> or <code>.. in window</code> checks) under the assumption that only JS code creates such variables, but as you can see, the contents of your hosting HTML page can also create them, which can easily throw off your existence check logic if you&apos;re not careful.</p>
+<p>This is yet one more reason why you should, if at all possible, avoid using global variables, and if you have to, use variables with unique names that won&apos;t likely collide. But you also need to make sure not to collide with the HTML content as well as any other code.</p>
+<h2 id="native-prototypes"><a name="native-prototypes" class="anchor-navigation-ex-anchor" href="#native-prototypes"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Native Prototypes</h2>
+<p>One of the most widely known and classic pieces of JavaScript <em>best practice</em> wisdom is: <strong>never extend native prototypes</strong>.</p>
+<p>Whatever method or property name you come up with to add to <code>Array.prototype</code> that doesn&apos;t (yet) exist, if it&apos;s a useful addition and well-designed, and properly named, there&apos;s a strong chance it <em>could</em> eventually end up being added to the spec -- in which case your extension is now in conflict.</p>
+<p>Here&apos;s a real example that actually happened to me that illustrates this point well.</p>
+<p>I was building an embeddable widget for other websites, and my widget relied on jQuery (though pretty much any framework would have suffered this gotcha). It worked on almost every site, but we ran across one where it was totally broken.</p>
+<p>After almost a week of analysis/debugging, I found that the site in question had, buried deep in one of its legacy files, code that looked like this:</p>
+<pre><code class="lang-js">// Netscape 4 doesn&apos;t have Array.push
+Array.prototype.push = function(item) {
+    this[this.length] = item;
+};
+</code></pre>
+<p>Aside from the crazy comment (who cares about Netscape 4 anymore!?), this looks reasonable, right?</p>
+<p>The problem is, <code>Array.prototype.push</code> was added to the spec sometime subsequent to this Netscape 4 era coding, but what was added is not compatible with this code. The standard <code>push(..)</code> allows multiple items to be pushed at once. This hacked one ignores the subsequent items.</p>
+<p>Basically all JS frameworks have code that relies on <code>push(..)</code> with multiple elements. In my case, it was code around the CSS selector engine that was completely busted. But there could conceivably be dozens of other places susceptible.</p>
+<p>The developer who originally wrote that <code>push(..)</code> hack had the right instinct to call it <code>push</code>, but didn&apos;t foresee pushing multiple elements. They were certainly acting in good faith, but they created a landmine that didn&apos;t go off until almost 10 years later when I unwittingly came along.</p>
+<p>There&apos;s multiple lessons to take away on all sides.</p>
+<p>First, don&apos;t extend the natives unless you&apos;re absolutely sure your code is the only code that will ever run in that environment. If you can&apos;t say that 100%, then extending the natives is dangerous. You must weigh the risks.</p>
+<p>Next, don&apos;t unconditionally define extensions (because you can overwrite natives accidentally). In this particular example, had the code said this:</p>
+<pre><code class="lang-js">if (!Array.prototype.push) {
+    // Netscape 4 doesn&apos;t have Array.push
+    Array.prototype.push = function(item) {
+        this[this.length] = item;
+    };
+}
+</code></pre>
+<p>The <code>if</code> statement guard would have only defined this hacked <code>push()</code> for JS environments where it didn&apos;t exist. In my case, that probably would have been OK. But even this approach is not without risk:</p>
+<ol>
+<li>If the site&apos;s code (for some crazy reason!) was relying on a <code>push(..)</code> that ignored multiple items, that code would have been broken years ago when the standard <code>push(..)</code> was rolled out.</li>
+<li>If any other library had come in and hacked in a <code>push(..)</code> ahead of this <code>if</code> guard, and it did so in an incompatible way, that would have broken the site at that time.</li>
+</ol>
+<p>What that highlights is an interesting question that, frankly, doesn&apos;t get enough attention from JS developers: <strong>Should you EVER rely on native built-in behavior</strong> if your code is running in any environment where it&apos;s not the only code present?</p>
+<p>The strict answer is <strong>no</strong>, but that&apos;s awfully impractical. Your code usually can&apos;t redefine its own private untouchable versions of all built-in behavior relied on. Even if you <em>could</em>, that&apos;s pretty wasteful.</p>
+<p>So, should you feature-test for the built-in behavior as well as compliance-testing that it does what you expect? And what if that test fails -- should your code just refuse to run?</p>
+<pre><code class="lang-js">// don&apos;t trust Array.prototype.push
+(function(){
+    if (Array.prototype.push) {
+        var a = [];
+        a.push(1,2);
+        if (a[0] === 1 &amp;&amp; a[1] === 2) {
+            // tests passed, safe to use!
+            return;
+        }
+    }
+
+    throw Error(
+        &quot;Array#push() is missing/broken!&quot;
+    );
+})();
+</code></pre>
+<p>In theory, that sounds plausible, but it&apos;s also pretty impractical to design tests for every single built-in method.</p>
+<p>So, what should we do? Should we <em>trust but verify</em> (feature- and compliance-test) <strong>everything</strong>? Should we just assume existence is compliance and let breakage (caused by others) bubble up as it will?</p>
+<p>There&apos;s no great answer. The only fact that can be observed is that extending native prototypes is the only way these things bite you.</p>
+<p>If you don&apos;t do it, and no one else does in the code in your application, you&apos;re safe. Otherwise, you should build in at least a little bit of skepticism, pessimism, and expectation of possible breakage.</p>
+<p>Having a full set of unit/regression tests of your code that runs in all known environments is one way to surface some of these issues earlier, but it doesn&apos;t do anything to actually protect you from these conflicts.</p>
+<h3 id="shimspolyfills"><a name="shimspolyfills" class="anchor-navigation-ex-anchor" href="#shimspolyfills"><i class="fa fa-link" aria-hidden="true"></i></a>2.4.1. Shims/Polyfills</h3>
+<p>It&apos;s usually said that the only safe place to extend a native is in an older (non-spec-compliant) environment, since that&apos;s unlikely to ever change -- new browsers with new spec features replace older browsers rather than amending them.</p>
+<p>If you could see into the future, and know for sure what a future standard was going to be, like for <code>Array.prototype.foobar</code>, it&apos;d be totally safe to make your own compatible version of it to use now, right?</p>
+<pre><code class="lang-js">if (!Array.prototype.foobar) {
+    // silly, silly
+    Array.prototype.foobar = function() {
+        this.push( &quot;foo&quot;, &quot;bar&quot; );
+    };
+}
+</code></pre>
+<p>If there&apos;s already a spec for <code>Array.prototype.foobar</code>, and the specified behavior is equal to this logic, you&apos;re pretty safe in defining such a snippet, and in that case it&apos;s generally called a &quot;polyfill&quot; (or &quot;shim&quot;).</p>
+<p>Such code is <strong>very</strong> useful to include in your code base to &quot;patch&quot; older browser environments that aren&apos;t updated to the newest specs. Using polyfills is a great way to create predictable code across all your supported environments.</p>
+<p><strong>Tip:</strong> ES5-Shim (<a href="https://github.com/es-shims/es5-shim">https://github.com/es-shims/es5-shim</a>) is a comprehensive collection of shims/polyfills for bringing a project up to ES5 baseline, and similarly, ES6-Shim (<a href="https://github.com/es-shims/es6-shim">https://github.com/es-shims/es6-shim</a>) provides shims for new APIs added as of ES6. While APIs can be shimmed/polyfilled, new syntax generally cannot. To bridge the syntactic divide, you&apos;ll want to also use an ES6-to-ES5 transpiler like Traceur (<a href="https://github.com/google/traceur-compiler/wiki/Getting-Started">https://github.com/google/traceur-compiler/wiki/Getting-Started</a>).</p>
+<p>If there&apos;s likely a coming standard, and most discussions agree what it&apos;s going to be called and how it will operate, creating the ahead-of-time polyfill for future-facing standards compliance is called &quot;prollyfill&quot; (probably-fill).</p>
+<p>The real catch is if some new standard behavior can&apos;t be (fully) polyfilled/prollyfilled.</p>
+<p>There&apos;s debate in the community if a partial-polyfill for the common cases is acceptable (documenting the parts that cannot be polyfilled), or if a polyfill should be avoided if it purely can&apos;t be 100% compliant to the spec.</p>
+<p>Many developers at least accept some common partial polyfills (like for instance <code>Object.create(..)</code>), because the parts that aren&apos;t covered are not parts they intend to use anyway.</p>
+<p>Some developers believe that the <code>if</code> guard around a polyfill/shim should include some form of conformance test, replacing the existing method either if it&apos;s absent or fails the tests. This extra layer of compliance testing is sometimes used to distinguish &quot;shim&quot; (compliance tested) from &quot;polyfill&quot; (existence checked).</p>
+<p>The only absolute take-away is that there is no absolute <em>right</em> answer here. Extending natives, even when done &quot;safely&quot; in older environments, is not 100% safe. The same goes for relying upon (possibly extended) natives in the presence of others&apos; code.</p>
+<p>Either should always be done with caution, defensive code, and lots of obvious documentation about the risks.</p>
+<h2 id="scripts"><a name="scripts" class="anchor-navigation-ex-anchor" href="#scripts"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. &lt;script&gt;s</h2>
+<p>Most browser-viewed websites/applications have more than one file that contains their code, and it&apos;s common to have a few or several <code>&lt;script src=..&gt;&lt;/script&gt;</code> elements in the page that load these files separately, and even a few inline-code <code>&lt;script&gt; .. &lt;/script&gt;</code> elements as well.</p>
+<p>But do these separate files/code snippets constitute separate programs or are they collectively one JS program?</p>
+<p>The (perhaps surprising) reality is they act more like independent JS programs in most, but not all, respects.</p>
+<p>The one thing they <em>share</em> is the single <code>global</code> object (<code>window</code> in the browser), which means multiple files can append their code to that shared namespace and they can all interact.</p>
+<p>So, if one <code>script</code> element defines a global function <code>foo()</code>, when a second <code>script</code> later runs, it can access and call <code>foo()</code> just as if it had defined the function itself.</p>
+<p>But global variable scope <em>hoisting</em> (see the <em>Scope &amp; Closures</em> title of this series) does not occur across these boundaries, so the following code would not work (because <code>foo()</code>&apos;s declaration isn&apos;t yet declared), regardless of if they are (as shown) inline <code>&lt;script&gt; .. &lt;/script&gt;</code> elements or externally loaded <code>&lt;script src=..&gt;&lt;/script&gt;</code> files:</p>
+<pre><code class="lang-html">&lt;script&gt;foo();&lt;/script&gt;
+
+&lt;script&gt;
+  function foo() { .. }
+&lt;/script&gt;
+</code></pre>
+<p>But either of these <em>would</em> work instead:</p>
+<pre><code class="lang-html">&lt;script&gt;
+  foo();
+  function foo() { .. }
+&lt;/script&gt;
+</code></pre>
+<p>Or:</p>
+<pre><code class="lang-html">&lt;script&gt;
+  function foo() { .. }
+&lt;/script&gt;
+
+&lt;script&gt;foo();&lt;/script&gt;
+</code></pre>
+<p>Also, if an error occurs in a <code>script</code> element (inline or external), as a separate standalone JS program it will fail and stop, but any subsequent <code>script</code>s will run (still with the shared <code>global</code>) unimpeded.</p>
+<p>You can create <code>script</code> elements dynamically from your code, and inject them into the DOM of the page, and the code in them will behave basically as if loaded normally in a separate file:</p>
+<pre><code class="lang-js">var greeting = &quot;Hello World&quot;;
+
+var el = document.createElement( &quot;script&quot; );
+
+el.text = &quot;function foo(){ alert( greeting );\
+ } setTimeout( foo, 1000 );&quot;;
+
+document.body.appendChild( el );
+</code></pre>
+<p><strong>Note:</strong> Of course, if you tried the above snippet but set <code>el.src</code> to some file URL instead of setting <code>el.text</code> to the code contents, you&apos;d be dynamically creating an externally loaded <code>&lt;script src=..&gt;&lt;/script&gt;</code> element.</p>
+<p>One difference between code in an inline code block and that same code in an external file is that in the inline code block, the sequence of characters <code>&lt;/script&gt;</code> cannot appear together, as (regardless of where it appears) it would be interpreted as the end of the code block. So, beware of code like:</p>
+<pre><code class="lang-html">&lt;script&gt;
+  var code = &quot;&lt;script&gt;alert( &apos;Hello World&apos; )&lt;/script&gt;&quot;;
+&lt;/script&gt;
+</code></pre>
+<p>It looks harmless, but the <code>&lt;/script&gt;</code> appearing inside the <code>string</code> literal will terminate the script block abnormally, causing an error. The most common workaround is:</p>
+<pre><code class="lang-js">&quot;&lt;/sc&quot; + &quot;ript&gt;&quot;;
+</code></pre>
+<p>Also, beware that code inside an external file will be interpreted in the character set (UTF-8, ISO-8859-8, etc.) the file is served with (or the default), but that same code in an inline <code>script</code> element in your HTML page will be interpreted by the character set of the page (or its default).</p>
+<p><strong>Warning:</strong> The <code>charset</code> attribute will not work on inline script elements.</p>
+<p>Another deprecated practice with inline <code>script</code> elements is including HTML-style or X(HT)ML-style comments around inline code, like:</p>
+<pre><code class="lang-html">&lt;script&gt;
+&lt;!--
+alert( &quot;Hello&quot; );
+//--&gt;
+&lt;/script&gt;
+
+&lt;script&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+alert( &quot;World&quot; );
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+</code></pre>
+<p>Both of these are totally unnecessary now, so if you&apos;re still doing that, stop it!</p>
+<p><strong>Note:</strong> Both <code>&lt;!--</code> and <code>--&gt;</code> (HTML-style comments) are actually specified as valid single-line comment delimiters (<code>var x = 2; &lt;!-- valid comment</code> and <code>--&gt; another valid line comment</code>) in JavaScript (see the &quot;Web ECMAScript&quot; section earlier), purely because of this old technique. But never use them.</p>
+<h2 id="reserved-words"><a name="reserved-words" class="anchor-navigation-ex-anchor" href="#reserved-words"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. Reserved Words</h2>
+<p>The ES5 spec defines a set of &quot;reserved words&quot; in Section 7.6.1 that cannot be used as standalone variable names. Technically, there are four categories: &quot;keywords&quot;, &quot;future reserved words&quot;, the <code>null</code> literal, and the <code>true</code> / <code>false</code> boolean literals.</p>
+<p>Keywords are the obvious ones like <code>function</code> and <code>switch</code>. Future reserved words include things like <code>enum</code>, though many of the rest of them (<code>class</code>, <code>extends</code>, etc.) are all now actually used by ES6; there are other strict-mode only reserved words like <code>interface</code>.</p>
+<p>StackOverflow user &quot;art4theSould&quot; creatively worked all these reserved words into a fun little poem (<a href="http://stackoverflow.com/questions/26255/reserved-keywords-in-javascript/12114140#12114140">http://stackoverflow.com/questions/26255/reserved-keywords-in-javascript/12114140#12114140</a>):</p>
+<blockquote>
+<p>Let this long package float,
+Goto private class if short.
+While protected with debugger case,
+Continue volatile interface.
+Instanceof super synchronized throw,
+Extends final export throws.</p>
+<p>Try import double enum?</p>
+<ul>
+<li>False, boolean, abstract function,
+Implements typeof transient break!
+Void static, default do,
+Switch int native new.
+Else, delete null public var
+In return for const, true, char
+&#x2026;Finally catch byte.</li>
+</ul>
+</blockquote>
+<p><strong>Note:</strong> This poem includes words that were reserved in ES3 (<code>byte</code>, <code>long</code>, etc.) that are no longer reserved as of ES5.</p>
+<p>Prior to ES5, the reserved words also could not be property names or keys in object literals, but that restriction no longer exists.</p>
+<p>So, this is not allowed:</p>
+<pre><code class="lang-js">var import = &quot;42&quot;;
+</code></pre>
+<p>But this is allowed:</p>
+<pre><code class="lang-js">var obj = { import: &quot;42&quot; };
+console.log( obj.import );
+</code></pre>
+<p>You should be aware though that some older browser versions (mainly older IE) weren&apos;t completely consistent on applying these rules, so there are places where using reserved words in object property name locations can still cause issues. Carefully test all supported browser environments.</p>
+<h2 id="implementation-limits"><a name="implementation-limits" class="anchor-navigation-ex-anchor" href="#implementation-limits"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. Implementation Limits</h2>
+<p>The JavaScript spec does not place arbitrary limits on things such as the number of arguments to a function or the length of a string literal, but these limits exist nonetheless, because of implementation details in different engines.</p>
+<p>For example:</p>
+<pre><code class="lang-js">function addAll() {
+    var sum = 0;
+    for (var i=0; i &lt; arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
+
+var nums = [];
+for (var i=1; i &lt; 100000; i++) {
+    nums.push(i);
+}
+
+addAll( 2, 4, 6 );                // 12
+addAll.apply( null, nums );        // should be: 499950000
+</code></pre>
+<p>In some JS engines, you&apos;ll get the correct <code>499950000</code> answer, but in others (like Safari 6.x), you&apos;ll get the error: &quot;RangeError: Maximum call stack size exceeded.&quot;</p>
+<p>Examples of other limits known to exist:</p>
+<ul>
+<li>maximum number of characters allowed in a string literal (not just a string value)</li>
+<li>size (bytes) of data that can be sent in arguments to a function call (aka stack size)</li>
+<li>number of parameters in a function declaration</li>
+<li>maximum depth of non-optimized call stack (i.e., with recursion): how long a chain of function calls from one to the other can be</li>
+<li>number of seconds a JS program can run continuously blocking the browser</li>
+<li>maximum length allowed for a variable name</li>
+<li>...</li>
+</ul>
+<p>It&apos;s not very common at all to run into these limits, but you should be aware that limits can and do exist, and importantly that they vary between engines.</p>
+<h2 id="review"><a name="review" class="anchor-navigation-ex-anchor" href="#review"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. Review</h2>
+<p>We know and can rely upon the fact that the JS language itself has one standard and is predictably implemented by all the modern browsers/engines. This is a very good thing!</p>
+<p>But JavaScript rarely runs in isolation. It runs in an environment mixed in with code from third-party libraries, and sometimes it even runs in engines/environments that differ from those found in browsers.</p>
+<p>Paying close attention to these issues improves the reliability and robustness of your code.</p>
+</script></a></li></ul></ul></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch5.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 5: Grammar">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apB.html" class="navigation navigation-next " aria-label="Next page: Appendix B: Thank You's!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: Mixed Environment JavaScript","level":"1.6.7","depth":2,"next":{"title":"Appendix B: Thank You's!","level":"1.6.8","depth":2,"path":"Types & Grammar/apB.md","ref":"Types & Grammar/apB.md","articles":[]},"previous":{"title":"Chapter 5: Grammar","level":"1.6.6","depth":2,"path":"Types & Grammar/ch5.md","ref":"Types & Grammar/ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-sharing","-livereload","-search","search-plus","anchor-navigation-ex","splitter","prism","theme-comscore","livereload"],"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-plus":{},"splitter":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Types & Grammar/apA.md","mtime":"2018-09-23T00:16:07.327Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-23T02:41:01.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

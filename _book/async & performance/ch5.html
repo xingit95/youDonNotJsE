@@ -1,0 +1,1263 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 5: Program Performance · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch6.html" />
+    
+    
+    <link rel="prev" href="ch4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up & going/toc.html">
+            
+                <a href="../up & going/toc.html">
+            
+                    
+                    Up & Going
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up & going/foreword.html">
+            
+                <a href="../up & going/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up & going/ch1.html">
+            
+                <a href="../up & going/ch1.html">
+            
+                    
+                    Chapter 1: Into Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up & going/ch2.html">
+            
+                <a href="../up & going/ch2.html">
+            
+                    
+                    Chapter 2: Into JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up & going/ch3.html">
+            
+                <a href="../up & going/ch3.html">
+            
+                    
+                    Chapter 3: Into YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up & going/apA.html">
+            
+                <a href="../up & going/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Scope & Closures/toc.html">
+            
+                <a href="../Scope & Closures/toc.html">
+            
+                    
+                    Scope & Closures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Scope & Closures/ch1.html">
+            
+                <a href="../Scope & Closures/ch1.html">
+            
+                    
+                    Chapter 1: What is Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Scope & Closures/ch2.html">
+            
+                <a href="../Scope & Closures/ch2.html">
+            
+                    
+                    Chapter 2: Lexical Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Scope & Closures/ch3.html">
+            
+                <a href="../Scope & Closures/ch3.html">
+            
+                    
+                    Chapter 3: Function vs. Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Scope & Closures/ch4.html">
+            
+                <a href="../Scope & Closures/ch4.html">
+            
+                    
+                    Chapter 4: Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Scope & Closures/ch5.html">
+            
+                <a href="../Scope & Closures/ch5.html">
+            
+                    
+                    Chapter 5: Scope Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Scope & Closures/apA.html">
+            
+                <a href="../Scope & Closures/apA.html">
+            
+                    
+                    Appendix A: Dynamic Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Scope & Closures/apB.html">
+            
+                <a href="../Scope & Closures/apB.html">
+            
+                    
+                    Appendix B: Polyfilling Block Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Scope & Closures/apC.html">
+            
+                <a href="../Scope & Closures/apC.html">
+            
+                    
+                    Appendix C: Lexical-this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Scope & Closures/apD.html">
+            
+                <a href="../Scope & Closures/apD.html">
+            
+                    
+                    Appendix D: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../this & Object Prototypes/toc.html">
+            
+                <a href="../this & Object Prototypes/toc.html">
+            
+                    
+                    this & Object Prototypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../this & Object Prototypes/foreword.html">
+            
+                <a href="../this & Object Prototypes/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../this & Object Prototypes/ch1.html">
+            
+                <a href="../this & Object Prototypes/ch1.html">
+            
+                    
+                    Chapter 1: this Or That?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../this & Object Prototypes/ch2.html">
+            
+                <a href="../this & Object Prototypes/ch2.html">
+            
+                    
+                    Chapter 2: this All Makes Sense Now!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../this & Object Prototypes/ch3.html">
+            
+                <a href="../this & Object Prototypes/ch3.html">
+            
+                    
+                    Chapter 3: Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../this & Object Prototypes/ch4.html">
+            
+                <a href="../this & Object Prototypes/ch4.html">
+            
+                    
+                    Chapter 4: Mixing (Up) "Class" Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../this & Object Prototypes/ch5.html">
+            
+                <a href="../this & Object Prototypes/ch5.html">
+            
+                    
+                    Chapter 5: Prototypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../this & Object Prototypes/ch6.html">
+            
+                <a href="../this & Object Prototypes/ch6.html">
+            
+                    
+                    Chapter 6: Behavior Delegation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../this & Object Prototypes/apA.html">
+            
+                <a href="../this & Object Prototypes/apA.html">
+            
+                    
+                    Appendix A: ES6 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../this & Object Prototypes/apB.html">
+            
+                <a href="../this & Object Prototypes/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Types & Grammar/toc.html">
+            
+                <a href="../Types & Grammar/toc.html">
+            
+                    
+                    Types & Grammar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Types & Grammar/foreword.html">
+            
+                <a href="../Types & Grammar/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Types & Grammar/ch1.html">
+            
+                <a href="../Types & Grammar/ch1.html">
+            
+                    
+                    Chapter 1: Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Types & Grammar/ch2.html">
+            
+                <a href="../Types & Grammar/ch2.html">
+            
+                    
+                    Chapter 2: Values
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Types & Grammar/ch3.html">
+            
+                <a href="../Types & Grammar/ch3.html">
+            
+                    
+                    Chapter 3: Natives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Types & Grammar/ch4.html">
+            
+                <a href="../Types & Grammar/ch4.html">
+            
+                    
+                    Chapter 4: Coercion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Types & Grammar/ch5.html">
+            
+                <a href="../Types & Grammar/ch5.html">
+            
+                    
+                    Chapter 5: Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Types & Grammar/apA.html">
+            
+                <a href="../Types & Grammar/apA.html">
+            
+                    
+                    Appendix A: Mixed Environment JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Types & Grammar/apB.html">
+            
+                <a href="../Types & Grammar/apB.html">
+            
+                    
+                    Appendix B: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    Async & Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="foreword.html">
+            
+                <a href="foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Asynchrony: Now & Later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Program Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Benchmarking & Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Library: asynquence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: Advanced Async Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ES6 & Beyond/toc.html">
+            
+                <a href="../ES6 & Beyond/toc.html">
+            
+                    
+                    ES6 & Beyond
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../ES6 & Beyond/foreword.html">
+            
+                <a href="../ES6 & Beyond/foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../ES6 & Beyond/ch1.html">
+            
+                <a href="../ES6 & Beyond/ch1.html">
+            
+                    
+                    Chapter 1: ES? Now & Future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ES6 & Beyond/ch2.html">
+            
+                <a href="../ES6 & Beyond/ch2.html">
+            
+                    
+                    Chapter 2: Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../ES6 & Beyond/ch3.html">
+            
+                <a href="../ES6 & Beyond/ch3.html">
+            
+                    
+                    Chapter 3: Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../ES6 & Beyond/ch4.html">
+            
+                <a href="../ES6 & Beyond/ch4.html">
+            
+                    
+                    Chapter 4: Async Flow Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../ES6 & Beyond/ch5.html">
+            
+                <a href="../ES6 & Beyond/ch5.html">
+            
+                    
+                    Chapter 5: Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../ES6 & Beyond/ch6.html">
+            
+                <a href="../ES6 & Beyond/ch6.html">
+            
+                    
+                    Chapter 6: API Additions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../ES6 & Beyond/ch7.html">
+            
+                <a href="../ES6 & Beyond/ch7.html">
+            
+                    
+                    Chapter 7: Meta Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../ES6 & Beyond/ch8.html">
+            
+                <a href="../ES6 & Beyond/ch8.html">
+            
+                    
+                    Chapter 8: Beyond ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../ES6 & Beyond/apA.html">
+            
+                <a href="../ES6 & Beyond/apA.html">
+            
+                    
+                    Appendix A: Thank You's!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 5: Program Performance</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#you-dont-know-js-async--performance"><b>1. </b>You Don&apos;t Know JS: Async &amp; Performance</a></li><li><span class="title-icon "></span><a href="#chapter-5-program-performance"><b>2. </b>Chapter 5: Program Performance</a></li><ul><li><span class="title-icon "></span><a href="#web-workers"><b>2.1. </b>Web Workers</a></li><ul><li><span class="title-icon "></span><a href="#worker-environment"><b>2.1.1. </b>Worker Environment</a></li><li><span class="title-icon "></span><a href="#data-transfer"><b>2.1.2. </b>Data Transfer</a></li><li><span class="title-icon "></span><a href="#shared-workers"><b>2.1.3. </b>Shared Workers</a></li><li><span class="title-icon "></span><a href="#polyfilling-web-workers"><b>2.1.4. </b>Polyfilling Web Workers</a></li></ul><li><span class="title-icon "></span><a href="#simd"><b>2.2. </b>SIMD</a></li><li><span class="title-icon "></span><a href="#asmjs"><b>2.3. </b>asm.js</a></li><ul><li><span class="title-icon "></span><a href="#how-to-optimize-with-asmjs"><b>2.3.1. </b>How to Optimize with asm.js</a></li><li><span class="title-icon "></span><a href="#asmjs-modules"><b>2.3.2. </b>asm.js Modules</a></li></ul><li><span class="title-icon "></span><a href="#review"><b>2.4. </b>Review</a></li></ul></ul></div><a href="#you-dont-know-js-async--performance" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="you-dont-know-js-async--performance"><a name="you-dont-know-js-async--performance" class="anchor-navigation-ex-anchor" href="#you-dont-know-js-async--performance"><i class="fa fa-link" aria-hidden="true"></i></a>1. You Don&apos;t Know JS: Async &amp; Performance</h1>
+<h1 id="chapter-5-program-performance"><a name="chapter-5-program-performance" class="anchor-navigation-ex-anchor" href="#chapter-5-program-performance"><i class="fa fa-link" aria-hidden="true"></i></a>2. Chapter 5: Program Performance</h1>
+<p>This book so far has been all about how to leverage asynchrony patterns more effectively. But we haven&apos;t directly addressed why asynchrony really matters to JS. The most obvious explicit reason is <strong>performance</strong>.</p>
+<p>For example, if you have two Ajax requests to make, and they&apos;re independent, but you need to wait on them both to finish before doing the next task, you have two options for modeling that interaction: serial and concurrent.</p>
+<p>You could make the first request and wait to start the second request until the first finishes. Or, as we&apos;ve seen both with promises and generators, you could make both requests &quot;in parallel,&quot; and express the &quot;gate&quot; to wait on both of them before moving on.</p>
+<p>Clearly, the latter is usually going to be more performant than the former. And better performance generally leads to better user experience.</p>
+<p>It&apos;s even possible that asynchrony (interleaved concurrency) can improve just the perception of performance, even if the overall program still takes the same amount of time to complete. User perception of performance is every bit -- if not more! -- as important as actual measurable performance.</p>
+<p>We want to now move beyond localized asynchrony patterns to talk about some bigger picture performance details at the program level.</p>
+<p><strong>Note:</strong> You may be wondering about micro-performance issues like if <code>a++</code> or <code>++a</code> is faster. We&apos;ll look at those sorts of performance details in the next chapter on &quot;Benchmarking &amp; Tuning.&quot;</p>
+<h2 id="web-workers"><a name="web-workers" class="anchor-navigation-ex-anchor" href="#web-workers"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Web Workers</h2>
+<p>If you have processing-intensive tasks but you don&apos;t want them to run on the main thread (which may slow down the browser/UI), you might have wished that JavaScript could operate in a multithreaded manner.</p>
+<p>In Chapter 1, we talked in detail about how JavaScript is single threaded. And that&apos;s still true. But a single thread isn&apos;t the only way to organize the execution of your program.</p>
+<p>Imagine splitting your program into two pieces, and running one of those pieces on the main UI thread, and running the other piece on an entirely separate thread.</p>
+<p>What kinds of concerns would such an architecture bring up?</p>
+<p>For one, you&apos;d want to know if running on a separate thread meant that it ran in parallel (on systems with multiple CPUs/cores) such that a long-running process on that second thread would <strong>not</strong> block the main program thread. Otherwise, &quot;virtual threading&quot; wouldn&apos;t be of much benefit over what we already have in JS with async concurrency.</p>
+<p>And you&apos;d want to know if these two pieces of the program have access to the same shared scope/resources. If they do, then you have all the questions that multithreaded languages (Java, C++, etc.) deal with, such as needing cooperative or preemptive locking (mutexes, etc.). That&apos;s a lot of extra work, and shouldn&apos;t be undertaken lightly.</p>
+<p>Alternatively, you&apos;d want to know how these two pieces could &quot;communicate&quot; if they couldn&apos;t share scope/resources.</p>
+<p>All these are great questions to consider as we explore a feature added to the web platform circa HTML5 called &quot;Web Workers.&quot; This is a feature of the browser (aka host environment) and actually has almost nothing to do with the JS language itself. That is, JavaScript does not <em>currently</em> have any features that support threaded execution.</p>
+<p>But an environment like your browser can easily provide multiple instances of the JavaScript engine, each on its own thread, and let you run a different program in each thread. Each of those separate threaded pieces of your program is called a &quot;(Web) Worker.&quot; This type of parallelism is called &quot;task parallelism,&quot; as the emphasis is on splitting up chunks of your program to run in parallel.</p>
+<p>From your main JS program (or another Worker), you instantiate a Worker like so:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> w1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Worker</span><span class="token punctuation">(</span> <span class="token string">&quot;http://some.url.1/mycoolworker.js&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The URL should point to the location of a JS file (not an HTML page!) which is intended to be loaded into a Worker. The browser will then spin up a separate thread and let that file run as an independent program in that thread.</p>
+<p><strong>Note:</strong> The kind of Worker created with such a URL is called a &quot;Dedicated Worker.&quot; But instead of providing a URL to an external file, you can also create an &quot;Inline Worker&quot; by providing a Blob URL (another HTML5 feature); essentially it&apos;s an inline file stored in a single (binary) value. However, Blobs are beyond the scope of what we&apos;ll discuss here.</p>
+<p>Workers do not share any scope or resources with each other or the main program -- that would bring all the nightmares of threaded programming to the forefront -- but instead have a basic event messaging mechanism connecting them.</p>
+<p>The <code>w1</code> Worker object is an event listener and trigger, which lets you subscribe to events sent by the Worker as well as send events to the Worker.</p>
+<p>Here&apos;s how to listen for events (actually, the fixed <code>&quot;message&quot;</code> event):</p>
+<pre class="language-"><code class="lang-js">w1<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;message&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// evt.data</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>And you can send the <code>&quot;message&quot;</code> event to the Worker:</p>
+<pre class="language-"><code class="lang-js">w1<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span> <span class="token string">&quot;something cool to say&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Inside the Worker, the messaging is totally symmetrical:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &quot;mycoolworker.js&quot;</span>
+
+<span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;message&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// evt.data</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">postMessage</span><span class="token punctuation">(</span> <span class="token string">&quot;a really cool reply&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Notice that a dedicated Worker is in a one-to-one relationship with the program that created it. That is, the <code>&quot;message&quot;</code> event doesn&apos;t need any disambiguation here, because we&apos;re sure that it could only have come from this one-to-one relationship -- either it came from the Worker or the main page.</p>
+<p>Usually the main page application creates the Workers, but a Worker can instantiate its own child Worker(s) -- known as subworkers -- as necessary. Sometimes this is useful to delegate such details to a sort of &quot;master&quot; Worker that spawns other Workers to process parts of a task. Unfortunately, at the time of this writing, Chrome still does not support subworkers, while Firefox does.</p>
+<p>To kill a Worker immediately from the program that created it, call <code>terminate()</code> on the Worker object (like <code>w1</code> in the previous snippets). Abruptly terminating a Worker thread does not give it any chance to finish up its work or clean up any resources. It&apos;s akin to you closing a browser tab to kill a page.</p>
+<p>If you have two or more pages (or multiple tabs with the same page!) in the browser that try to create a Worker from the same file URL, those will actually end up as completely separate Workers. Shortly, we&apos;ll discuss a way to &quot;share&quot; a Worker.</p>
+<p><strong>Note:</strong> It may seem like a malicious or ignorant JS program could easily perform a denial-of-service attack on a system by spawning hundreds of Workers, seemingly each with their own thread. While it&apos;s true that it&apos;s somewhat of a guarantee that a Worker will end up on a separate thread, this guarantee is not unlimited. The system is free to decide how many actual threads/CPUs/cores it really wants to create. There&apos;s no way to predict or guarantee how many you&apos;ll have access to, though many people assume it&apos;s at least as many as the number of CPUs/cores available. I think the safest assumption is that there&apos;s at least one other thread besides the main UI thread, but that&apos;s about it.</p>
+<h3 id="worker-environment"><a name="worker-environment" class="anchor-navigation-ex-anchor" href="#worker-environment"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. Worker Environment</h3>
+<p>Inside the Worker, you do not have access to any of the main program&apos;s resources. That means you cannot access any of its global variables, nor can you access the page&apos;s DOM or other resources. Remember: it&apos;s a totally separate thread.</p>
+<p>You can, however, perform network operations (Ajax, WebSockets) and set timers. Also, the Worker has access to its own copy of several important global variables/features, including <code>navigator</code>, <code>location</code>, <code>JSON</code>, and <code>applicationCache</code>.</p>
+<p>You can also load extra JS scripts into your Worker, using <code>importScripts(..)</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// inside the Worker</span>
+<span class="token function">importScripts</span><span class="token punctuation">(</span> <span class="token string">&quot;foo.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bar.js&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>These scripts are loaded synchronously, which means the <code>importScripts(..)</code> call will block the rest of the Worker&apos;s execution until the file(s) are finished loading and executing.</p>
+<p><strong>Note:</strong> There have also been some discussions about exposing the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span><span class="token punctuation">&gt;</span></span></code> API to Workers, which combined with having canvases be Transferables (see the &quot;Data Transfer&quot; section), would allow Workers to perform more sophisticated off-thread graphics processing, which can be useful for high-performance gaming (WebGL) and other similar applications. Although this doesn&apos;t exist yet in any browsers, it&apos;s likely to happen in the near future.</p>
+<p>What are some common uses for Web Workers?</p>
+<ul>
+<li>Processing intensive math calculations</li>
+<li>Sorting large data sets</li>
+<li>Data operations (compression, audio analysis, image pixel manipulations, etc.)</li>
+<li>High-traffic network communications</li>
+</ul>
+<h3 id="data-transfer"><a name="data-transfer" class="anchor-navigation-ex-anchor" href="#data-transfer"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2. Data Transfer</h3>
+<p>You may notice a common characteristic of most of those uses, which is that they require a large amount of information to be transferred across the barrier between threads using the event mechanism, perhaps in both directions.</p>
+<p>In the early days of Workers, serializing all data to a string value was the only option. In addition to the speed penalty of the two-way serializations, the other major negative was that the data was being copied, which meant a doubling of memory usage (and the subsequent churn of garbage collection).</p>
+<p>Thankfully, we now have a few better options.</p>
+<p>If you pass an object, a so-called &quot;Structured Cloning Algorithm&quot; (<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/The_structured_clone_algorithm" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/The_structured_clone_algorithm</a>) is used to copy/duplicate the object on the other side. This algorithm is fairly sophisticated and can even handle duplicating objects with circular references. The to-string/from-string performance penalty is not paid, but we still have duplication of memory using this approach. There is support for this in IE10 and above, as well as all the other major browsers.</p>
+<p>An even better option, especially for larger data sets, is &quot;Transferable Objects&quot; (<a href="http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast" target="_blank">http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast</a>). What happens is that the object&apos;s &quot;ownership&quot; is transferred, but the data itself is not moved. Once you transfer away an object to a Worker, it&apos;s empty or inaccessible in the originating location -- that eliminates the hazards of threaded programming over a shared scope. Of course, transfer of ownership can go in both directions.</p>
+<p>There really isn&apos;t much you need to do to opt into a Transferable Object; any data structure that implements the Transferable interface (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Transferable" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Transferable</a>) will automatically be transferred this way (support Firefox &amp; Chrome).</p>
+<p>For example, typed arrays like <code>Uint8Array</code> (see the <em>ES6 &amp; Beyond</em> title of this series) are &quot;Transferables.&quot; This is how you&apos;d send a Transferable Object using <code>postMessage(..)</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// `foo` is a `Uint8Array` for instance</span>
+
+<span class="token function">postMessage</span><span class="token punctuation">(</span> foo<span class="token punctuation">.</span>buffer<span class="token punctuation">,</span> <span class="token punctuation">[</span> foo<span class="token punctuation">.</span>buffer <span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The first parameter is the raw buffer and the second parameter is a list of what to transfer.</p>
+<p>Browsers that don&apos;t support Transferable Objects simply degrade to structured cloning, which means performance reduction rather than outright feature breakage.</p>
+<h3 id="shared-workers"><a name="shared-workers" class="anchor-navigation-ex-anchor" href="#shared-workers"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.3. Shared Workers</h3>
+<p>If your site or app allows for loading multiple tabs of the same page (a common feature), you may very well want to reduce the resource usage of their system by preventing duplicate dedicated Workers; the most common limited resource in this respect is a socket network connection, as browsers limit the number of simultaneous connections to a single host. Of course, limiting multiple connections from a client also eases your server resource requirements.</p>
+<p>In this case, creating a single centralized Worker that all the page instances of your site or app can <em>share</em> is quite useful.</p>
+<p>That&apos;s called a <code>SharedWorker</code>, which you create like so (support for this is limited to Firefox and Chrome):</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> w1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SharedWorker</span><span class="token punctuation">(</span> <span class="token string">&quot;http://some.url.1/mycoolworker.js&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Because a shared Worker can be connected to or from more than one program instance or page on your site, the Worker needs a way to know which program a message comes from. This unique identification is called a &quot;port&quot; -- think network socket ports. So the calling program must use the <code>port</code> object of the Worker for communication:</p>
+<pre class="language-"><code class="lang-js">w1<span class="token punctuation">.</span>port<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;message&quot;</span><span class="token punctuation">,</span> handleMessages <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+w1<span class="token punctuation">.</span>port<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span> <span class="token string">&quot;something cool&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Also, the port connection must be initialized, as:</p>
+<pre class="language-"><code class="lang-js">w1<span class="token punctuation">.</span>port<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Inside the shared Worker, an extra event must be handled: <code>&quot;connect&quot;</code>. This event provides the port <code>object</code> for that particular connection. The most convenient way to keep multiple connections separate is to use closure (see <em>Scope &amp; Closures</em> title of this series) over the <code>port</code>, as shown next, with the event listening and transmitting for that connection defined inside the handler for the <code>&quot;connect&quot;</code> event:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// inside the shared Worker</span>
+<span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;connect&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// the assigned port for this connection</span>
+    <span class="token keyword">var</span> port <span class="token operator">=</span> evt<span class="token punctuation">.</span>ports<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    port<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span> <span class="token string">&quot;message&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>evt<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// ..</span>
+
+        port<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// ..</span>
+    <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// initialize the port connection</span>
+    port<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Other than that difference, shared and dedicated Workers have the same capabilities and semantics.</p>
+<p><strong>Note:</strong> Shared Workers survive the termination of a port connection if other port connections are still alive, whereas dedicated Workers are terminated whenever the connection to their initiating program is terminated.</p>
+<h3 id="polyfilling-web-workers"><a name="polyfilling-web-workers" class="anchor-navigation-ex-anchor" href="#polyfilling-web-workers"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.4. Polyfilling Web Workers</h3>
+<p>Web Workers are very attractive performance-wise for running JS programs in parallel. However, you may be in a position where your code needs to run in older browsers that lack support. Because Workers are an API and not a syntax, they can be polyfilled, to an extent.</p>
+<p>If a browser doesn&apos;t support Workers, there&apos;s simply no way to fake multithreading from the performance perspective. Iframes are commonly thought of to provide a parallel environment, but in all modern browsers they actually run on the same thread as the main page, so they&apos;re not sufficient for faking parallelism.</p>
+<p>As we detailed in Chapter 1, JS&apos;s asynchronicity (not parallelism) comes from the event loop queue, so you can force faked Workers to be asynchronous using timers (<code>setTimeout(..)</code>, etc.). Then you just need to provide a polyfill for the Worker API. There are some listed here (<a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills#web-workers" target="_blank">https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills#web-workers</a>), but frankly none of them look great.</p>
+<p>I&apos;ve written a sketch of a polyfill for <code>Worker</code> here (<a href="https://gist.github.com/getify/1b26accb1a09aa53ad25" target="_blank">https://gist.github.com/getify/1b26accb1a09aa53ad25</a>). It&apos;s basic, but it should get the job done for simple <code>Worker</code> support, given that the two-way messaging works correctly as well as <code>&quot;onerror&quot;</code> handling. You could probably also extend it with more features, such as <code>terminate()</code> or faked Shared Workers, as you see fit.</p>
+<p><strong>Note:</strong> You can&apos;t fake synchronous blocking, so this polyfill just disallows use of <code>importScripts(..)</code>. Another option might have been to parse and transform the Worker&apos;s code (once Ajax loaded) to handle rewriting to some asynchronous form of an <code>importScripts(..)</code> polyfill, perhaps with a promise-aware interface.</p>
+<h2 id="simd"><a name="simd" class="anchor-navigation-ex-anchor" href="#simd"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. SIMD</h2>
+<p>Single instruction, multiple data (SIMD) is a form of &quot;data parallelism,&quot; as contrasted to &quot;task parallelism&quot; with Web Workers, because the emphasis is not really on program logic chunks being parallelized, but rather multiple bits of data being processed in parallel.</p>
+<p>With SIMD, threads don&apos;t provide the parallelism. Instead, modern CPUs provide SIMD capability with &quot;vectors&quot; of numbers -- think: type specialized arrays -- as well as instructions that can operate in parallel across all the numbers; these are low-level operations leveraging instruction-level parallelism.</p>
+<p>The effort to expose SIMD capability to JavaScript is primarily spearheaded by Intel (<a href="https://01.org/node/1495" target="_blank">https://01.org/node/1495</a>), namely by Mohammad Haghighat (at the time of this writing), in cooperation with Firefox and Chrome teams. SIMD is on an early standards track with a good chance of making it into a future revision of JavaScript, likely in the ES7 timeframe.</p>
+<p>SIMD JavaScript proposes to expose short vector types and APIs to JS code, which on those SIMD-enabled systems would map the operations directly through to the CPU equivalents, with fallback to non-parallelized operation &quot;shims&quot; on non-SIMD systems.</p>
+<p>The performance benefits for data-intensive applications (signal analysis, matrix operations on graphics, etc.) with such parallel math processing are quite obvious!</p>
+<p>Early proposal forms of the SIMD API at the time of this writing look like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> v1 <span class="token operator">=</span> <span class="token constant">SIMD</span><span class="token punctuation">.</span><span class="token function">float32x4</span><span class="token punctuation">(</span> <span class="token number">3.14159</span><span class="token punctuation">,</span> <span class="token number">21.0</span><span class="token punctuation">,</span> <span class="token number">32.3</span><span class="token punctuation">,</span> <span class="token number">55.55</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> v2 <span class="token operator">=</span> <span class="token constant">SIMD</span><span class="token punctuation">.</span><span class="token function">float32x4</span><span class="token punctuation">(</span> <span class="token number">2.1</span><span class="token punctuation">,</span> <span class="token number">3.2</span><span class="token punctuation">,</span> <span class="token number">4.3</span><span class="token punctuation">,</span> <span class="token number">5.4</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> v3 <span class="token operator">=</span> <span class="token constant">SIMD</span><span class="token punctuation">.</span><span class="token function">int32x4</span><span class="token punctuation">(</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token number">1001</span><span class="token punctuation">,</span> <span class="token number">10001</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> v4 <span class="token operator">=</span> <span class="token constant">SIMD</span><span class="token punctuation">.</span><span class="token function">int32x4</span><span class="token punctuation">(</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token constant">SIMD</span><span class="token punctuation">.</span>float32x4<span class="token punctuation">.</span><span class="token function">mul</span><span class="token punctuation">(</span> v1<span class="token punctuation">,</span> v2 <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// [ 6.597339, 67.2, 138.89, 299.97 ]</span>
+<span class="token constant">SIMD</span><span class="token punctuation">.</span>int32x4<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span> v3<span class="token punctuation">,</span> v4 <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// [ 20, 121, 1031, 10041 ]</span>
+</code></pre>
+<p>Shown here are two different vector data types, 32-bit floating-point numbers and 32-bit integer numbers. You can see that these vectors are sized exactly to four 32-bit elements, as this matches the SIMD vector sizes (128-bit) available in most modern CPUs. It&apos;s also possible we may see an <code>x8</code> (or larger!) version of these APIs in the future.</p>
+<p>Besides <code>mul()</code> and <code>add()</code>, many other operations are likely to be included, such as <code>sub()</code>, <code>div()</code>, <code>abs()</code>, <code>neg()</code>, <code>sqrt()</code>, <code>reciprocal()</code>, <code>reciprocalSqrt()</code> (arithmetic), <code>shuffle()</code> (rearrange vector elements), <code>and()</code>, <code>or()</code>, <code>xor()</code>, <code>not()</code> (logical), <code>equal()</code>, <code>greaterThan()</code>, <code>lessThan()</code> (comparison), <code>shiftLeft()</code>, <code>shiftRightLogical()</code>, <code>shiftRightArithmetic()</code> (shifts), <code>fromFloat32x4()</code>, and <code>fromInt32x4()</code> (conversions).</p>
+<p><strong>Note:</strong> There&apos;s an official &quot;prollyfill&quot; (hopeful, expectant, future-leaning polyfill) for the SIMD functionality available (<a href="https://github.com/johnmccutchan/ecmascript_simd" target="_blank">https://github.com/johnmccutchan/ecmascript_simd</a>), which illustrates a lot more of the planned SIMD capability than we&apos;ve illustrated in this section.</p>
+<h2 id="asmjs"><a name="asmjs" class="anchor-navigation-ex-anchor" href="#asmjs"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. asm.js</h2>
+<p>&quot;asm.js&quot; (<a href="http://asmjs.org/" target="_blank">http://asmjs.org/</a>) is a label for a highly optimizable subset of the JavaScript language. By carefully avoiding certain mechanisms and patterns that are <em>hard</em> to optimize (garbage collection, coercion, etc.), asm.js-styled code can be recognized by the JS engine and given special attention with aggressive low-level optimizations.</p>
+<p>Distinct from other program performance mechanisms discussed in this chapter, asm.js isn&apos;t necessarily something that needs to be adopted into the JS language specification. There <em>is</em> an asm.js specification (<a href="http://asmjs.org/spec/latest/" target="_blank">http://asmjs.org/spec/latest/</a>), but it&apos;s mostly for tracking an agreed upon set of candidate inferences for optimization rather than a set of requirements of JS engines.</p>
+<p>There&apos;s not currently any new syntax being proposed. Instead, asm.js suggests ways to recognize existing standard JS syntax that conforms to the rules of asm.js and let engines implement their own optimizations accordingly.</p>
+<p>There&apos;s been some disagreement between browser vendors over exactly how asm.js should be activated in a program. Early versions of the asm.js experiment required a <code>&quot;use asm&quot;;</code> pragma (similar to strict mode&apos;s <code>&quot;use strict&quot;;</code>) to help clue the JS engine to be looking for asm.js optimization opportunities and hints. Others have asserted that asm.js should just be a set of heuristics that engines automatically recognize without the author having to do anything extra, meaning that existing programs could theoretically benefit from asm.js-style optimizations without doing anything special.</p>
+<h3 id="how-to-optimize-with-asmjs"><a name="how-to-optimize-with-asmjs" class="anchor-navigation-ex-anchor" href="#how-to-optimize-with-asmjs"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1. How to Optimize with asm.js</h3>
+<p>The first thing to understand about asm.js optimizations is around types and coercion (see the <em>Types &amp; Grammar</em> title of this series). If the JS engine has to track multiple different types of values in a variable through various operations, so that it can handle coercions between types as necessary, that&apos;s a lot of extra work that keeps the program optimization suboptimal.</p>
+<p><strong>Note:</strong> We&apos;re going to use asm.js-style code here for illustration purposes, but be aware that it&apos;s not commonly expected that you&apos;ll author such code by hand. asm.js is more intended to a compilation target from other tools, such as Emscripten (<a href="https://github.com/kripken/emscripten/wiki" target="_blank">https://github.com/kripken/emscripten/wiki</a>). It&apos;s of course possible to write your own asm.js code, but that&apos;s usually a bad idea because the code is very low level and managing it can be very time consuming and error prone. Nevertheless, there may be cases where you&apos;d want to hand tweak your code for asm.js optimization purposes.</p>
+<p>There are some &quot;tricks&quot; you can use to hint to an asm.js-aware JS engine what the intended type is for variables/operations, so that it can skip these coercion tracking steps.</p>
+<p>For example:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+<span class="token keyword">var</span> b <span class="token operator">=</span> a<span class="token punctuation">;</span>
+</code></pre>
+<p>In that program, the <code>b = a</code> assignment leaves the door open for type divergence in variables. However, it could instead be written as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ..</span>
+
+<span class="token keyword">var</span> b <span class="token operator">=</span> a <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Here, we&apos;ve used the <code>|</code> (&quot;binary OR&quot;) with value <code>0</code>, which has no effect on the value other than to make sure it&apos;s a 32-bit integer. That code run in a normal JS engine works just fine, but when run in an asm.js-aware JS engine it <em>can</em> signal that <code>b</code> should always be treated as a 32-bit integer, so the coercion tracking can be skipped.</p>
+<p>Similarly, the addition operation between two variables can be restricted to a more performant integer addition (instead of floating point):</p>
+<pre class="language-"><code class="lang-js"><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span>
+</code></pre>
+<p>Again, the asm.js-aware JS engine can see that hint and infer that the <code>+</code> operation should be 32-bit integer addition because the end result of the whole expression would automatically be 32-bit integer conformed anyway.</p>
+<h3 id="asmjs-modules"><a name="asmjs-modules" class="anchor-navigation-ex-anchor" href="#asmjs-modules"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.2. asm.js Modules</h3>
+<p>One of the biggest detractors to performance in JS is around memory allocation, garbage collection, and scope access. asm.js suggests one of the ways around these issues is to declare a more formalized asm.js &quot;module&quot; -- do not confuse these with ES6 modules; see the <em>ES6 &amp; Beyond</em> title of this series.</p>
+<p>For an asm.js module, you need to explicitly pass in a tightly conformed namespace -- this is referred to in the spec as <code>stdlib</code>, as it should represent standard libraries needed -- to import necessary symbols, rather than just using globals via lexical scope. In the base case, the <code>window</code> object is an acceptable <code>stdlib</code> object for asm.js module purposes, but you could and perhaps should construct an even more restricted one.</p>
+<p>You also must declare a &quot;heap&quot; -- which is just a fancy term for a reserved spot in memory where variables can already be used without asking for more memory or releasing previously used memory -- and pass that in, so that the asm.js module won&apos;t need to do anything that would cause memory churn; it can just use the pre-reserved space.</p>
+<p>A &quot;heap&quot; is likely a typed <code>ArrayBuffer</code>, such as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> heap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayBuffer</span><span class="token punctuation">(</span> <span class="token number">0x10000</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 64k heap</span>
+</code></pre>
+<p>Using that pre-reserved 64k of binary space, an asm.js module can store and retrieve values in that buffer without any memory allocation or garbage collection penalties. For example, the <code>heap</code> buffer could be used inside the module to back an array of 64-bit float values like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Float64Array</span><span class="token punctuation">(</span> heap <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>OK, so let&apos;s make a quick, silly example of an asm.js-styled module to illustrate how these pieces fit together. We&apos;ll define a <code>foo(..)</code> that takes a start (<code>x</code>) and end (<code>y</code>) integer for a range, and calculates all the inner adjacent multiplications of the values in the range, and then finally averages those values together:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">fooASM</span><span class="token punctuation">(</span>stdlib<span class="token punctuation">,</span>foreign<span class="token punctuation">,</span>heap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;use asm&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">stdlib<span class="token punctuation">.</span>Int32Array</span><span class="token punctuation">(</span> heap <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> x <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        y <span class="token operator">=</span> y <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> count <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>y<span class="token operator">|</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token punctuation">(</span>x<span class="token operator">|</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// calculate all the inner adjacent multiplications</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> x <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">(</span>i <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token punctuation">(</span>y <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            p <span class="token operator">=</span> <span class="token punctuation">(</span>p <span class="token operator">+</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span>
+        <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// store result</span>
+            arr<span class="token punctuation">[</span> p <span class="token operator">&gt;&gt;</span> <span class="token number">3</span> <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">*</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// calculate average of all intermediate values</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> p <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">(</span>i <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token punctuation">(</span>count <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            p <span class="token operator">=</span> <span class="token punctuation">(</span>p <span class="token operator">+</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span>
+        <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            sum <span class="token operator">=</span> <span class="token punctuation">(</span>sum <span class="token operator">+</span> arr<span class="token punctuation">[</span> p <span class="token operator">&gt;&gt;</span> <span class="token number">3</span> <span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token operator">+</span><span class="token punctuation">(</span>sum <span class="token operator">/</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        foo<span class="token punctuation">:</span> foo
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> heap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayBuffer</span><span class="token punctuation">(</span> <span class="token number">0x1000</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token function">fooASM</span><span class="token punctuation">(</span> window<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> heap <span class="token punctuation">)</span><span class="token punctuation">.</span>foo<span class="token punctuation">;</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 233</span>
+</code></pre>
+<p><strong>Note:</strong> This asm.js example is hand authored for illustration purposes, so it doesn&apos;t represent the same code that would be produced from a compilation tool targeting asm.js. But it does show the typical nature of asm.js code, especially the type hinting and use of the <code>heap</code> buffer for temporary variable storage.</p>
+<p>The first call to <code>fooASM(..)</code> is what sets up our asm.js module with its <code>heap</code> allocation. The result is a <code>foo(..)</code> function we can call as many times as necessary. Those <code>foo(..)</code> calls should be specially optimized by an asm.js-aware JS engine. Importantly, the preceding code is completely standard JS and would run just fine (without special optimization) in a non-asm.js engine.</p>
+<p>Obviously, the nature of restrictions that make asm.js code so optimizable reduces the possible uses for such code significantly. asm.js won&apos;t necessarily be a general optimization set for any given JS program. Instead, it&apos;s intended to provide an optimized way of handling specialized tasks such as intensive math operations (e.g., those used in graphics processing for games).</p>
+<h2 id="review"><a name="review" class="anchor-navigation-ex-anchor" href="#review"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Review</h2>
+<p>The first four chapters of this book are based on the premise that async coding patterns give you the ability to write more performant code, which is generally a very important improvement. But async behavior only gets you so far, because it&apos;s still fundamentally bound to a single event loop thread.</p>
+<p>So in this chapter we&apos;ve covered several program-level mechanisms for improving performance even further.</p>
+<p>Web Workers let you run a JS file (aka program) in a separate thread using async events to message between the threads. They&apos;re wonderful for offloading long-running or resource-intensive tasks to a different thread, leaving the main UI thread more responsive.</p>
+<p>SIMD proposes to map CPU-level parallel math operations to JavaScript APIs for high-performance data-parallel operations, like number processing on large data sets.</p>
+<p>Finally, asm.js describes a small subset of JavaScript that avoids the hard-to-optimize parts of JS (like garbage collection and coercion) and lets the JS engine recognize and run such code through aggressive optimizations. asm.js could be hand authored, but that&apos;s extremely tedious and error prone, akin to hand authoring assembly language (hence the name). Instead, the main intent is that asm.js would be a good target for cross-compilation from other highly optimized program languages -- for example, Emscripten (<a href="https://github.com/kripken/emscripten/wiki" target="_blank">https://github.com/kripken/emscripten/wiki</a>) transpiling C/C++ to JavaScript.</p>
+<p>While not covered explicitly in this chapter, there are even more radical ideas under very early discussion for JavaScript, including approximations of direct threaded functionality (not just hidden behind data structure APIs). Whether that happens explicitly, or we just see more parallelism creep into JS behind the scenes, the future of more optimized program-level performance in JS looks really <em>promising</em>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch4.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 4: Generators">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch6.html" class="navigation navigation-next " aria-label="Next page: Chapter 6: Benchmarking & Tuning">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 5: Program Performance","level":"1.7.6","depth":2,"next":{"title":"Chapter 6: Benchmarking & Tuning","level":"1.7.7","depth":2,"path":"Async & Performance/ch6.md","ref":"Async & Performance/ch6.md","articles":[]},"previous":{"title":"Chapter 4: Generators","level":"1.7.5","depth":2,"path":"Async & Performance/ch4.md","ref":"Async & Performance/ch4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-sharing","-livereload","-search","search-plus","anchor-navigation-ex","splitter","prism","theme-comscore","livereload"],"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-plus":{},"splitter":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Async & Performance/ch5.md","mtime":"2018-09-23T00:16:07.254Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-23T02:41:01.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
